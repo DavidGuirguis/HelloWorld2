@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="rkMsg_For_any_additional_information__please_call_">
+		<value xml:space="preserve">For any additional information, please call {0} at {1} .</value>
+		<comment><![CDATA[{0} :sSalesRep
+
+{1}:sSalesRepPhoneNo
+]]></comment>
+	</data>
+	<data name="rkRptLbl_Issued_PO">
+		<value xml:space="preserve">Issued PO#</value>
+	</data>
+	<data name="rkRptLbl_Authorized_Name">
+		<value xml:space="preserve">Authorized Name</value>
+	</data>
+	<data name="rkLbl_Please_Print">
+		<value xml:space="preserve">Please Print</value>
+	</data>
+	<data name="rkLbl_Date">
+		<value xml:space="preserve">Date</value>
+	</data>
+	<data name="rkShortForDay_dd">
+		<value xml:space="preserve">dd</value>
+		<comment>dd/mm/yy</comment>
+	</data>
+	<data name="rkShortForMonth_mm">
+		<value xml:space="preserve">mm</value>
+		<comment>dd/mm/yy</comment>
+	</data>
+	<data name="rkShortForYear_yy">
+		<value xml:space="preserve">yy</value>
+		<comment>dd//mm/yy</comment>
+	</data>
+	<data name="rkAcknowledgmentMessage">
+		<value xml:space="preserve">The signature is an authorization to proceed with the required repair work as described within the quote</value>
+	</data>
+	<data name="rkFrmLbl_ESTIMATED_REPAIR_TIME">
+		<value xml:space="preserve">ESTIMATED REPAIR TIME</value>
+	</data>
+	<data name="rkLbl_ADDITIONAL_REPAIR_NOTIFICATION">
+		<value xml:space="preserve">ADDITIONAL REPAIR NOTIFICATION</value>
+	</data>
+	<data name="FAX_BACK_ASAP_TO">
+		<value xml:space="preserve">FAX BACK ASAP TO {0}</value>
+		<comment><![CDATA[{0}: sSRFaxNo
+]]></comment>
+	</data>
+	<data name="rkFrmLbl_CUSTOMER_NO">
+		<value xml:space="preserve">CUSTOMER NO.</value>
+	</data>
+	<data name="rkFrmLbl_PHONE_NO">
+		<value xml:space="preserve">PHONE NO.</value>
+	</data>
+	<data name="rkFrmLbl_FAX_NO">
+		<value xml:space="preserve">FAX NO.</value>
+	</data>
+	<data name="rkLbl__NO">
+		<value xml:space="preserve">{0} NO.</value>
+		<comment><![CDATA[{0}: rs.Fields["PrintHeaderText"].Value.As<String>()
+]]></comment>
+	</data>
+	<data name="rkLbl_P_O__NO">
+		<value xml:space="preserve">P.O. NO.</value>
+	</data>
+	<data name="rkLbl_WORK_ORDER_NO">
+		<value xml:space="preserve">WORK ORDER NO.</value>
+	</data>
+	<data name="rkLbl_ORIGINAL_QUOTE_NO">
+		<value xml:space="preserve">ORIGINAL QUOTE NO.</value>
+	</data>
+	<data name="rkLabel_MAKE">
+		<value xml:space="preserve">MAKE</value>
+	</data>
+	<data name="rkLabel_MODEL">
+		<value xml:space="preserve">MODEL</value>
+	</data>
+	<data name="rkLbl_SERIAL_NO">
+		<value xml:space="preserve">SERIAL NO.</value>
+	</data>
+	<data name="rkLbl_UNIT_NO">
+		<value xml:space="preserve">UNIT NO.</value>
+	</data>
+	<data name="rkLbl_HOURS">
+		<value xml:space="preserve">HOURS</value>
+	</data>
+	<data name="rkMsg_We_are_due_to_complete_your_repair_soon">
+		<value xml:space="preserve">While working on your equipment we came across some additional repairs that we had not quoted on. We wanted to make sure that you were notified and give you the opportunity to decide if you would like us to repair these additional items.Please review the quote following and FAX US BACK ASAP. We need your response whether you would like us to proceed or not. We are due to complete your repair soon and need to schedule the technician.</value>
+	</data>
+	<data name="rkLbl_New_estimated_completion_date">
+		<value><![CDATA[New estimated completion date:&nbsp;&nbsp;<u> {0}]]></value>
+		<comment><![CDATA[{0}: Util.DateFormat(iNewCompDate)
+]]></comment>
+	</data>
+	<data name="rkLbl_SEGMENT">
+		<value><![CDATA[SEGMENT:&nbsp;&nbsp;{0}]]></value>
+		<comment>{0}: sSegmentNo</comment>
+	</data>
+	<data name="rkLbl_JOB_CODE">
+		<value xml:space="preserve">JOB CODE:</value>
+	</data>
+	<data name="rkLbl_COMPONENT_CODE">
+		<value xml:space="preserve">COMPONENT CODE:</value>
+	</data>
+	<data name="rkLbl_MODIFIER_CODE">
+		<value xml:space="preserve">MODIFIER CODE:</value>
+	</data>
+	<data name="rkLbl_QUANTITY_CODE">
+		<value xml:space="preserve">QUANTITY CODE:</value>
+	</data>
+	<data name="rkLbl_JOB_LOCATION_CODE">
+		<value xml:space="preserve">JOB LOCATION CODE:</value>
+	</data>
+	<data name="rkListItem_Job_Code">
+		<value xml:space="preserve">Job Code</value>
+	</data>
+	<data name="rkListItem_Comp_Code">
+		<value xml:space="preserve">Comp Code</value>
+	</data>
+	<data name="rkListItem_Mod_Code">
+		<value xml:space="preserve">Mod Code</value>
+	</data>
+	<data name="rkListItem_Job_Loc_Code">
+		<value xml:space="preserve">Job Loc Code</value>
+	</data>
+	<data name="rkListItem_Qty_Code">
+		<value xml:space="preserve">Qty Code</value>
+	</data>
+	<data name="rkListItem_Qty">
+		<value xml:space="preserve">Qty</value>
+	</data>
+	<data name="rkListItem_Item_No">
+		<value xml:space="preserve">Item No</value>
+	</data>
+	<data name="rkListItem_Description">
+		<value xml:space="preserve">Description</value>
+	</data>
+	<data name="rkListItem_Part_Price">
+		<value xml:space="preserve">Part Price</value>
+	</data>
+	<data name="rkListItem_Disc">
+		<value xml:space="preserve">Disc %</value>
+	</data>
+	<data name="rkListItem_Unit_Price">
+		<value xml:space="preserve">Unit Price</value>
+	</data>
+	<data name="rkListItem_Price">
+		<value xml:space="preserve">{0} Price</value>
+		<comment>{0}: strDisclabel</comment>
+	</data>
+	<data name="rkLbl_Unit_Price">
+		<value xml:space="preserve">Unit / {0} Price</value>
+		<comment>{0}: strDiscLabel</comment>
+	</data>
+	<data name="rkListItem_Ext_Price">
+		<value xml:space="preserve">Ext Price</value>
+	</data>
+	<data name="rkLbl_Total">
+		<value><![CDATA[Total ]]></value>
+	</data>
+	<data name="rkLbl_CORE">
+		<value xml:space="preserve">CORE</value>
+	</data>
+	<data name="rkTOTAL">
+		<value xml:space="preserve">TOTAL {0}</value>
+		<comment>{0}: rkHeaderText</comment>
+	</data>
+	<data name="rkLbl_from_start_date">
+		<value xml:space="preserve">from start date</value>
+	</data>
+	<data name="rkMsg_Any_questions__Please_call">
+		<value xml:space="preserve">Any questions? Please call {0} at  {1}.</value>
+		<comment><![CDATA[{0}: sSalesRep
+{1}: sSalesRepPhoneNo]]></comment>
+	</data>
+	<data name="rkLbl_Fax_number">
+		<value xml:space="preserve">Fax number {0}.</value>
+		<comment>{0}: sSRFaxNo</comment>
+	</data>
+	<data name="rkLbl_Signature">
+		<value xml:space="preserve">Signature</value>
+	</data>
+	<data name="rkLbl_EMAIL">
+		<value xml:space="preserve">EMAIL</value>
+	</data>
+	<data name="rkLbl_Total_Cat">
+		<value><![CDATA[Total {0} ]]></value>
+		<comment>{0}:sCategoryOLD</comment>
+	</data>
+	<data name="rkLbl_Segment_Total">
+		<value xml:space="preserve">Segment {0} Total</value>
+		<comment>{0}: sSegmentNo</comment>
+	</data>
+	<data name="rkLbl_CONTACT">
+		<value xml:space="preserve">CONTACT</value>
+	</data>
+</root>

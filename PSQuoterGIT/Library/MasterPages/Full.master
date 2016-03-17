@@ -1,0 +1,65 @@
+<%@ Master 
+    Language="C#" 
+    AutoEventWireup="true" 
+    CodeFile="Full.master.cs" 
+    Inherits="Template" 
+    MasterPageFile="~/Library/MasterPages/_webForm.master"
+%>
+<%@ Register Src="../Panes/rightPane.ascx" TagName="rightPane" TagPrefix="pane" %>
+<%@ Register Src="../Panes/bottomPane.ascx" TagName="bottomPane" TagPrefix="pane" %>
+<%--<%@ Register Src="../Panes/leftPane.ascx" TagName="leftPane" TagPrefix="pane" %>--%>
+<%@ Register Src="../Panes/topmenu.ascx" TagName="topmenu" TagPrefix="pane" %>
+<%@ Register Src="../Panes/SearchBar.ascx" TagName="searchbar" TagPrefix="pane" %>
+<%@ Register Src="../Panes/detailbar.ascx" TagName="detailbar" TagPrefix="pane" %>
+<%@ Register Src="../Panes/applicationheader.ascx" TagName="applicationheader" TagPrefix="pane" %>
+<asp:Content runat="server" ContentPlaceHolderID="cntMP">
+      <div id="topContainer">
+    <!-- HEADER: Start -->
+       <div id="headerBox">
+            <asp:ContentPlaceHolder ID="cntHP" runat="server"><pane:applicationheader runat="server" /></asp:ContentPlaceHolder>
+       </div>
+    <!-- HEADER: End -->
+
+    <!-- TOP MENU: Start -->
+       <div id="topPaneBox">
+         <asp:ContentPlaceHolder ID="cntTP" runat="server">
+           <pane:topmenu runat="server" />
+         </asp:ContentPlaceHolder>
+       </div>
+    <!-- TOP MENU: END -->
+
+    <!-- SEARCH: Start -->
+      <div id="searchBox">
+        <asp:ContentPlaceHolder ID="cntSP" runat="server">
+          <pane:searchbar runat="server" />
+        </asp:ContentPlaceHolder>
+      </div>
+    <!-- SEARCH: END -->
+      </div>
+      <div id="bottomContainer">
+        <table width="100%" style="height:100%;" cellpadding="0" cellspacing="0" border="0">    
+            <tr valign="top">
+<%--        <!-- LEFT PANE: Start -->
+                <td width="140" rowspan="2" id="leftPaneBox" rowspan="2"><asp:ContentPlaceHolder ID="cntLP" runat="server"><pane:leftPane runat="server" /></asp:ContentPlaceHolder></td>
+        <!-- LEFT PANE: END -->
+--%>                <td valign="top">
+                  <!-- Detail: Start -->
+                  <div id="detailBox"><asp:ContentPlaceHolder ID="cntDP" runat="server"><pane:detailbar runat="server" /></asp:ContentPlaceHolder><!-- Detail: END --></div>
+                  <div style="clear:both;">
+                    <!-- RIGHT PANE: Start -->
+                    <div id="rightPaneBox" style="float:right;"><asp:ContentPlaceHolder ID="cntRP" runat="server"><pane:rightPane runat="server" /></asp:ContentPlaceHolder></div>
+                    <!-- RIGHT PANE: END -->
+                    <!-- Module PANE: END -->
+                    <div id="moduleBox" style="float:left;"><asp:Panel ID=MsgHolder runat="server" Visible="false" /><asp:ContentPlaceHolder ID="cntMP" runat="server"></asp:ContentPlaceHolder></div>
+                    <!-- Module PANE: END -->
+                  </div>
+                </td>
+            </tr>
+        <!-- BOTTOM PANE: Start -->
+            <tr>
+                <td id="bottomPaneBox"><asp:ContentPlaceHolder ID="cntBP" runat="server"><pane:bottomPane runat="server" /></asp:ContentPlaceHolder></td>
+            </tr>
+        <!-- BOTTOM PANE: END-->
+        </table>
+      </div>
+</asp:Content>

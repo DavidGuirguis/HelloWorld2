@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rkHeaderText_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="rkHeaderText_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="rkHeaderText_AllEquipment" xml:space="preserve">
+    <value>All Equipment</value>
+  </data>
+  <data name="rkHeaderText_CATEquipment" xml:space="preserve">
+    <value>CAT Equipment</value>
+  </data>
+  <data name="rkHeaderText_CEquiv" xml:space="preserve">
+    <value>C Equiv</value>
+  </data>
+  <data name="rkHeaderText_CEquiv2" xml:space="preserve">
+    <value>C Equiv</value>
+  </data>
+  <data name="rkHeaderText_CEquiv3" xml:space="preserve">
+    <value>C Equiv</value>
+  </data>
+  <data name="rkHeaderText_CEquiv4" xml:space="preserve">
+    <value>C Equiv</value>
+  </data>
+  <data name="rkHeaderText_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="rkHeaderText_CityState" xml:space="preserve">
+    <value>City/State</value>
+  </data>
+  <data name="rkHeaderText_ClickHereToSortBy" xml:space="preserve">
+    <value>Click here to sort by {0}</value>
+    <comment>{0: sHdrTitle}</comment>
+  </data>
+  <data name="rkHeaderText_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="rkHeaderText_CustomerName" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="rkHeaderText_CustomerNo" xml:space="preserve">
+    <value>Customer No</value>
+  </data>
+  <data name="rkHeaderText_Division" xml:space="preserve">
+    <value>Division</value>
+  </data>
+  <data name="rkHeaderText_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="rkHeaderText_EQNo" xml:space="preserve">
+    <value>EQ No</value>
+  </data>
+  <data name="rkHeaderText_EQNo2" xml:space="preserve">
+    <value>EQ No</value>
+  </data>
+  <data name="rkHeaderText_EQNo3" xml:space="preserve">
+    <value>EQ No</value>
+  </data>
+  <data name="rkHeaderText_EQNo4" xml:space="preserve">
+    <value>EQ No</value>
+  </data>
+  <data name="rkHeaderText_Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="rkHeaderText_FPC" xml:space="preserve">
+    <value>FPC</value>
+  </data>
+  <data name="rkHeaderText_FPC2" xml:space="preserve">
+    <value>FPC</value>
+  </data>
+  <data name="rkHeaderText_FPC3" xml:space="preserve">
+    <value>FPC</value>
+  </data>
+  <data name="rkHeaderText_FPC4" xml:space="preserve">
+    <value>FPC</value>
+  </data>
+  <data name="rkHeaderText_Industry" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="rkHeaderText_Industry2" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="rkHeaderText_Industry3" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="rkHeaderText_Industry4" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="rkHeaderText_Mfr2" xml:space="preserve">
+    <value>Mfr</value>
+  </data>
+  <data name="rkHeaderText_Mfr3" xml:space="preserve">
+    <value>Mfr</value>
+  </data>
+  <data name="rkHeaderText_Mfr4" xml:space="preserve">
+    <value>Mfr</value>
+  </data>
+  <data name="rkHeaderText_MfrYear" xml:space="preserve">
+    <value>Mfr Year</value>
+  </data>
+  <data name="rkHeaderText_MfrYear2" xml:space="preserve">
+    <value>Mfr Year</value>
+  </data>
+  <data name="rkHeaderText_MfrYear3" xml:space="preserve">
+    <value>Mfr Year</value>
+  </data>
+  <data name="rkHeaderText_MfrYear4" xml:space="preserve">
+    <value>Mfr Year</value>
+  </data>
+  <data name="rkHeaderText_Mod2" xml:space="preserve">
+    <value>Mod</value>
+  </data>
+  <data name="rkHeaderText_Mod3" xml:space="preserve">
+    <value>Mod</value>
+  </data>
+  <data name="rkHeaderText_Mod4" xml:space="preserve">
+    <value>Mod</value>
+  </data>
+  <data name="rkHeaderText_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="rkHeaderText_NewSearch" xml:space="preserve">
+    <value>New Search</value>
+  </data>
+  <data name="rkHeaderText_On" xml:space="preserve">
+    <value>on</value>
+  </data>
+  <data name="rkHeaderText_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="rkHeaderText_OtherEquipment" xml:space="preserve">
+    <value>Other Equipment</value>
+  </data>
+  <data name="rkHeaderText_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="rkHeaderText_PrevSearchResult" xml:space="preserve">
+    <value>Previous Search Result</value>
+  </data>
+  <data name="rkHeaderText_PurchDate" xml:space="preserve">
+    <value>Purch Dte</value>
+  </data>
+  <data name="rkHeaderText_PurchDate2" xml:space="preserve">
+    <value>Purch Dte</value>
+  </data>
+  <data name="rkHeaderText_PurchDte3" xml:space="preserve">
+    <value>Purch Dte</value>
+  </data>
+  <data name="rkHeaderText_PurchDte4" xml:space="preserve">
+    <value>Purch Dte</value>
+  </data>
+  <data name="rkHeaderText_Rental" xml:space="preserve">
+    <value>Rental</value>
+  </data>
+  <data name="rkHeaderText_Rental2" xml:space="preserve">
+    <value>Rental</value>
+  </data>
+  <data name="rkHeaderText_SerialNum" xml:space="preserve">
+    <value>Serial #</value>
+  </data>
+  <data name="rkHeaderText_SerialNum2" xml:space="preserve">
+    <value>Serial #</value>
+  </data>
+  <data name="rkHeaderText_SerialNum3" xml:space="preserve">
+    <value>Serial #</value>
+  </data>
+  <data name="rkHeaderText_SerialNum4" xml:space="preserve">
+    <value>Serial #</value>
+  </data>
+  <data name="rkHeaderText_ServiceMeter" xml:space="preserve">
+    <value>Service Meter</value>
+  </data>
+  <data name="rkHeaderText_ServiceMeter2" xml:space="preserve">
+    <value>Service Meter</value>
+  </data>
+  <data name="rkHeaderText_ServiceMeter3" xml:space="preserve">
+    <value>Service Meter</value>
+  </data>
+  <data name="rkHeaderText_StockNo" xml:space="preserve">
+    <value>Stock No</value>
+  </data>
+  <data name="rkHeaderText_StockNo2" xml:space="preserve">
+    <value>Stock No</value>
+  </data>
+  <data name="rkHeaderText_StockNo3" xml:space="preserve">
+    <value>Stock No</value>
+  </data>
+  <data name="rkHeaderText_System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="rkHeaderText_VIN" xml:space="preserve">
+    <value>VIN</value>
+  </data>
+  <data name="rkHeaderText_VIN2" xml:space="preserve">
+    <value>VIN</value>
+  </data>
+  <data name="rkHeaderText_VIN3" xml:space="preserve">
+    <value>VIN</value>
+  </data>
+  <data name="rkMsg_NoContactFound" xml:space="preserve">
+    <value>No Contact was found.</value>
+  </data>
+  <data name="rkMsg_NoCustCreditInfoFound" xml:space="preserve">
+    <value>No customer credit info was found.</value>
+  </data>
+  <data name="rkMsg_NoCustomerFound" xml:space="preserve">
+    <value>No customer was found.</value>
+  </data>
+  <data name="rkMsg_NoEquipmentFound" xml:space="preserve">
+    <value>No equipment was found.</value>
+  </data>
+  <data name="rkMsg_NoEquipmentFound2" xml:space="preserve">
+    <value>No equipment was found.</value>
+  </data>
+  <data name="rkMsg_NoEquipmentFound3" xml:space="preserve">
+    <value>No equipment was found.</value>
+  </data>
+  <data name="rkMsg_NoEquipmentFound4" xml:space="preserve">
+    <value>No equipment was found.</value>
+  </data>
+  <data name="rkMsg_NoEquipmentFound5" xml:space="preserve">
+    <value>No equipment was found.</value>
+  </data>
+  <data name="rkMsg_PONumberReqd" xml:space="preserve">
+    <value>PO Number Required:</value>
+  </data>
+  <data name="rkMsg_TermsCode" xml:space="preserve">
+    <value>Terms Code:</value>
+  </data>
+</root>

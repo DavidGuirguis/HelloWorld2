@@ -1,0 +1,30 @@
+<%@ Master 
+    Language="C#" 
+    AutoEventWireup="true" 
+    CodeFile="printLegacy.master.cs" 
+    Inherits="Template" 
+    MasterPageFile="~/Library/MasterPages/_Legacy.master"
+%>
+<%@ Register Src="../Panes/bottomPane.ascx" TagName="bottomPane" TagPrefix="pane" %>
+<asp:Content runat="server" ContentPlaceHolderID="cntMP">
+      <div id="bottomContainer">
+        <!-- Module PANE: Start -->
+          <div id="moduleBox"><asp:Panel ID=MsgHolder runat="server" Visible="false" /><asp:ContentPlaceHolder ID="cntMP" runat="server"></asp:ContentPlaceHolder></div>
+        <!-- Module PANE: END -->
+
+        <!-- BOTTOM PANE: Start -->
+          <div id="bottomPaneBox"><asp:ContentPlaceHolder ID="cntBP" runat="server"><pane:bottomPane runat="server" /></asp:ContentPlaceHolder></div>
+        <!-- BOTTOM PANE: END-->
+      </div>
+      <script type="text/javascript" >
+          window.onload = printMe;
+
+          function printMe() {
+              try {
+                  window.print();
+              } catch (e) { }
+          }
+
+      
+      </script>
+</asp:Content>

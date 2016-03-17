@@ -1,0 +1,72 @@
+.ms-SrvMenuUI {
+	DISPLAY: none
+}
+.ms-MenuUIPopupBody {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 66.67%; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; FONT-FAMILY: Verdana, sans-serif; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.ms-MenuUIPopupBody TABLE {
+	FONT-SIZE: 100%; WIDTH: 100%; COLOR: #003399
+}
+.ms-MenuUIPopupBody IMG {
+	WIDTH: 16px; HEIGHT: 16px
+}
+.ms-MenuUI {
+	BORDER-RIGHT: #2254b1 1px solid; BORDER-TOP: #2254b1 1px solid; BORDER-LEFT: #2254b1 1px solid; CURSOR: hand; BORDER-BOTTOM: #2254b1 1px solid; BACKGROUND-COLOR: #fafafa
+}
+.ms-MenuUIItemTableCell {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.ms-MenuUIItemTableCellHover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.ms-MenuUIItemTableHover {
+	BORDER-RIGHT: #2254b1 1px solid; BORDER-TOP: #2254b1 1px solid; BORDER-LEFT: #2254b1 1px solid; BORDER-BOTTOM: #2254b1 1px solid; BACKGROUND-COLOR: #fee197
+}
+.ms-MenuUIIcon {
+	WIDTH: 24px; HEIGHT: 16px
+}
+.ms-MenuUIIconRtL {
+	WIDTH: 24px; HEIGHT: 16px
+}
+.ms-MenuUIIcon {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-MenuUIIconRtL {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ms-MenuUILabel {
+	WIDTH: 100%
+}
+.ms-MenuUILabelRtL {
+	WIDTH: 100%
+}
+.ms-MenuUILabel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+.ms-MenuUILabelRtL {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+.ms-MenuUITitleRtL, .ms-MenuUITitle  {
+	WIDTH: 100%; font-weight:bold; font-size:105%; border-top:1px solid #787BA9; border-bottom:1px solid #787BA9; background-color:#D9DAE7; color: Black;
+}
+.ms-MenuUITitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+.ms-MenuUITitleRtL {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+.ms-MenuUISubmenuArrow {
+	WIDTH: 16px; HEIGHT: 16px
+}
+.ms-MenuUISeparator {
+	FONT-SIZE: 1px; WIDTH: 100%; LINE-HEIGHT: 1px; HEIGHT: 1px; BACKGROUND-COLOR: #6a8ccb
+}
+.ms-MenuUISeparatorRtL {
+	FONT-SIZE: 1px; WIDTH: 100%; LINE-HEIGHT: 1px; HEIGHT: 1px; BACKGROUND-COLOR: #6a8ccb
+}
+.ms-MenuUISeparator {
+	MARGIN: 0px 0px 0px 32px
+}
+.ms-MenuUISeparatorRtL {
+	MARGIN: 0px 32px 0px 0px
+}

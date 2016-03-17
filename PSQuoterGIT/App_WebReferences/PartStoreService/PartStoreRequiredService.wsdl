@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ns2="http://customerlookup.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns6="http://quote.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns0="http://docinqdetail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns3="http://allpartsavail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns5="http://www.cat.com/MT/2008/11/15/PartStoreRequiredService" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns7="http://docdisctax.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns4="http://placeorder.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" targetNamespace="http://www.cat.com/MT/2008/11/15/PartStoreRequiredService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>PartStoreRequiredService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema xmlns:ax24="http://docinqdetail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://docinqdetail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="DocInqDetailInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocInqDetailOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="billToAddrLn1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToAddrLn2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToAddrLn3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToCitySt" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToZipCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="currencyInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cwsId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="deliLoc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docDscnt" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="docStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="empId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="entryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="entryTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="miscCharge" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="netTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="noteArray" nillable="true" type="ax24:DocInqDetailNoteArrayOutput" />
+          <xs:element minOccurs="0" name="orderBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="orderTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="orderType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="part" nillable="true" type="ax24:DocInqDetailPartOutput" />
+          <xs:element minOccurs="0" name="promoCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="reqByDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="salesRep" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipInstDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipViaDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="taxArray" nillable="true" type="ax24:DocInqDetailTaxArrayOutput" />
+          <xs:element minOccurs="0" name="taxTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="termsCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="woNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="woOpNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="woSeg" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocInqDetailNoteArrayOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocInqDetailPartOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="coreDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="custItemNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="lnItemNote" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="orderQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sosDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDscnt" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="weight" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocInqDetailTaxArrayOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="taxAmount" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="taxDesc" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax27="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="PartStoreCommonTextInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="textLine" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax22="http://customerlookup.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://customerlookup.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="CustomerInformationInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CustomerInformationOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="accStkOrders" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="countryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="currInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custAddr3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custCityState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custName2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPresCurrCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dfltTermsCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dftStnoEndUse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="exemptLicNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="jobSite" nillable="true" type="ax22:CustomerInformationJobSiteOutput" />
+          <xs:element minOccurs="0" name="langCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nameAddrLen" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="phoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="poNoReqdInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="reqByDateRequired" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="shipInst" nillable="true" type="ax22:CustomerInformationShipInstOutput" />
+          <xs:element minOccurs="0" name="shipToAddrln1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustZipCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="shipVia" nillable="true" type="ax22:CustomerInformationShipViaOutput" />
+          <xs:element minOccurs="0" name="state" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="validPayment" nillable="true" type="ax22:CustomerInformationValidPaymentOutput" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="validStore" nillable="true" type="ax22:CustomerInformationValidStoreOutput" />
+          <xs:element minOccurs="0" name="zipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CustomerInformationJobSiteOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="jobSiteCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCustAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCustAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCustCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCustCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCustName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCustState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCustZipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CustomerInformationShipInstOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="shippingCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shippingDesc" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CustomerInformationShipViaOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="shipViaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipViaDesc" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CustomerInformationValidPaymentOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dbsPaymentTermsCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="paymentTermsCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CustomerInformationValidStoreOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax21="http://allpartsavail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://allpartsavail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="AllPartsAvailInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="equipMfrCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="equipMfrModel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="equipMfrSerNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="inNbrPartTable" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="inPartTable" nillable="true" type="ax21:AllPartsAvailInPartTable" />
+          <xs:element minOccurs="0" name="orderType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="reqByDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllPartsAvailInPartTable">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="inputSos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ordQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="useDlrSos" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllPartsAvailOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="altPart" nillable="true" type="ax21:AltPartsAvailAltPartInformation" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="bo" nillable="true" type="ax21:AllPartsAvailBOInformation" />
+          <xs:element minOccurs="0" name="boInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="currInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPresCurrCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="desc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="extdCoreSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdNet" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hoseAsmInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nonRtnInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="outputSOS" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="partNoteArray" nillable="true" type="ax21:AllPartsAvailPartNote" />
+          <xs:element minOccurs="0" name="qtyOnHand" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="repl" nillable="true" type="ax21:AllPartsAvailReplInformation" />
+          <xs:element minOccurs="0" name="sosName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitWeight" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="xref" nillable="true" type="ax21:AllPartsAvailXRefInformation" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AltPartsAvailAltPartInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="bo" nillable="true" type="ax21:AllPartsAvailBOInformation" />
+          <xs:element minOccurs="0" name="boInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="desc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="extdCoreSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hoseAsmInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="netPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="nonRtnInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="onHand" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="partNoteArray" nillable="true" type="ax21:AllPartsAvailPartNote" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sosName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitWeight" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllPartsAvailBOInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boFac" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="boQty" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllPartsAvailPartNote">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="partNote" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllPartsAvailReplInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="bo" nillable="true" type="ax21:AllPartsAvailBOInformation" />
+          <xs:element minOccurs="0" name="boInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdCoreSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hoseAsmInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="netPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="nonRtnInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="onHand" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="orderQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="partNoteArray" nillable="true" type="ax21:AllPartsAvailPartNote" />
+          <xs:element minOccurs="0" name="replDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="replPartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="replQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="replSos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="replSosName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitWeight" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllPartsAvailXRefInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="bo" nillable="true" type="ax21:AllPartsAvailBOInformation" />
+          <xs:element minOccurs="0" name="boInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="desc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="extdCoreSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hoseAsmInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="netPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="nonRtnInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="onHand" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="partNoteArray" nillable="true" type="ax21:AllPartsAvailPartNote" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sosName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitWeight" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax28="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ax26="http://placeorder.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://placeorder.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:import namespace="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" />
+      <xs:complexType name="PlaceOrderOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatusDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PlaceOrderInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="billToAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToAddr3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToCityState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="billToZipCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="creditAuthDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custEmailId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPhoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cwsId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dbsPymtTermCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryLocation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="miscCharges" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nbrPartInfo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="orderByName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="orderType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="partInfoArray" nillable="true" type="ax26:PlaceOrderPartInfoInput" />
+          <xs:element minOccurs="0" name="poNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="promoCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pymtTermCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="reqByDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="salesRepName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustZipCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipViaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shippingInst" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="textLineArray" nillable="true" type="ax28:PartStoreCommonTextInput" />
+          <xs:element minOccurs="0" name="tranType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ARRAY_LEN_TEXT_LINES" type="xs:int" />
+          <xs:element minOccurs="0" name="MAX_LEN_TEXT_LINE" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PlaceOrderPartInfoInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="coreChrUnitSellPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="custLineItemNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="lineItemNote" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ordQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDiscAmt" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSellPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitWeight" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns="http://www.cat.com/MT/2008/11/15/PartStoreRequiredService" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.cat.com/MT/2008/11/15/PartStoreRequiredService">
+      <xs:element name="getPartsAvailInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="param0" nillable="true" type="ns3:AllPartsAvailInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPartsAvailInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ns3:AllPartsAvailOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCustomerInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="param0" nillable="true" type="ns2:CustomerInformationInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCustomerInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns2:CustomerInformationOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getDocDiscTaxInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="param0" nillable="true" type="ns7:DocDiscTaxInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getDocDiscTaxInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns7:DocDiscTaxOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getDocumentInquiryDetails">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="param0" nillable="true" type="ns0:DocInqDetailInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getDocumentInquiryDetailsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns0:DocInqDetailOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="activateOrCancelQuote">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="param0" nillable="true" type="ns6:QuoteActivateOrCancelInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="activateOrCancelQuoteResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns4:PlaceOrderOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPlaceOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="param0" nillable="true" type="ns4:PlaceOrderInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPlaceOrderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns4:PlaceOrderOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:ax25="http://quote.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://quote.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="QuoteActivateOrCancelInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="tranType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax23="http://docdisctax.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://docdisctax.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="DocDiscTaxInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="jobSiteCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nbrPartsArr" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="orderType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="promoCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="reqByDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustCity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToCustZipCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipViaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="taxPartArray" nillable="true" type="ax23:DocDiscTaxPartInput" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocDiscTaxPartInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="coreUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="ordQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partErrorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partErrorDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitWeight" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocDiscTaxOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="currInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dlrCreditFlag" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docDiscTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="itemDiscTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="netTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="orderBeforeTaxes" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="orderTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="shipMiscCharge" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="shipToAddrLn1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrLn5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="taxArray" nillable="true" type="ax23:DocDiscTaxDescAndAmountOutput" />
+          <xs:element minOccurs="0" name="taxTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="ARRAY_LEN_TAX" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocDiscTaxDescAndAmountOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="taxAmount" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="taxDesc" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getPlaceOrderRequest">
+    <wsdl:part name="parameters" element="ns5:getPlaceOrder" />
+  </wsdl:message>
+  <wsdl:message name="getPlaceOrderResponse">
+    <wsdl:part name="parameters" element="ns5:getPlaceOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentInquiryDetailsRequest">
+    <wsdl:part name="parameters" element="ns5:getDocumentInquiryDetails" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentInquiryDetailsResponse">
+    <wsdl:part name="parameters" element="ns5:getDocumentInquiryDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPartsAvailInformationRequest">
+    <wsdl:part name="parameters" element="ns5:getPartsAvailInformation" />
+  </wsdl:message>
+  <wsdl:message name="getPartsAvailInformationResponse">
+    <wsdl:part name="parameters" element="ns5:getPartsAvailInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="activateOrCancelQuoteRequest">
+    <wsdl:part name="parameters" element="ns5:activateOrCancelQuote" />
+  </wsdl:message>
+  <wsdl:message name="activateOrCancelQuoteResponse">
+    <wsdl:part name="parameters" element="ns5:activateOrCancelQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCustomerInformationRequest">
+    <wsdl:part name="parameters" element="ns5:getCustomerInformation" />
+  </wsdl:message>
+  <wsdl:message name="getCustomerInformationResponse">
+    <wsdl:part name="parameters" element="ns5:getCustomerInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocDiscTaxInfoRequest">
+    <wsdl:part name="parameters" element="ns5:getDocDiscTaxInfo" />
+  </wsdl:message>
+  <wsdl:message name="getDocDiscTaxInfoResponse">
+    <wsdl:part name="parameters" element="ns5:getDocDiscTaxInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PartStoreRequiredServicePortType">
+    <wsdl:operation name="getPlaceOrder">
+      <wsdl:input wsaw:Action="urn:getPlaceOrder" message="ns5:getPlaceOrderRequest" />
+      <wsdl:output wsaw:Action="urn:getPlaceOrderResponse" message="ns5:getPlaceOrderResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentInquiryDetails">
+      <wsdl:input wsaw:Action="urn:getDocumentInquiryDetails" message="ns5:getDocumentInquiryDetailsRequest" />
+      <wsdl:output wsaw:Action="urn:getDocumentInquiryDetailsResponse" message="ns5:getDocumentInquiryDetailsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPartsAvailInformation">
+      <wsdl:input wsaw:Action="urn:getPartsAvailInformation" message="ns5:getPartsAvailInformationRequest" />
+      <wsdl:output wsaw:Action="urn:getPartsAvailInformationResponse" message="ns5:getPartsAvailInformationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="activateOrCancelQuote">
+      <wsdl:input wsaw:Action="urn:activateOrCancelQuote" message="ns5:activateOrCancelQuoteRequest" />
+      <wsdl:output wsaw:Action="urn:activateOrCancelQuoteResponse" message="ns5:activateOrCancelQuoteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInformation">
+      <wsdl:input wsaw:Action="urn:getCustomerInformation" message="ns5:getCustomerInformationRequest" />
+      <wsdl:output wsaw:Action="urn:getCustomerInformationResponse" message="ns5:getCustomerInformationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocDiscTaxInfo">
+      <wsdl:input wsaw:Action="urn:getDocDiscTaxInfo" message="ns5:getDocDiscTaxInfoRequest" />
+      <wsdl:output wsaw:Action="urn:getDocDiscTaxInfoResponse" message="ns5:getDocDiscTaxInfoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PartStoreRequiredServiceSOAP11Binding" type="ns5:PartStoreRequiredServicePortType">
+    <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" Id="UsernameTokenOverSSL">
+      <wsp:ExactlyOne>
+        <wsp:All>
+          <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken RequireClientCertificate="false" />
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic256 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Lax />
+                </wsp:Policy>
+              </sp:Layout>
+              <sp:IncludeTimestamp />
+            </wsp:Policy>
+          </sp:TransportBinding>
+          <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+            <wsp:Policy>
+              <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient" />
+            </wsp:Policy>
+          </sp:SignedSupportingTokens>
+        </wsp:All>
+      </wsp:ExactlyOne>
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPlaceOrder">
+      <soap:operation soapAction="urn:getPlaceOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentInquiryDetails">
+      <soap:operation soapAction="urn:getDocumentInquiryDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPartsAvailInformation">
+      <soap:operation soapAction="urn:getPartsAvailInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activateOrCancelQuote">
+      <soap:operation soapAction="urn:activateOrCancelQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInformation">
+      <soap:operation soapAction="urn:getCustomerInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocDiscTaxInfo">
+      <soap:operation soapAction="urn:getDocDiscTaxInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PartStoreRequiredServiceSOAP12Binding" type="ns5:PartStoreRequiredServicePortType">
+    <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" Id="UsernameTokenOverSSL">
+      <wsp:ExactlyOne>
+        <wsp:All>
+          <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken RequireClientCertificate="false" />
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic256 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Lax />
+                </wsp:Policy>
+              </sp:Layout>
+              <sp:IncludeTimestamp />
+            </wsp:Policy>
+          </sp:TransportBinding>
+          <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+            <wsp:Policy>
+              <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient" />
+            </wsp:Policy>
+          </sp:SignedSupportingTokens>
+        </wsp:All>
+      </wsp:ExactlyOne>
+    </wsp:Policy>
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPlaceOrder">
+      <soap12:operation soapAction="urn:getPlaceOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentInquiryDetails">
+      <soap12:operation soapAction="urn:getDocumentInquiryDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPartsAvailInformation">
+      <soap12:operation soapAction="urn:getPartsAvailInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activateOrCancelQuote">
+      <soap12:operation soapAction="urn:activateOrCancelQuote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInformation">
+      <soap12:operation soapAction="urn:getCustomerInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocDiscTaxInfo">
+      <soap12:operation soapAction="urn:getDocDiscTaxInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PartStoreRequiredServiceHttpBinding" type="ns5:PartStoreRequiredServicePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getPlaceOrder">
+      <http:operation location="PartStoreRequiredService/getPlaceOrder" />
+      <wsdl:input>
+        <mime:content part="getPlaceOrder" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getPlaceOrder" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentInquiryDetails">
+      <http:operation location="PartStoreRequiredService/getDocumentInquiryDetails" />
+      <wsdl:input>
+        <mime:content part="getDocumentInquiryDetails" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getDocumentInquiryDetails" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPartsAvailInformation">
+      <http:operation location="PartStoreRequiredService/getPartsAvailInformation" />
+      <wsdl:input>
+        <mime:content part="getPartsAvailInformation" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getPartsAvailInformation" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activateOrCancelQuote">
+      <http:operation location="PartStoreRequiredService/activateOrCancelQuote" />
+      <wsdl:input>
+        <mime:content part="activateOrCancelQuote" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="activateOrCancelQuote" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInformation">
+      <http:operation location="PartStoreRequiredService/getCustomerInformation" />
+      <wsdl:input>
+        <mime:content part="getCustomerInformation" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getCustomerInformation" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocDiscTaxInfo">
+      <http:operation location="PartStoreRequiredService/getDocDiscTaxInfo" />
+      <wsdl:input>
+        <mime:content part="getDocDiscTaxInfo" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getDocDiscTaxInfo" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PartStoreRequiredService">
+    <wsdl:port name="PartStoreRequiredServiceSOAP11port_https" binding="ns5:PartStoreRequiredServiceSOAP11Binding">
+      <soap:address location="https://midtierws.cat.com:80/webapp/services/PartStoreRequiredService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreRequiredServiceSOAP11port_http1" binding="ns5:PartStoreRequiredServiceSOAP11Binding">
+      <soap:address location="http://midtierws.cat.com:8080/webapp/services/PartStoreRequiredService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreRequiredServiceSOAP12port_https" binding="ns5:PartStoreRequiredServiceSOAP12Binding">
+      <soap12:address location="https://midtierws.cat.com:80/webapp/services/PartStoreRequiredService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreRequiredServiceSOAP12port_http1" binding="ns5:PartStoreRequiredServiceSOAP12Binding">
+      <soap12:address location="http://midtierws.cat.com:8080/webapp/services/PartStoreRequiredService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreRequiredServiceHttpport" binding="ns5:PartStoreRequiredServiceHttpBinding">
+      <http:address location="https://midtierws.cat.com:80/webapp/services/PartStoreRequiredService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreRequiredServiceHttpport1" binding="ns5:PartStoreRequiredServiceHttpBinding">
+      <http:address location="http://midtierws.cat.com:8080/webapp/services/PartStoreRequiredService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

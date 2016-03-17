@@ -1,0 +1,230 @@
+[2012-02-10]::4.0.5.2+
+	** NEW **
+		-X.ServiceModel.RequiredParametersBehaviorAttribute
+			Enforce WCF Contract's all members' parameters are required, so auto parameter 'bool *Specified' won't be generated
+
+	** BREAKING CHANGES - IIS 7+ Integrated Mode **
+		-X.Configuration.EnvironmentSectionHandler
+			Not supporting appUrl with schema or Authority (e.g. http://domain/xyz) to favor integrated mode. Only virtual path is supported for 'appUrl' attribute
+
+[2012-02-01]::4.0.5.0+
+	** NEW **
+		-X.Reflection.ReflectionInfo, X.Reflection.ReflectionMemberType, X.Reflection.ConfigurationItem
+			Reflection classes to deal with setting object's member based on backend's configuration
+
+[2012-02-01]::4.0.5.0+
+	** FIXES **
+		-X.Configuration.EnvironmentSettings
+			Crrent
+				-Checks if HttpContext.Current is null for non-web app type (e.g. WCF)
+
+[2011-07-13]::4.0.5.0+
+	** NEW **
+		-X.XApplicationException
+			Throw
+				-A static method to throw type of XApplicationException exception
+[2011-07-11]::4.0.5.0+
+	** NEW **
+		-X.Extensions.DataSetExtensions
+			ToDictionary
+				-Extracts named DataTable (identified with RS_Type column) out of specified DataSet into a Dictionary
+
+[2011-06-27]::4.0.5.0+
+	** NEW **
+		-X.Extensions.ObjectExtensions
+			Copy
+				-Copy public properties
+
+[2011-04-24]::v2.0.4.0+
+	** IMPROVES **
+		-X.Extensions.IEnumerableExtensions
+			ForEach
+				-Returns source IEnumerable
+			ForAll
+				-Signature changed to only take one parameter Func<IEnumerable<TSource>, IEnumerable<TSource>> action, and returns the return value of this param.
+
+[2011-04-11]::v2.0.4.0+
+	** NEW **
+		-X.Extensions.StringExtensions
+			DefaultIfNullOrWhiteSpace, DefaultIfNullOrEmpty
+				-Supply default value
+		
+		-X.Extensions.NameValueCollectionExtensions
+			GetBitMaskValue
+				-Gets a bit mask value from the collection by the specified key
+
+[2011-04-07]::v2.0.4.0+
+	** NEW **
+		-X.Extensions.IEnumerableExtensions
+			ForAll
+				-Do action against all items in source sequence and returns it for fluent coding style
+
+			Insert
+				-Insert an item to source and return the new list if not implements IList<T> for fluent coding style
+
+			InsertRange
+				-Insert a collection to source and return the new list if not implements IList<T> for fluent coding style
+
+			Add
+				-Add an item to source and return the new list if not implements ICollection<T> for fluent coding style
+
+			AddRange
+				-Insert an item to source and return the new list if not implements ICollection<T> for fluent coding style
+
+[2011-04-04]::v2.0.4.0+
+	** NEW **
+		-X.Extensions.StringExtensions
+			Split(char separator, bool emptyArrayIfNullOrEmpty = false)
+				Returns empty array if the specified value is null or empty
+			Split(string separator, bool emptyArrayIfNullOrEmpty = false)
+				Returns empty array if the specified value is null or empty
+
+[2011-03-16]::v2.0.4.0+
+	** IMPROVES **
+		-X.Configuration.SessionStateSection
+			AcceptedFileType
+				Allows extensionless pages
+
+[2011-03-15]::v2.0.4.0+
+	** IMPROVES **
+		-X.Configuration.EnvironmentSettings
+			OneTimeInit
+				Allows executing from Application_Start event
+
+[2011-02-18]::v2.0.4.0+
+	** FIXES **
+		-X.Web.HtmlHelper
+			Renamed from HttpUtil and change access modifier to 'internal'
+	
+	** IMPROVES **
+		-X.Extensions.ObjectExtnesions, X.Extensions.StringExtensions
+			Moved Web related encoders to X.Web.Extensions
+
+[2011-02-16]::v2.0.4.0+
+	** FIXES **
+		-X.Extensions.StringExtensions
+			IsNumeric
+				- Change the type from 'object' to 'string'
+
+[2011-02-10]::v2.0.4.0+
+	** NEW **
+		-X.Extensions.ObjectExtensions
+			UrlEncode, UrlDecode, HtmlEncode, HtmlDecode, HtmlAttributeEncode, JavaScriptStringEncode, ParseQueryString
+				Encoder methods
+
+[2011-02-09]::v2.0.4.0+
+	** CHANGES **
+		-X.Web.HttpUtil
+			JavaScriptStringEncode
+				Moved from X.Web dll
+	
+	** NEW **
+		-X.Extensions.StringExtensions
+			As*, Is*
+				Type converter methods
+			UrlEncode, UrlDecode, HtmlEncode, HtmlDecode, HtmlAttributeEncode, JavaScriptStringEncode, ParseQueryString
+				Encoder methods
+		-X.Extensions.ObjectExtensions
+			As*, Is*
+				Type converter methods
+
+[2011-01-12]::v2.0.4.0+
+	** NEW **
+		-X.Extensions.IEnumerableExtensions
+			ForEach<T>
+				- Performs the specified action on each element of the IEnumerable<T>
+
+[2010-11-03]::v2.0.1.1+
+	** NEW **
+		-X.Configuration.AuthenticationSection
+			ProcessConfigSection - Added 'ScriptResource.axd' to _skipAuthorizationPages collection
+
+[2010-11-03]::v2.0.1.1+
+	** NEW **
+		-X.BitMaskBoolean
+			> New struct to deal with bitmask boolean
+
+[2010-10-15]::v4.0+
+	** NEW **
+		-X.Extensions.IEnumerableExtensions
+			> New extension class for IEnumerable
+			ForEach		- Loop through element
+		-X.Extensions.StringExtensions
+			> New extension class for String
+			AsNullIfWhiteSpace - convert empty or whitespaces to Null
+
+[2008-11-23]::v2.0.1.1
+	** CHANGES **
+		-X.Configuration.CustomErrorSection
+			OverrideSettngs - only override errorUrl if it's not empty
+
+[2008-11-21]::v2.0.1.1
+	** IMPROVEMENTS **
+		-X.Configuration.EnvironmentSettings
+			OneTimeInit - Look for ApplicationStateManager HttpModule and retrieve ApplicationStateManager instance, also override environment 
+						  settings from the ApplicationStateManager 
+
+	** CHANGES **
+		-X.Configuration.SessionStateSection
+			Initialize - normalize '_cookiePath'
+		
+		-X.Data.Connections
+			Data_ConnectionID_APPLICATION - change modifier to 'internal' from 'private'
+	
+	** NEW **
+		-X.Configuration.AuthenticationSettings
+			_authMode - overridable private field for holding value of 'AuthenticationMode'
+			LoginUrl - overridable property for Forms authentication
+			OverrideSettings - allows overriding settings during EnvironmentSettings is initializing 
+							   (used by framework designer only)
+
+		-X.Configuration.CustomErrorSection
+			OverrideSettings - allows overriding settings during EnvironmentSettings is initializing 
+							   (used by framework designer only)
+
+		-X.Configuration.DataConnections
+			OverrideSettings - allows overriding settings during EnvironmentSettings is initializing 
+							   (used by framework designer only)
+
+		-X.Configuration.DataConnectionSection
+			OverrideSettings - allows overriding settings during EnvironmentSettings is initializing 
+							   (used by framework designer only)
+
+		-X.Configuration.EnvironmentSettings
+			ApplicationStateManager - new property holds instance of IApplicationStateManager
+
+		-X.Configuration.SessionStateSection
+			OverrideSettings - allows overriding settings during EnvironmentSettings is initializing 
+							   (used by framework designer only)
+
+		-X.Web.IApplicationStateManagerContainer
+			- An interface for holding ApplicationStateManager instance
+
+		-X.Web.IApplicationStateManager
+			- An interface defines structure of ApplicationStateManager
+
+		-X.Web.ISessionIDManager
+			- An instance defines struecture of SessionIDManager
+
+[2008-10-12]::v2.0.1.1
+	** IMPROVEMENTS **
+		-X.Configuration.EnvironmentSectionHander
+			Create - look for config by fully qualified URL (including schema)
+
+[2008-09-21]::v2.0.1.1
+	** IMPROVEMENTS **
+		-X.Configuration.SessionStateSection
+			ctor - init _acceptedFileTypes with values of '".aspx", ".asmx", ".ashx", ".axd"'
+
+[2008-09-19]::v2.0.1.1
+	** IMPROVEMENTS **
+		-X.Configuration.ApplicationSection
+			DefaultUrl - Added internal setter
+		-X.Configuration.SessionStateSection
+			Initialize - Overrides ApplicationSection.DefaultUrl with the settings set in FormsAuthenticationConfiguration when authentication mode is Forms
+
+[2008-08-25]::v2.0.1.0
+	** FIXES **
+		-X.Configuration.SessionStateSection
+			AcceptedFileType - Fixed an issues that this method always return true regardless what current file type is, because 
+								_acceptedFileTypes array could contain empty element (e.g. '.aspx;') that cause the method return 'true'

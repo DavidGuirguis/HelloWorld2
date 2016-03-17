@@ -1,0 +1,471 @@
+#divSearchbleList ul
+{
+    width: 100%; /* 210px;*/
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: solid 1px gray;
+    padding: 0;
+    margin: 0;
+}
+
+#divSearchbleList ul li
+{
+    list-style-type: none;
+    width: 100%;
+    background-color: White;
+}
+
+#divSearchbleList ul li a
+{
+    color: black;
+    text-decoration: none;
+}
+
+#divSearchbleList ul li a span
+{
+    padding-left: 2px;
+    width: 100%;
+    display: block;
+}
+
+#divSearchbleList ul li a:hover span
+{
+    background-color: #3582C4;
+}
+
+.quoteHeader
+{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffcc00, endColorstr=#FFF4CC);
+}
+
+.quoteHeader table
+{
+    width: 100%;
+}
+
+.quoteHeader table th
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 3px;
+}
+
+.quoteHeader table td
+{
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 3px;
+}
+
+.RevisionTabLeftShoulder
+{
+    padding-top: 2px !important;
+    padding-right: 20px !important;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.documentsList
+{
+    width: 100%;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.documentsList th
+{
+    color: #ffffff;    
+    background-image: url("../images/ui-bg_gloss-wave_35_f6a828_500x100.png");
+    background-repeat: repeat-x;    
+    background-color: rgb(246,168,40);    
+    font-weight: bolder;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.Segment table
+{
+    width: 100%;
+}
+
+.Segment table th
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+
+.Segment table td
+{
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+
+.SegmentPart table
+{
+    width: 100%;
+}
+
+.SegmentPart table th
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 0px;
+}
+
+.SegmentPart table td
+{
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 0px;
+}
+
+.quoteHeaderEdit table th
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+   
+}
+
+.quoteHeaderEdit table td
+{
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+
+.quoteSummary table
+{
+    width: 100%;
+}
+
+.quoteSummary table th
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+    border: 1px solid #999;
+    border-collapse:collapse;   
+}
+
+.quoteSummary table td
+{
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+    border: 1px solid #999;
+    border-collapse:collapse;  
+}
+
+
+.quoteHeaderEdit fieldset
+{
+    margin: 10px 0 10px; 
+}
+
+.quoteHeaderEdit fieldset legend
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+
+.tVt
+{
+  vertical-align:top;    
+}
+
+.corePart
+{
+    color:Green;
+}
+
+.rootmenu li a
+{
+   white-space:nowrap;  
+   overflow:hidden ; 
+   text-overflow: ellipsis;
+}
+
+#ctxmenu > ul > li.rootitem > a > span
+{
+    color:Black;
+}
+.w80p
+{
+    width:80%; 
+}
+
+.w90p
+{
+    width:90%; 
+}
+
+.w98p
+{
+    width:98%; 
+}
+
+.w100p
+{
+    width:100%; 
+}
+.errorMessage
+{
+    color:Red;
+}
+.segmentNoTextbox
+{
+    width:20px; 
+}
+.promptMessage
+{
+    font-family: arial, helvetica;
+    font-size: 12px;
+    padding-bottom: 5px;    
+}
+.reportHeader
+{
+    color: black;  
+    font-weight:bold;  
+    background-image: url("../images/ui-bg_gloss-wave_35_f6a828_500x100.png");
+    background-repeat: repeat-x;    
+    background-color: rgb(246,168,40);
+    
+}
+.reportFooter
+{
+    color: #ffffff;    
+    background-image: url("../images/ui-bg_gloss-wave_35_f6a828_500x100.png");
+    background-repeat: repeat-x;    
+    background-color: rgb(246,168,40);
+}
+.reportContentOddRow
+{    
+    background-color: white; 
+}
+.reportContentEvenRow
+{       
+    background-color: #efefef;
+}
+.filters
+{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffcc00, endColorstr=#FFF4CC);    
+}
+
+.financialsTable
+{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+    
+.financialsTable thead
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+    border: 1px solid #999;
+    border-collapse:collapse;   
+}
+
+.financialsTable thead td
+{    
+    border: 1px solid #999;
+}
+
+.financialsTable tbody
+{
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+    border: 1px solid #999;
+    border-collapse:collapse;      
+}
+
+.financialsTable tbody td
+{    
+    border: 1px solid #999;
+}
+
+
+.financialsTable tfoot
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 5px;
+    border: 1px solid #999;
+    border-collapse:collapse;   
+}
+
+.financialsTable tfoot td
+{    
+    border: 1px solid #999;
+}
+
+/*--- Form Elements -------------------------------------------------------------------*/
+.fe					{font-family: arial; font-size: 11px;}
+.fe25				{width:  25px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe25R				{width:  25px; font-family: arial; font-size: 11px; padding-left: 4px; text-align:right;}
+.fe50				{width:  50px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe60				{width:  60px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe60R				{width:  60px; font-family: arial; font-size: 11px; padding-left: 4px; text-align:right;}
+.fe75				{width:  75px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe100				{width: 100px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe125				{width: 125px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe125R				{width: 125px; font-family: arial; font-size: 11px; padding-left: 4px; text-align:right;}
+.fe125AZ			{height: 20px; width: 150px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe150				{width: 150px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe150R				{width: 150px; font-family: arial; font-size: 11px; padding-left: 4px; text-align:right;}
+.fe175				{width: 175px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe200				{width: 200px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe225				{width: 225px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe250				{width: 250px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe275				{width: 275px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe300				{width: 300px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe325				{width: 325px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe350				{width: 350px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe375				{width: 375px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe400				{width: 400px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe425				{width: 425px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe450				{width: 450px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe475				{width: 475px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe500				{width: 500px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe525				{width: 525px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe550				{width: 550px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe575				{width: 575px; font-family: arial; font-size: 11px; padding-left: 4px;}
+.fe600				{width: 600px; font-family: arial; font-size: 11px; padding-left: 4px;}
+
+
+.segmentSearchResult 
+{
+    width:100%;
+}
+.segmentSearchResult th
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 0px;
+    border : 1px solid black; 
+    text-align:center;  
+}
+
+.segmentSearchResult  td
+{
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 0px;
+    border : 1px solid black;
+    vertical-align:top;
+     
+}
+
+.highLight
+{
+    background-color:#ffcf63; 
+}
+
+.noWrap
+{
+    white-space:nowrap;
+     
+}
+.alterRow
+{
+   background-color:#efefef;   
+}
+
+
+
+
+    .ulDetailColumns { list-style-type: none; margin: 0; padding: 0; width: 90%; }
+	.ulDetailColumns li { margin: 0 3px 3px 3px; padding-bottom: 5px; padding-left: 12px; font-size:11px; height: 12px; color:Black; font-weight:normal    }
+	.ulDetailColumns li .flag { position: absolute; margin-left: -1.3em; }
+
+
+#tableNewSegmentManualDetails th
+{
+    font-weight: bolder;
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 0px;
+    border : 1px solid black; 
+    text-align:left;  
+}
+
+#tableNewSegmentManualDetails  td
+{
+    font-family: arial, helvetica;
+    font-size: 11px;
+    padding-bottom: 0px;
+    border : 1px solid black;
+    vertical-align:top;
+     
+}
+
+.segmentNote td
+{
+    height:20px; 
+    padding:0px;
+}
+.segmentNote input
+{
+    font-size:11px; 
+     
+     margin:0px;   
+}
+
+.segmentCustomers th
+{
+    border: 1px solid black; 
+    font-weight:bold ; 
+    text-align: center;
+}
+.segmentCustomers td
+{
+    border: 1px solid black; 
+    text-align: right;
+}
+
+.SegmentCustomerEdit  th
+{
+    font-weight:bold ; 
+    text-align: center;
+}
+
+.tAl 
+{
+    text-align:left;
+}
+
+.tAr
+{
+    text-align:right;
+}
+.tAc
+{
+    text-align:center;
+}
+
+.dialog {
+   position: absolute;
+}

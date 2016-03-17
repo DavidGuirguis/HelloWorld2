@@ -1,0 +1,1294 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="90" />
+      <Item value="int" priority="130" />
+      <Item value="string" priority="117" />
+      <Item value="enum" priority="0" />
+      <Item value="QuoteType`0" priority="1" />
+      <Item value="AreaRoutes`0" priority="0" />
+      <Item value="Quote" priority="3" />
+      <Item value="Models" priority="3" />
+      <Item value="using" priority="52" />
+      <Item value="System" priority="25" />
+      <Item value="DateTime`0" priority="12" />
+      <Item value="bool" priority="18" />
+      <Item value="float" priority="3" />
+      <Item value="UI.Abstracts" priority="0" />
+      <Item value="void" priority="13" />
+      <Item value="Response" priority="10" />
+      <Item value="null" priority="124" />
+      <Item value="return" priority="28" />
+      <Item value="view`0" priority="0" />
+      <Item value="ViewResult`0" priority="0" />
+      <Item value="QuoteHeader`0" priority="7" />
+      <Item value="new" priority="56" />
+      <Item value="QuoteHeader" priority="2" />
+      <Item value="h" priority="0" />
+      <Item value="qh" priority="2" />
+      <Item value="Areas" priority="0" />
+      <Item value="quoteHeader" priority="5" />
+      <Item value="Repositories" priority="0" />
+      <Item value="QuoteRepository`0" priority="1" />
+      <Item value="static" priority="11" />
+      <Item value="QuoteRepository" priority="0" />
+      <Item value="if" priority="88" />
+      <Item value="data" priority="19" />
+      <Item value="QuoteId" priority="13" />
+      <Item value="DataRow`0" priority="48" />
+      <Item value="dr" priority="170" />
+      <Item value="QuoteNo" priority="1" />
+      <Item value="else" priority="43" />
+      <Item value="qType" priority="0" />
+      <Item value="QuoteType" priority="0" />
+      <Item value="A" priority="0" />
+      <Item value="IFormatProvider`0" priority="3" />
+      <Item value="QuoteTypeEnmu`0" priority="0" />
+      <Item value="Comments" priority="0" />
+      <Item value="quoteRepository" priority="0" />
+      <Item value="Collections" priority="5" />
+      <Item value="Generic" priority="4" />
+      <Item value="Customer`0" priority="0" />
+      <Item value="RepInfo`0" priority="0" />
+      <Item value="IdentityInfo`0" priority="2" />
+      <Item value="QuoteSummaryInfo`0" priority="0" />
+      <Item value="List" priority="12" />
+      <Item value="PartInfo`0" priority="0" />
+      <Item value="LaborInfo`0" priority="0" />
+      <Item value="MiscellaneousInfo`0" priority="0" />
+      <Item value="QuoteSegmentInfo`0" priority="0" />
+      <Item value="byte" priority="2" />
+      <Item value="DocumentInfo`0" priority="0" />
+      <Item value="Entities" priority="7" />
+      <Item value="QuoteStatusEnmu`0" priority="0" />
+      <Item value="QuoteRevision`0" priority="0" />
+      <Item value="DataSet`0" priority="19" />
+      <Item value="foreach" priority="44" />
+      <Item value="DataTable`0" priority="13" />
+      <Item value="in" priority="18" />
+      <Item value="ds" priority="10" />
+      <Item value="dt" priority="21" />
+      <Item value="tableName" priority="0" />
+      <Item value="GetTableByName`0" priority="6" />
+      <Item value="Customer" priority="1" />
+      <Item value="CustomerNo" priority="0" />
+      <Item value="CustomerName" priority="0" />
+      <Item value="EnterUser" priority="0" />
+      <Item value="IdentityInfo" priority="2" />
+      <Item value="UserID" priority="2" />
+      <Item value="UserName" priority="0" />
+      <Item value="EnterDate" priority="0" />
+      <Item value="ChangeDate" priority="0" />
+      <Item value="QuoteRevision" priority="0" />
+      <Item value="Revision" priority="12" />
+      <Item value="Selected" priority="2" />
+      <Item value="Summary" priority="0" />
+      <Item value="Segment`0" priority="1" />
+      <Item value="Segment" priority="0" />
+      <Item value="SegmentId" priority="9" />
+      <Item value="SegmentNo" priority="0" />
+      <Item value="Description" priority="3" />
+      <Item value="HiddenDescription" priority="0" />
+      <Item value="DBSRepairOptionId" priority="0" />
+      <Item value="s" priority="11" />
+      <Item value="dtParts" priority="25" />
+      <Item value="PartInfo" priority="0" />
+      <Item value="SOS" priority="3" />
+      <Item value="PartNo" priority="3" />
+      <Item value="ItemNo" priority="0" />
+      <Item value="UI" priority="0" />
+      <Item value="Abstracts" priority="0" />
+      <Item value="Pages" priority="0" />
+      <Item value="QuotePage`0" priority="0" />
+      <Item value="FullGUI`0" priority="0" />
+      <Item value="namespace" priority="2" />
+      <Item value="Dataset`0" priority="2" />
+      <Item value="Data" priority="12" />
+      <Item value="protected" priority="30" />
+      <Item value="Request" priority="20" />
+      <Item value="Extensions" priority="4" />
+      <Item value="PageMode" priority="3" />
+      <Item value="IsPostBack" priority="2" />
+      <Item value="ReportViewPage`0" priority="0" />
+      <Item value="FormView1" priority="0" />
+      <Item value="FormView`0" priority="0" />
+      <Item value="viewReadonly" priority="0" />
+      <Item value="false" priority="28" />
+      <Item value="MulView" priority="1" />
+      <Item value="ViewEdit" priority="0" />
+      <Item value="true" priority="18" />
+      <Item value="viewEdit" priority="0" />
+      <Item value="Web" priority="6" />
+      <Item value="UI.WebControls" priority="1" />
+      <Item value="tabStrip" priority="4" />
+      <Item value="DataTable" priority="1" />
+      <Item value="DataColumn" priority="1" />
+      <Item value="repParts" priority="5" />
+      <Item value="ViewState" priority="2" />
+      <Item value="btnAddNew_Click`0" priority="0" />
+      <Item value="var" priority="15" />
+      <Item value="dict" priority="0" />
+      <Item value="menu" priority="8" />
+      <Item value="MenuRenderType`0" priority="0" />
+      <Item value="Text" priority="3" />
+      <Item value="litRevision" priority="0" />
+      <Item value="ModuleTitle" priority="0" />
+      <Item value="dsQuote" priority="2" />
+      <Item value="DAL" priority="27" />
+      <Item value="Quote`0" priority="26" />
+      <Item value="quoteId" priority="10" />
+      <Item value="pageMode" priority="3" />
+      <Item value="IDictionary" priority="0" />
+      <Item value="DataRowState`0" priority="0" />
+      <Item value="IEnumerable" priority="1" />
+      <Item value="RowsSet" priority="33" />
+      <Item value="DropDownList`0" priority="0" />
+      <Item value="tempIndex" priority="1" />
+      <Item value="AppContext`0" priority="12" />
+      <Item value="X" priority="4" />
+      <Item value="Url`0" priority="1" />
+      <Item value="lblQuoteNo" priority="1" />
+      <Item value="lblQuoteType" priority="0" />
+      <Item value="drOpp" priority="4" />
+      <Item value="lblOppNo" priority="1" />
+      <Item value="lblCustomer" priority="0" />
+      <Item value="drHeader" priority="23" />
+      <Item value="lblModel" priority="1" />
+      <Item value="lblProbabilityOfClosing" priority="1" />
+      <Item value="lblEsDelivery" priority="1" />
+      <Item value="lblSalesrep" priority="0" />
+      <Item value="drRevsions" priority="0" />
+      <Item value="MenuItemGroup`0" priority="1" />
+      <Item value="drSegments" priority="1" />
+      <Item value="leftMenuGroup" priority="1" />
+      <Item value="SelectMatchPatterns" priority="0" />
+      <Item value="lblSegmentNo" priority="1" />
+      <Item value="drCurrentSegment" priority="14" />
+      <Item value="lblSegmentDescription" priority="1" />
+      <Item value="lblSegmentTotal" priority="0" />
+      <Item value="DataPager`0" priority="1" />
+      <Item value="parts" priority="1" />
+      <Item value="ucParts" priority="1" />
+      <Item value="bindData`0" priority="4" />
+      <Item value="TextBox`0" priority="6" />
+      <Item value="HiddenField`0" priority="2" />
+      <Item value="CATPAI" priority="2" />
+      <Item value="btnAddNew" priority="1" />
+      <Item value="partPriceList" priority="8" />
+      <Item value="DTO" priority="0" />
+      <Item value="btnImport" priority="1" />
+      <Item value="private" priority="15" />
+      <Item value="curOrder" priority="2" />
+      <Item value="sortOrder" priority="2" />
+      <Item value="getMaxSortOrder`0" priority="0" />
+      <Item value="Button`0" priority="9" />
+      <Item value="sender" priority="4" />
+      <Item value="btn" priority="2" />
+      <Item value="getMaxId`0" priority="0" />
+      <Item value="for" priority="5" />
+      <Item value="tempDr" priority="1" />
+      <Item value="ID" priority="0" />
+      <Item value="tempHiddenField" priority="2" />
+      <Item value="i" priority="25" />
+      <Item value="itemId" priority="19" />
+      <Item value="out" priority="5" />
+      <Item value="quantity" priority="1" />
+      <Item value="description" priority="1" />
+      <Item value="double" priority="27" />
+      <Item value="hdnCalculateItemId" priority="0" />
+      <Item value="calculateItemId" priority="0" />
+      <Item value="Bind`0" priority="0" />
+      <Item value="unitPrice" priority="1" />
+      <Item value="tempTextBox" priority="3" />
+      <Item value="discount" priority="1" />
+      <Item value="Convert`0" priority="14" />
+      <Item value="Popup`0" priority="2" />
+      <Item value="RequestsPage`0" priority="0" />
+      <Item value="Plain`0" priority="1" />
+      <Item value="InlineFramePage`0" priority="0" />
+      <Item value="filelength" priority="0" />
+      <Item value="Length" priority="5" />
+      <Item value="fuXML" priority="1" />
+      <Item value="Attributes" priority="0" />
+      <Item value="txtQuoteNo" priority="3" />
+      <Item value="SqlHelper`0" priority="3" />
+      <Item value="drQuoteHeader" priority="42" />
+      <Item value="lstQuoteType" priority="1" />
+      <Item value="JSONObject`0" priority="4" />
+      <Item value="hdnXMLParts" priority="0" />
+      <Item value="XMLParts" priority="0" />
+      <Item value="p" priority="40" />
+      <Item value="btnImportXML" priority="3" />
+      <Item value="Part`0" priority="16" />
+      <Item value="QuoteDetailId" priority="0" />
+      <Item value="Quantity" priority="3" />
+      <Item value="UnitSellPrice" priority="2" />
+      <Item value="UnitDiscPrice" priority="4" />
+      <Item value="NetSellPrice" priority="1" />
+      <Item value="UnitPrice" priority="4" />
+      <Item value="Discount" priority="3" />
+      <Item value="ExtendedPrice" priority="2" />
+      <Item value="RepairOptionId" priority="0" />
+      <Item value="COREDetailId" priority="4" />
+      <Item value="SortOrder" priority="0" />
+      <Item value="List&lt;Part&gt;" priority="2" />
+      <Item value="allParts" priority="17" />
+      <Item value="DBNull`0" priority="2" />
+      <Item value="String`0" priority="1" />
+      <Item value="dsDocuments" priority="1" />
+      <Item value="repDocuments" priority="3" />
+      <Item value="DocumentRowsSet" priority="0" />
+      <Item value="drJobCodes" priority="0" />
+      <Item value="JobCodeList" priority="1" />
+      <Item value="Server" priority="0" />
+      <Item value="lstBusinessGroupCode" priority="3" />
+      <Item value="ListItem" priority="13" />
+      <Item value="lstQuantityCode" priority="2" />
+      <Item value="lstWorkApplicationCode" priority="2" />
+      <Item value="lstStoreCode" priority="4" />
+      <Item value="lstCostCenterCode" priority="2" />
+      <Item value="lstCabTypeCode" priority="3" />
+      <Item value="lstShopFieldCode" priority="4" />
+      <Item value="lstJobLocationCode" priority="3" />
+      <Item value="SegmentEdit" priority="4" />
+      <Item value="divSegmentEdit" priority="0" />
+      <Item value="divSegmentReadonly" priority="0" />
+      <Item value="ResolveClientUrl`0" priority="0" />
+      <Item value="Page" priority="4" />
+      <Item value="Helpers" priority="2" />
+      <Item value="UrlHelper`0" priority="0" />
+      <Item value="currentPage" priority="0" />
+      <Item value="urlBase" priority="0" />
+      <Item value="repPartsReadonly" priority="1" />
+      <Item value="divPartEdit" priority="0" />
+      <Item value="divPartReadonly" priority="0" />
+      <Item value="SegmentEditble" priority="0" />
+      <Item value="txtJobCode" priority="0" />
+      <Item value="txtComponentCode" priority="0" />
+      <Item value="hidJobCode" priority="1" />
+      <Item value="hidComponentCode" priority="1" />
+      <Item value="txtModifierCode" priority="0" />
+      <Item value="hidModifierCode" priority="1" />
+      <Item value="txtSegmentNo" priority="3" />
+      <Item value="txtSegmentDescription" priority="2" />
+      <Item value="txtSegmentComment" priority="1" />
+      <Item value="lblSegmentComment" priority="0" />
+      <Item value="lblJobCode" priority="0" />
+      <Item value="lblComponentCode" priority="0" />
+      <Item value="lblModifierCode" priority="0" />
+      <Item value="lblBusinessCode" priority="0" />
+      <Item value="lblQuantityCode" priority="0" />
+      <Item value="lblWorkApplicationCode" priority="0" />
+      <Item value="lblStoreCode" priority="0" />
+      <Item value="lblCostCenterCode" priority="0" />
+      <Item value="lblCabTypeCode" priority="0" />
+      <Item value="lblShopField" priority="0" />
+      <Item value="lblJobLocation" priority="0" />
+      <Item value="ChangeUserId" priority="0" />
+      <Item value="WebContext`0" priority="1" />
+      <Item value="QuoteSegmentId" priority="0" />
+      <Item value="lblBranch" priority="0" />
+      <Item value="lblDescription" priority="0" />
+      <Item value="lblDivision" priority="0" />
+      <Item value="lblPhoneNo" priority="0" />
+      <Item value="lblPONo" priority="0" />
+      <Item value="lblMake" priority="0" />
+      <Item value="lblSerialNo" priority="0" />
+      <Item value="lblUnitNo" priority="0" />
+      <Item value="lblHours" priority="0" />
+      <Item value="lblQuoeType" priority="0" />
+      <Item value="lblCommodity" priority="0" />
+      <Item value="lblSource" priority="0" />
+      <Item value="dataRow" priority="0" />
+      <Item value="dsQuoteHeader" priority="1" />
+      <Item value="lstQuoteStatus" priority="3" />
+      <Item value="lstSalesRep" priority="2" />
+      <Item value="lstBranch" priority="4" />
+      <Item value="txtDescription" priority="2" />
+      <Item value="lstDivision" priority="2" />
+      <Item value="lstContact" priority="6" />
+      <Item value="txtPO" priority="2" />
+      <Item value="txtMake" priority="1" />
+      <Item value="txtSerialNo" priority="1" />
+      <Item value="txtModel" priority="1" />
+      <Item value="txtUnitNo" priority="1" />
+      <Item value="txtHours" priority="1" />
+      <Item value="lstEstDeliveryMonth" priority="2" />
+      <Item value="lstEstDeliveryYear" priority="2" />
+      <Item value="rdoLow" priority="1" />
+      <Item value="rdoMedium" priority="1" />
+      <Item value="rdoHigh" priority="0" />
+      <Item value="lstOppType" priority="3" />
+      <Item value="lstCommodity" priority="3" />
+      <Item value="lstSource" priority="4" />
+      <Item value="hidCustomerNo" priority="1" />
+      <Item value="hidCustomerName" priority="1" />
+      <Item value="chkNewContact" priority="2" />
+      <Item value="txtContact" priority="1" />
+      <Item value="txtPhoneNo" priority="1" />
+      <Item value="TemplateName" priority="0" />
+      <Item value="case" priority="16" />
+      <Item value="ListItemType`0" priority="1" />
+      <Item value="default" priority="4" />
+      <Item value="break" priority="22" />
+      <Item value="Label`0" priority="2" />
+      <Item value="tempLabel" priority="3" />
+      <Item value="btnEdit" priority="0" />
+      <Item value="tempButton" priority="4" />
+      <Item value="e" priority="1" />
+      <Item value="fuDocument" priority="2" />
+      <Item value="long" priority="1" />
+      <Item value="byteFile" priority="0" />
+      <Item value="fileName" priority="0" />
+      <Item value="fileSize" priority="0" />
+      <Item value="FileDependencies" priority="0" />
+      <Item value="IO" priority="0" />
+      <Item value="File`0" priority="1" />
+      <Item value="FileOptions`0" priority="0" />
+      <Item value="Path`0" priority="0" />
+      <Item value="fileId" priority="2" />
+      <Item value="LinkButton`0" priority="5" />
+      <Item value="tempLinkbutton" priority="2" />
+      <Item value="lbtn" priority="1" />
+      <Item value="hdnDownloadFileId" priority="0" />
+      <Item value="desc" priority="0" />
+      <Item value="fileDescription" priority="0" />
+      <Item value="createPartsTable`0" priority="0" />
+      <Item value="Double`0" priority="0" />
+      <Item value="SortedList`0" priority="0" />
+      <Item value="SortedList" priority="1" />
+      <Item value="str" priority="3" />
+      <Item value="ArrayList`0" priority="1" />
+      <Item value="Part" priority="4" />
+      <Item value="List&lt;part&gt;" priority="0" />
+      <Item value="SegmentDetailHandler" priority="0" />
+      <Item value="listParts" priority="3" />
+      <Item value="class" priority="1" />
+      <Item value="PartsList`0" priority="1" />
+      <Item value="StringBuilder`0" priority="1" />
+      <Item value="StringBuilder" priority="2" />
+      <Item value="sb" priority="57" />
+      <Item value="StringUtils`0" priority="0" />
+      <Item value="Util`0" priority="9" />
+      <Item value="HttpRequest`0" priority="0" />
+      <Item value="context" priority="4" />
+      <Item value="itemsCount" priority="2" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="ItemId" priority="3" />
+      <Item value="DiscountPrice" priority="0" />
+      <Item value="currentitemId" priority="1" />
+      <Item value="switch" priority="4" />
+      <Item value="operation" priority="2" />
+      <Item value="currentPart" priority="32" />
+      <Item value="CrossAppDomainDelegate`0" priority="0" />
+      <Item value="hdnBranchNo" priority="1" />
+      <Item value="hdnCustomerNo" priority="0" />
+      <Item value="hdnDivision" priority="0" />
+      <Item value="division" priority="2" />
+      <Item value="customerNo" priority="1" />
+      <Item value="branchNo" priority="0" />
+      <Item value="btnClose" priority="0" />
+      <Item value="Linq" priority="0" />
+      <Item value="headerEdit" priority="1" />
+      <Item value="segmentEdit" priority="1" />
+      <Item value="rowsSet" priority="0" />
+      <Item value="HeaderEdit" priority="1" />
+      <Item value="BindReadonlyData`0" priority="0" />
+      <Item value="divQuoteHeaderEdit" priority="0" />
+      <Item value="divQuoteHeaderReadonly" priority="0" />
+      <Item value="rtOP" priority="0" />
+      <Item value="rtHtml" priority="3" />
+      <Item value="rtOp" priority="0" />
+      <Item value="PartPrice`0" priority="2" />
+      <Item value="sbHtml" priority="2" />
+      <Item value="part" priority="16" />
+      <Item value="GetReplacePartsHtml`0" priority="0" />
+      <Item value="PartUtil`0" priority="2" />
+      <Item value="MenuItem" priority="1" />
+      <Item value="m" priority="3" />
+      <Item value="menuItemGroup2" priority="0" />
+      <Item value="hdnPostbackOperation" priority="0" />
+      <Item value="parameters" priority="0" />
+      <Item value="rt" priority="17" />
+      <Item value="key" priority="0" />
+      <Item value="statusId" priority="1" />
+      <Item value="SqlClient" priority="0" />
+      <Item value="RV" priority="2" />
+      <Item value="newRevision" priority="0" />
+      <Item value="revision" priority="5" />
+      <Item value="strDivisionList" priority="3" />
+      <Item value="spiltChar1" priority="3" />
+      <Item value="spiltChar2" priority="8" />
+      <Item value="currentDivision" priority="1" />
+      <Item value="strInfluencerList" priority="3" />
+      <Item value="ListItem`0" priority="0" />
+      <Item value="l" priority="7" />
+      <Item value="hdnInfList" priority="0" />
+      <Item value="arrStr" priority="4" />
+      <Item value="influencerType" priority="0" />
+      <Item value="influencerName" priority="0" />
+      <Item value="strCommodityList" priority="3" />
+      <Item value="hdnCommodityList" priority="0" />
+      <Item value="OppSourceId" priority="2" />
+      <Item value="strCampaignList" priority="3" />
+      <Item value="lstCampaign" priority="3" />
+      <Item value="lstOppReason" priority="4" />
+      <Item value="strReasonList" priority="3" />
+      <Item value="hdnOppReason" priority="0" />
+      <Item value="quoteStatusId" priority="4" />
+      <Item value="currentStageId" priority="0" />
+      <Item value="trOppMore" priority="0" />
+      <Item value="lblOppStatus" priority="0" />
+      <Item value="oppStatusDesc" priority="0" />
+      <Item value="txtOppComment" priority="1" />
+      <Item value="lblOppReasonTitle" priority="0" />
+      <Item value="hdnOppNo" priority="0" />
+      <Item value="btnAdd" priority="0" />
+      <Item value="PartStore" priority="0" />
+      <Item value="quoteSegmentId" priority="0" />
+      <Item value="curPart" priority="16" />
+      <Item value="Labor`0" priority="1" />
+      <Item value="LaborUtil`0" priority="1" />
+      <Item value="corePart" priority="17" />
+      <Item value="CoreItemId" priority="4" />
+      <Item value="dbCoreItemId" priority="3" />
+      <Item value="dbItemId" priority="1" />
+      <Item value="leftMenuLarge" priority="0" />
+      <Item value="lblSegmentNoPreviousVersionReadonly" priority="0" />
+      <Item value="strSegmentId" priority="0" />
+      <Item value="currentSegmentRowId" priority="0" />
+      <Item value="tempPreviousSegmentId" priority="1" />
+      <Item value="findCurrentSegment" priority="1" />
+      <Item value="previousSegmentId" priority="1" />
+      <Item value="nextSegmentId" priority="1" />
+      <Item value="btnPrevisouSegment" priority="1" />
+      <Item value="hdnPartsCount" priority="0" />
+      <Item value="HtmlHelper`0" priority="1" />
+      <Item value="flatRateAmountInput" priority="1" />
+      <Item value="flatRateInd" priority="3" />
+      <Item value="totalExtPrice" priority="2" />
+      <Item value="partFlatRateAmount" priority="0" />
+      <Item value="partFlatRateInd" priority="2" />
+      <Item value="partFlatRateAmountInput" priority="1" />
+      <Item value="partExtAmount" priority="1" />
+      <Item value="lbtnChangeRevisionStatus" priority="1" />
+      <Item value="revisionStatusId" priority="0" />
+      <Item value="repSegments" priority="1" />
+      <Item value="totalPartsFlatRateAmount" priority="0" />
+      <Item value="laborFlatRateInd" priority="2" />
+      <Item value="laborFlatRateAmountInput" priority="1" />
+      <Item value="miscFlatRateInd" priority="1" />
+      <Item value="miscFlatRateAmountInput" priority="1" />
+      <Item value="lstTotalFlatRate" priority="1" />
+      <Item value="txtTotalFlatRateAmount" priority="1" />
+      <Item value="totalFlatRateInd" priority="1" />
+      <Item value="totalFlatRateAmountInput" priority="0" />
+      <Item value="totalExtAmount" priority="0" />
+      <Item value="segmentNo" priority="0" />
+      <Item value="SqlParameter" priority="0" />
+      <Item value="segmentId" priority="0" />
+      <Item value="hidRefreshParent" priority="0" />
+      <Item value="AppContext" priority="1" />
+      <Item value="b" priority="3" />
+      <Item value="appContext" priority="0" />
+      <Item value="SystemId" priority="1" />
+      <Item value="WOno" priority="0" />
+      <Item value="fromQuoteNo" priority="0" />
+      <Item value="txtCopyFromQuoteQuoteNo" priority="0" />
+      <Item value="txtCopyFromQuoteRevision" priority="0" />
+      <Item value="txtCopyFromQuoteSegmentNo" priority="0" />
+      <Item value="CalendarSelectionMode`0" priority="0" />
+      <Item value="lblErrorMessage" priority="0" />
+      <Item value="rdoManual" priority="1" />
+      <Item value="divManual" priority="0" />
+      <Item value="divQuote" priority="0" />
+      <Item value="rdoQuote" priority="1" />
+      <Item value="rdoWorkorder" priority="1" />
+      <Item value="rdoStandardJob" priority="2" />
+      <Item value="lblQuoteErrorMessage" priority="0" />
+      <Item value="lblTotalParts" priority="1" />
+      <Item value="MiscUtil`0" priority="0" />
+      <Item value="labor`0" priority="0" />
+      <Item value="lblTotalMisc" priority="0" />
+      <Item value="lblTotalDetails" priority="0" />
+      <Item value="lblTotalVariance" priority="0" />
+      <Item value="totalSegment" priority="0" />
+      <Item value="txtEmail" priority="1" />
+      <Item value="Contains`1" priority="0" />
+      <Item value="Shift" priority="2" />
+      <Item value="curLabor" priority="0" />
+      <Item value="shift" priority="0" />
+      <Item value="UnitCost" priority="1" />
+      <Item value="curMisc" priority="0" />
+      <Item value="unitCost" priority="0" />
+      <Item value="currentRevisionStatusId" priority="0" />
+      <Item value="getPostbackParameters`0" priority="0" />
+      <Item value="IsNewQuote" priority="1" />
+      <Item value="btnOK_Manual" priority="0" />
+      <Item value="btnOK_CopyFromQuote" priority="0" />
+      <Item value="value" priority="1" />
+      <Item value="lstSearchFields" priority="1" />
+      <Item value="lstOp" priority="0" />
+      <Item value="txtKeyword" priority="0" />
+      <Item value="litResult" priority="0" />
+      <Item value="lastQuoteId" priority="2" />
+      <Item value="TestDeviceFilter`0" priority="0" />
+      <Item value="getQuoteRowsCount`0" priority="0" />
+      <Item value="lastRevision" priority="1" />
+      <Item value="hidQuoteSegmentIds" priority="1" />
+      <Item value="repQuoteSegmentList" priority="1" />
+      <Item value="Unit`0" priority="0" />
+      <Item value="workorderNo" priority="1" />
+      <Item value="WorkorderNo" priority="1" />
+      <Item value="WorkorderStatus" priority="0" />
+      <Item value="lastWONO" priority="0" />
+      <Item value="wono" priority="0" />
+      <Item value="hdnNewSegmentSourceType" priority="0" />
+      <Item value="hdnNewSegmentData" priority="1" />
+      <Item value="newQuoteId" priority="1" />
+      <Item value="partFlatRateIndDesc" priority="0" />
+      <Item value="hidNewSegmentData" priority="0" />
+      <Item value="NewSegmentId" priority="0" />
+      <Item value="hidParentRedirect" priority="1" />
+      <Item value="menuItemGroup3" priority="0" />
+      <Item value="SegmentCount" priority="0" />
+      <Item value="tempDateTime" priority="0" />
+      <Item value="DateTime" priority="0" />
+      <Item value="t" priority="0" />
+      <Item value="txtSMULastRead" priority="0" />
+      <Item value="hdnNewOppDefaultValue" priority="0" />
+      <Item value="QuoteTypeId" priority="0" />
+      <Item value="DataSetExtensions`0" priority="1" />
+      <Item value="quoteTypeId" priority="0" />
+      <Item value="oppList" priority="1" />
+      <Item value="lstOppList" priority="0" />
+      <Item value="txtStockNo" priority="1" />
+      <Item value="stockno" priority="0" />
+      <Item value="stockNo" priority="0" />
+      <Item value="costCentreCodeList" priority="0" />
+      <Item value="hidCostCentreCode" priority="0" />
+      <Item value="drUser" priority="0" />
+      <Item value="txtFax" priority="0" />
+      <Item value="divStandardJob" priority="0" />
+      <Item value="btnOK_StandardJob" priority="0" />
+      <Item value="DBSROId" priority="2" />
+      <Item value="DBSROPId" priority="2" />
+      <Item value="lblStandardJobModel" priority="0" />
+      <Item value="lblStandardJobJobCode" priority="0" />
+      <Item value="lblStandardJobComponentCode" priority="0" />
+      <Item value="lblStandardJobQty" priority="0" />
+      <Item value="partNo" priority="0" />
+      <Item value="dsPart" priority="2" />
+      <Item value="drPart" priority="1" />
+      <Item value="sosDesc" priority="0" />
+      <Item value="sSOSDesc" priority="1" />
+      <Item value="sPartNo" priority="1" />
+      <Item value="hidStandardJobROId" priority="1" />
+      <Item value="hidStandardJobROPId" priority="1" />
+      <Item value="TT" priority="0" />
+      <Item value="txtStandardJobSegmentNo" priority="0" />
+      <Item value="divStandardJobSegmentsList" priority="0" />
+      <Item value="sModel" priority="0" />
+      <Item value="hdnModel" priority="0" />
+      <Item value="totalQty" priority="1" />
+      <Item value="totalPartAmount" priority="0" />
+      <Item value="autoMiscCalculate" priority="0" />
+      <Item value="flatRateQtyInput" priority="0" />
+      <Item value="laborExtAmount" priority="0" />
+      <Item value="laborExtQty" priority="0" />
+      <Item value="miscExtAmount" priority="0" />
+      <Item value="lblJobControlCode" priority="0" />
+      <Item value="txtJobControlCode" priority="2" />
+      <Item value="jobControlCode" priority="0" />
+      <Item value="_qty" priority="3" />
+      <Item value="Qty" priority="2" />
+      <Item value="qty" priority="2" />
+      <Item value="UnitWeight" priority="3" />
+      <Item value="priceData" priority="10" />
+      <Item value="AvailableQty" priority="6" />
+      <Item value="Availability" priority="4" />
+      <Item value="json" priority="0" />
+      <Item value="getConsignmentInformationRequest`0" priority="0" />
+      <Item value="BackOrder`0" priority="7" />
+      <Item value="toar" priority="0" />
+      <Item value="bo" priority="16" />
+      <Item value="BackOrder" priority="5" />
+      <Item value="branchName" priority="1" />
+      <Item value="BackOrders" priority="10" />
+      <Item value="BoInfo`0" priority="2" />
+      <Item value="BoFacCode" priority="0" />
+      <Item value="BoFacName" priority="0" />
+      <Item value="BoFacType" priority="0" />
+      <Item value="BoQty" priority="0" />
+      <Item value="BoInfo" priority="0" />
+      <Item value="List&lt;BoInfo&gt;" priority="0" />
+      <Item value="List&lt;BackOrder&gt;" priority="2" />
+      <Item value="QtyOnhand" priority="6" />
+      <Item value="AvailabilityMultiLocation" priority="0" />
+      <Item value="while" priority="0" />
+      <Item value="BoCount" priority="0" />
+      <Item value="HttpServerUtility`0" priority="1" />
+      <Item value="j" priority="1" />
+      <Item value="boCount" priority="0" />
+      <Item value="strBackorders" priority="1" />
+      <Item value="drBo" priority="1" />
+      <Item value="object" priority="0" />
+      <Item value="pp" priority="3" />
+      <Item value="Replacements" priority="1" />
+      <Item value="ReplacementsFound" priority="1" />
+      <Item value="AlternatesFound" priority="0" />
+      <Item value="rp" priority="0" />
+      <Item value="field" priority="0" />
+      <Item value="po" priority="0" />
+      <Item value="hidLastTimeSMUValue" priority="0" />
+      <Item value="hidLastTimeSMUIndicator" priority="0" />
+      <Item value="AsDateTime`0" priority="0" />
+      <Item value="hidLastTimeSMUDate" priority="0" />
+      <Item value="SMUCheck" priority="0" />
+      <Item value="rowsCount" priority="0" />
+      <Item value="btnDealershipConfig" priority="0" />
+      <Item value="btnUserConfig" priority="0" />
+      <Item value="level" priority="0" />
+      <Item value="fCloseRate" priority="0" />
+      <Item value="chkQuote_CopyNotes" priority="1" />
+      <Item value="chkStandardJob_CopyNotes" priority="1" />
+      <Item value="copyNotes" priority="1" />
+      <Item value="chkWorkOrder_CopyNotes" priority="0" />
+      <Item value="hidCopyNotes" priority="0" />
+      <Item value="rptLabor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponseBase">
+      <Item value="Write`0" priority="4" />
+      <Item value="Redirect`0" priority="2" />
+      <Item value="End`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Areas.Quote.Models.QuoteHeader">
+      <Item value="QuoteNo" priority="1" />
+      <Item value="Comments" priority="1" />
+      <Item value="QuoteId" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Repositories.QuoteRepository">
+      <Item value="GetQuoteHeader`0" priority="0" />
+      <Item value="UpdateQuoteHeader`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="22" />
+      <Item value="toar" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataSet">
+      <Item value="Tables" priority="22" />
+      <Item value="ToDictionary`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="Rows" priority="33" />
+      <Item value="Columns" priority="1" />
+      <Item value="NewRow`0" priority="0" />
+      <Item value="Select`0" priority="0" />
+      <Item value="DefaultView" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRowCollection">
+      <Item value="Count" priority="8" />
+      <Item value="Add`0" priority="1" />
+      <Item value="Remove`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="AsInt`0" priority="46" />
+      <Item value="AsString`0" priority="15" />
+      <Item value="AsDateTime`0" priority="10" />
+      <Item value="ToString`0" priority="173" />
+      <Item value="As`1" priority="1" />
+      <Item value="AsDouble`0" priority="26" />
+      <Item value="toar" priority="6" />
+      <Item value="IsDateTime`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Areas.Quote.Models.QuoteTypeEnmu">
+      <Item value="Q" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@X.Data.SqlHelper">
+      <Item value="ExecuteNonQuery`0" priority="3" />
+      <Item value="ExecuteDataset`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.QuoteHeader">
+      <Item value="QuoteId" priority="0" />
+      <Item value="QuoteNo" priority="0" />
+      <Item value="Revisions" priority="0" />
+      <Item value="Summary" priority="0" />
+      <Item value="Segments" priority="0" />
+      <Item value="Documents" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Parse`0" priority="1" />
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="10" />
+      <Item value="RemoveAt`0" priority="1" />
+      <Item value="Count" priority="10" />
+      <Item value="Insert`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRow">
+      <Item value="RowState" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.Segment">
+      <Item value="Parts" priority="0" />
+      <Item value="Labor" priority="0" />
+      <Item value="Miscellaneous" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
+      <Item value="QueryString" priority="16" />
+      <Item value="Url" priority="1" />
+      <Item value="Path" priority="1" />
+      <Item value="FilePath" priority="0" />
+      <Item value="Files" priority="0" />
+      <Item value="RawUrl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="AsInt`0" priority="39" />
+      <Item value="Trim`0" priority="46" />
+      <Item value="Substring`0" priority="1" />
+      <Item value="toar" priority="0" />
+      <Item value="AsDouble`0" priority="0" />
+      <Item value="ToUpper`0" priority="3" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="Split`0" priority="1" />
+      <Item value="StartsWith`0" priority="0" />
+      <Item value="Length" priority="1" />
+      <Item value="IsNullOrEmpty`0" priority="0" />
+      <Item value="AsDateTime`0" priority="1" />
+      <Item value="AsString`0" priority="11" />
+      <Item value="As`1" priority="0" />
+      <Item value="Replace`0" priority="0" />
+      <Item value="IsNullOrWhiteSpace`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.FormView">
+      <Item value="ViewStateMode" priority="0" />
+      <Item value="DefaultMode" priority="1" />
+      <Item value="CurrentMode" priority="0" />
+      <Item value="ChangeMode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.UI.WebControls.DetailsViewMode">
+      <Item value="ReadOnly" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.UI.WebControls.FormViewMode">
+      <Item value="ReadOnly" priority="0" />
+      <Item value="Edit" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.View">
+      <Item value="Visible" priority="2" />
+      <Item value="Activate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.MultiView">
+      <Item value="SetActiveView`0" priority="1" />
+      <Item value="Views" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:X.Web.UI.WebControls.TabStrip">
+      <Item value="GetHtml`0" priority="0" />
+      <Item value="SelectedTab" priority="1" />
+      <Item value="SelectedIndex" priority="1" />
+      <Item value="SelectedValue" priority="1" />
+      <Item value="LeftShoulder" priority="0" />
+      <Item value="AddSpacer`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataColumnCollection">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Repeater">
+      <Item value="DataSource" priority="6" />
+      <Item value="DataBind`0" priority="6" />
+      <Item value="Items" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Literal">
+      <Item value="Text" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.MenuItem">
+      <Item value="Text" priority="1" />
+      <Item value="Groups" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Entities.MenuRenderType">
+      <Item value="Vertical" priority="0" />
+      <Item value="Context" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DAL.Quote">
+      <Item value="QuoteDetailGet`0" priority="0" />
+      <Item value="GetTableByName`0" priority="1" />
+      <Item value="QuoteHeaderGet`0" priority="0" />
+      <Item value="QuoteHeaderEdit`0" priority="0" />
+      <Item value="QuoteDocumentGet`0" priority="1" />
+      <Item value="QuoteDocumentAddNew`0" priority="0" />
+      <Item value="QuoteDocumentDelete`0" priority="0" />
+      <Item value="QuoteDocumentEdit`0" priority="0" />
+      <Item value="QuoteStatusChange`0" priority="0" />
+      <Item value="CopyRevision`0" priority="0" />
+      <Item value="AddPart`0" priority="0" />
+      <Item value="DeleteAllPart`0" priority="0" />
+      <Item value="AddManualSegment`0" priority="0" />
+      <Item value="DeleteSegment`0" priority="0" />
+      <Item value="QuoteGetSegmentsBySearch`0" priority="0" />
+      <Item value="QuoteGetSegmentsByIds`0" priority="1" />
+      <Item value="QuoteGetWoSegmentsBySearch`0" priority="0" />
+      <Item value="OpenWorkorder`0" priority="0" />
+      <Item value="AddSegmentFromQuote`0" priority="0" />
+      <Item value="AddSegmentFromWorkorder`0" priority="0" />
+      <Item value="QuoteGetAviliableOppList`0" priority="0" />
+      <Item value="QuoteListPartForCheck`0" priority="0" />
+      <Item value="QuoteGetBranchName`0" priority="0" />
+      <Item value="Quote_Save_PrintConfig_Reset`0" priority="0" />
+      <Item value="QuoteGetSegmentPendingDetails`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@AppContext">
+      <Item value="Current" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AppContext">
+      <Item value="ModuleInfo" priority="1" />
+      <Item value="SystemId" priority="1" />
+      <Item value="User" priority="0" />
+      <Item value="AppSettings" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@X.Url">
+      <Item value="ApplicationPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ASP.modules_quote_controls_quoteheader_ascx">
+      <Item value="BindingContainer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="FirstOrDefault`1" priority="1" />
+      <Item value="IsNullOrEmpty`0" priority="0" />
+      <Item value="Count`1" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Label">
+      <Item value="Text" priority="65" />
+      <Item value="Visible" priority="0" />
+      <Item value="Style" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.MenuItemGroup">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.MenuItemGroupCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ASP.modules_quote_controls_parts_ascx">
+      <Item value="Bind`0" priority="1" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Button">
+      <Item value="Text" priority="4" />
+      <Item value="CommandArgument" priority="0" />
+      <Item value="ClientID" priority="0" />
+      <Item value="Attributes" priority="5" />
+      <Item value="Visible" priority="15" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CATPAI.PartPrice">
+      <Item value="UnitNet" priority="4" />
+      <Item value="UnitSell" priority="1" />
+      <Item value="UnitDisc" priority="1" />
+      <Item value="PartDesc" priority="1" />
+      <Item value="ErrorCode" priority="1" />
+      <Item value="ErrorMessage" priority="0" />
+      <Item value="ReplacementsFound" priority="2" />
+      <Item value="AlternatesFound" priority="1" />
+      <Item value="Replacements" priority="5" />
+      <Item value="Sos" priority="1" />
+      <Item value="PartNo" priority="1" />
+      <Item value="Qty" priority="1" />
+      <Item value="FactoryFlag" priority="0" />
+      <Item value="Alternates" priority="1" />
+      <Item value="CoreExtdSell" priority="0" />
+      <Item value="UnitWeight" priority="1" />
+      <Item value="AvailableQty" priority="1" />
+      <Item value="Availability" priority="0" />
+      <Item value="BackOrders" priority="5" />
+      <Item value="QtyOnhand" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Value" priority="16" />
+      <Item value="AsDouble`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataView">
+      <Item value="Sort" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="MinValue" priority="0" />
+      <Item value="TryParse`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.RepeaterItem">
+      <Item value="FindControl`0" priority="4" />
+      <Item value="DataItemContainer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.HiddenField">
+      <Item value="Value" priority="48" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.TextBox">
+      <Item value="Text" priority="55" />
+      <Item value="AsDouble`0" priority="0" />
+      <Item value="Visible" priority="0" />
+      <Item value="Style" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToDouble`0" priority="6" />
+      <Item value="ToInt16`0" priority="3" />
+      <Item value="ToSingle`0" priority="0" />
+      <Item value="ToInt32`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.FileUpload">
+      <Item value="FileBytes" priority="2" />
+      <Item value="FileContent" priority="1" />
+      <Item value="HasFile" priority="0" />
+      <Item value="PostedFile" priority="0" />
+      <Item value="FileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Read`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.DropDownList">
+      <Item value="SelectedValue" priority="51" />
+      <Item value="Items" priority="29" />
+      <Item value="Text" priority="1" />
+      <Item value="DataKeysContainer" priority="0" />
+      <Item value="Style" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@JSONObject">
+      <Item value="CreateFromString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:JSONObject">
+      <Item value="Dictionary" priority="1" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="String" priority="3" />
+      <Item value="Integer" priority="0" />
+      <Item value="AsDouble`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DBNull">
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="0" />
+      <Item value="Empty" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpServerUtilityBase">
+      <Item value="HtmlEncode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Char">
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.ListItemCollection">
+      <Item value="Add`0" priority="22" />
+      <Item value="Clear`0" priority="4" />
+      <Item value="Contains`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.HtmlControls.HtmlGenericControl">
+      <Item value="Visible" priority="6" />
+      <Item value="Style" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@X.Web.WebContext">
+      <Item value="Current" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:X.Web.WebContext">
+      <Item value="User" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:X.Security.Principal.WebPrincipal">
+      <Item value="Identity" priority="0" />
+      <Item value="IdentityEx" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:X.Web.Security.WebIdentity">
+      <Item value="UserID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Helpers.DateTimeHelper">
+      <Item value="MonthName`0" priority="0" />
+      <Item value="FormatDate`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.CheckBox">
+      <Item value="Checked" priority="5" />
+      <Item value="Attributes" priority="0" />
+      <Item value="Style" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="ContainsKey`0" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.RadioButton">
+      <Item value="Checked" priority="5" />
+      <Item value="Visible" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.UI.WebControls.ListItemType">
+      <Item value="Item" priority="0" />
+      <Item value="AlternatingItem" priority="0" />
+      <Item value="Footer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.RepeaterItemEventArgs">
+      <Item value="Item" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpPostedFile">
+      <Item value="FileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetFileName`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.LinkButton">
+      <Item value="Text" priority="1" />
+      <Item value="Attributes" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.SortedList">
+      <Item value="Add`0" priority="0" />
+      <Item value="Count" priority="0" />
+      <Item value="IndexOfValue`0" priority="0" />
+      <Item value="GetByIndex`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.Part">
+      <Item value="PartNo" priority="11" />
+      <Item value="SOS" priority="6" />
+      <Item value="Quantity" priority="9" />
+      <Item value="Description" priority="4" />
+      <Item value="UnitSellPrice" priority="3" />
+      <Item value="UnitDiscPrice" priority="3" />
+      <Item value="NetSellPrice" priority="3" />
+      <Item value="UnitPrice" priority="6" />
+      <Item value="Discount" priority="1" />
+      <Item value="ExtendedPrice" priority="7" />
+      <Item value="ItemId" priority="16" />
+      <Item value="DiscountPrice" priority="1" />
+      <Item value="COREDetailId" priority="3" />
+      <Item value="HasCorePart" priority="5" />
+      <Item value="IsCorePart" priority="5" />
+      <Item value="CoreItemId" priority="5" />
+      <Item value="AvailableQty" priority="4" />
+      <Item value="Availability" priority="1" />
+      <Item value="UnitWeight" priority="5" />
+      <Item value="BackOrders" priority="12" />
+      <Item value="QtyOnhand" priority="4" />
+      <Item value="AvailabilityMultiLocation" priority="2" />
+      <Item value="AvailabilityLocation" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.SortedList`2">
+      <Item value="Indexer" priority="0" />
+      <Item value="IndexOfValue`0" priority="0" />
+      <Item value="IndexOfKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append`0" priority="61" />
+      <Item value="ToString`0" priority="2" />
+      <Item value="AppendFormat`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Helpers.Util">
+      <Item value="NumberFormat`0" priority="9" />
+      <Item value="DateFormat`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContext">
+      <Item value="Request" priority="3" />
+      <Item value="Response" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequest">
+      <Item value="QueryString" priority="1" />
+      <Item value="Form" priority="2" />
+      <Item value="Url" priority="0" />
+      <Item value="RawUrl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponse">
+      <Item value="Write`0" priority="0" />
+      <Item value="Redirect`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.Page">
+      <Item value="IsPostBack" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.CssStyleCollection">
+      <Item value="Add`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Entities.PartUtil">
+      <Item value="BuildPartJsonData`0" priority="1" />
+      <Item value="GetExtPriceTotal`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:X.Web.Entities.MenuItemGroup">
+      <Item value="Add`0" priority="3" />
+      <Item value="Text" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:X.Web.Entities.MenuItem">
+      <Item value="Groups" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:X.Web.Entities.MenuItemGroupCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlParameter">
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.ListItem">
+      <Item value="Value" priority="0" />
+      <Item value="Selected" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.HtmlControls.HtmlTableRow">
+      <Item value="Style" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.Labor">
+      <Item value="ItemNo" priority="1" />
+      <Item value="DiscountPrice" priority="1" />
+      <Item value="Shift" priority="3" />
+      <Item value="Description" priority="0" />
+      <Item value="UnitSellPrice" priority="1" />
+      <Item value="Quantity" priority="1" />
+      <Item value="Discount" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.AttributeCollection">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.AppState.ApplicationSettings">
+      <Item value="IsTrue`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Specialized.NameValueCollection">
+      <Item value="AllKeys" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.Misc">
+      <Item value="UnitCost" priority="0" />
+      <Item value="Description" priority="0" />
+      <Item value="Quantity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTableCollection">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.UI.WebControls.Unit">
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.AppState.UserInfo">
+      <Item value="RoleBasedAuthEnabled" priority="0" />
+      <Item value="LogonUser" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Consts">
+      <Item value="EstimateFlag" priority="1" />
+      <Item value="FlatRateFlag" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.RadioButtonList">
+      <Item value="SelectedValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DTO.PartIdentifier">
+      <Item value="SOS" priority="0" />
+      <Item value="Qty" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartStoreService.AllPartsAvailOutput">
+      <Item value="unitWeight" priority="0" />
+      <Item value="qtyOnHand" priority="0" />
+      <Item value="bo" priority="7" />
+      <Item value="boInd" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartStoreService.AllPartsAvailBOInformation">
+      <Item value="boFac" priority="0" />
+      <Item value="boQty" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="AsInt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CATPAI.BackOrder">
+      <Item value="BoQty" priority="0" />
+      <Item value="BoFacCode" priority="0" />
+      <Item value="BoFacName" priority="0" />
+      <Item value="BoFacType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CATPAI.BoInfo">
+      <Item value="BoFacCode" priority="2" />
+      <Item value="BoFacName" priority="1" />
+      <Item value="BoFacType" priority="1" />
+      <Item value="BoQty" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Entities.BackOrder">
+      <Item value="BoFacCode" priority="4" />
+      <Item value="BoFacName" priority="3" />
+      <Item value="BoQty" priority="2" />
+      <Item value="BoFacType" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartStoreService.AltPartsAvailAltPartInformation">
+      <Item value="qtyOnHand" priority="0" />
+      <Item value="onHand" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartStoreService.AllPartsAvailXRefInformation">
+      <Item value="onHand" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartStoreService.AllPartsAvailReplInformation">
+      <Item value="onHand" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartStoreOptionalService.AllSOSDetailInformation">
+      <Item value="qtyOnHand" priority="1" />
+      <Item value="bo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PartStoreOptionalService.AllBOInformation">
+      <Item value="boFac" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_Segment.aspx.cs" caret="30113" fromTop="23" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Workflow/f:QuoteWorkflow.aspx" caret="24806" fromTop="21" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_Workorder.aspx" caret="912" fromTop="13" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:inc_QuotePrint.aspx" caret="0" fromTop="0" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Print_QuotePDF.aspx" caret="30942" fromTop="29" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Print_Quote.aspx" caret="0" fromTop="0" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:PrintQuoteDocument.aspx" caret="0" fromTop="0" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:PrintQuoteDocumentDebug.aspx" caret="0" fromTop="0" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:inc_quote.aspx" caret="0" fromTop="0" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:Notes.ascx.cs" caret="7899" fromTop="34" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:Notes.ascx" caret="1186" fromTop="20" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:Parts.ascx" caret="1470" fromTop="28" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:QuoteHeader.ascx" caret="19828" fromTop="20" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_Segment.aspx" caret="44249" fromTop="13" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_AddNew.aspx.cs" caret="21660" fromTop="29" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_AddNew.aspx" caret="32306" fromTop="30" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:NewSegment.aspx" caret="30539" fromTop="23" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:NewSegment.aspx.cs" caret="713" fromTop="11" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:Entities/f:Part.cs" caret="3853" fromTop="28" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:SegmentDetailAjaxHandler.ashx" caret="23806" fromTop="29" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:Helpers/f:DateTimeHelper.cs" caret="598" fromTop="14" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:TRG_Search/d:Equipment/d:CustomerSearch/f:Customer_Details.aspx" caret="6260" fromTop="16" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:QuoteHeader.ascx.cs" caret="4721" fromTop="17" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLParts.aspx.cs" caret="1036" fromTop="24" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:DAL/f:Quote.cs" caret="55640" fromTop="20" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:Entities/f:Labor.cs" caret="9554" fromTop="18" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx.cs" caret="222" fromTop="10" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_Document.aspx" caret="186" fromTop="3" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_Document.aspx.cs" caret="726" fromTop="26" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="1945" fromTop="21" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:NewSegment.aspx.cs" caret="4430" fromTop="28" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_AddNew.aspx" caret="24452" fromTop="31" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_AddNew.aspx" caret="32036" fromTop="23" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:DAL/f:Quote.cs" caret="37657" fromTop="5" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:DAL/f:Quote.cs" caret="10294" fromTop="26" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/f:Quote_AddNew.aspx.cs" caret="21782" fromTop="37" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:DAL/f:Quote.cs" caret="15593" fromTop="23" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:NewSegment.aspx.cs" caret="1460" fromTop="31" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:NewSegment.aspx.cs" caret="1916" fromTop="38" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:SegmentDetailAjaxHandler.ashx" caret="24063" fromTop="34" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:SegmentDetailAjaxHandler.ashx" caret="23978" fromTop="32" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx.cs" caret="759" fromTop="19" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx.cs" caret="766" fromTop="9" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx.cs" caret="775" fromTop="13" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="2889" fromTop="19" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="2928" fromTop="21" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="3078" fromTop="27" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="1230" fromTop="27" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="797" fromTop="16" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:DAL/f:Quote.cs" caret="55770" fromTop="24" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:App_Code/d:DAL/f:Quote.cs" caret="55711" fromTop="22" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="2782" fromTop="37" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx.cs" caret="508" fromTop="9" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx.cs" caret="721" fromTop="17" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="2675" fromTop="34" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx.cs" caret="164" fromTop="7" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="221" fromTop="2" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="1602" fromTop="20" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="2640" fromTop="39" />
+      <File id="85F13766-5270-4889-8C72-AF580BE5E7FB/d:Modules/d:Quote/d:Controls/f:ImportXMLDetail.aspx" caret="2339" fromTop="32" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,23 @@
+﻿@using X.Web.UI
+@inherits UI.Abstracts.MasterPages.ReportViewLayout
+
+@{
+    Layout = "~/library/masterPages/_base.cshtml";
+}
+      <div id="topContainer">
+    <!-- HEADER: Start -->
+       <div id="headerBox">@RenderSection(LayoutSection.ApplicationHeader)</div>
+    <!-- HEADER: End -->
+
+    <!-- TOP MENU: Start -->
+       <div id="topPaneBox">@RenderSection(LayoutSection.TopPane)</div>
+    <!-- TOP MENU: END -->
+
+    <!-- SEARCH: Start -->
+       <div id="searchBox">@RenderSection(LayoutSection.SearchPane)</div>
+    <!-- SEARCH: END -->
+       <div id="detailBox">@RenderSection(LayoutSection.DetailPane)</div>
+     </div>
+     <div id="bottomContainer">    
+        <div id="moduleBox">@RenderBody()</div>
+     </div>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>X.Web.Mvc</name>
+    </assembly>
+    <members>
+        <member name="F:X.Web.Mvc.ViewPageBase`1.ensureCookiesEnabled">
+            <summary>
+            indicates whether to ensure client browser enabling cookies
+            </summary>
+        </member>
+        <member name="P:X.Web.Mvc.ControllerBase.ModuleTitle">
+            <summary>
+            Gets or sets value of module title that is used in the view.
+            </summary>
+        </member>
+    </members>
+</doc>

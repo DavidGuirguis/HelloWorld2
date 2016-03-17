@@ -1,0 +1,702 @@
+[2012-02-10]::4.0.5.2+
+	** BREAKING CHANGES - IIS 7+ Integrated Mode **
+		-X.Web.WebClientApplication
+			Application_Start
+				Only sending virtual path to SP 'XNET2_ApplicationStart' without Url's Authority to favor IIS 7+ Integrated Mode (as Request context not available anymore at Application_Start event)
+
+[2011-12-30]
+	::v4.0.5.1+
+	** IMPROVEMENTS **
+		-X.Web.Extensions.StringExtensions, X.Web.Extensions.ObjectExtensions
+			JavaScriptStringEncode
+				-Returns HtmlString instead of String type
+
+[2011-12-30]
+	::v4.0.5.1+
+	** IMPROVEMENTS **
+		-X.Web.IntegrationHelper
+			Render, WebRequestGetResponseText
+				-Add new param 'responseEncoding' to specify response encoding
+
+[2011-12-14]
+	::v4.0.5.1+
+	** IMPROVEMENTS **
+		-X.Web.Entities.Extensions.MenuExtensions
+			Render
+				-Add new param 'ignoreEmptyMenu' to control whether menu markup should be rendered when empty menu is rendering
+
+[2011-12-13]
+	::v4.0.5.1+
+	** NEW **
+		-X.Web.HttpUtil
+			SetNoCache
+				-Add new overload for HttpContextBase
+
+[2011-11-01]
+	::v4.0.5.1+
+	** FIXES **
+		-X.Web.Globalization.GlobalizationContext
+			InitializeRequest
+				-Ignore unsupported file types
+
+[2011-10-27]
+	::v4.0.5.1+
+	** FIXES **
+		-X.Web.ApplicationStateModule
+			OnAuthenticateRequest
+				-Don't check flag 'WebContext.Current.SessionStateEnabled' to call GlobalizationContext.InitializeRequest
+		-X.Web.Globalization.GlobalizationContext
+			InitializeRequest
+				-Globalization - Support anonymous log in or application not using WebContext
+		-X.Web.Globalization.LanguageExtensions
+			RenderSelector
+				-Globalization - Support anonymous log in or application not using WebContext
+		-X.Web.WebClientApplication
+			Application_PostAuthenticateRequest
+				-Globalization - Support anonymous log in or application not using WebContext
+[2011-10-05]
+	::v4.0.5.1+
+	** NEW **
+		-X.Web.WebClientApplication
+			Instance
+				-New internal property to get the instance of the HttpApplication
+			RenderLayoutSection
+				-Common method for rendering layout sections
+
+	** REMOVED **
+		-X.Web.UI.MasterPageBase
+			RenderLayoutSection
+				-Removed; changed to call WebClientApplication.Instance.RenderLayoutSection		
+
+[2011-10-04]
+	::v4.0.5.1+
+	** NEW **
+		-X.Web.UI.IPage
+			FormatPageTitle
+				-Gets formatted page title
+			TemplateName
+				[CONVERSION NOTES]::Delete this property in PageBase inheritant in application project
+				-Gets current master/layout name
+		-X.Web.UI.LayoutSection
+			Moved from namespace X.Web.Mvc
+		-X.Web.UI.CommonPageBase
+			IsHeaderSectionRegistered, RegisterHeaderSection, EnableTemplateUrlParam, TemplateName, GetTemplateFile
+				-Moved from PageBase to consolidate logic at one place for implementation of IPage
+		-X.Web.UI.PageBase
+			Construct
+				-Moved logic from protected ctor, as this method is called before protected ctor
+			TemplateName
+				-Gets or sets current master/layout name
+		-X.Web.UI.MasterPageBase
+			RenderLayoutSection
+				-Allows common layout section rendering
+		-X.Web.UI.LayoutHelper
+			RenderSection, HtmlHeadSection
+				-Common layout section renderer
+
+	** CHANGES **
+		-X.Web.UI.PageBase
+			-Make use of CommonPageBase
+			GetTemplateFile
+				-Changed from abstract to a virtual method
+				[CONVERSION NOTES]::call base method in its implementation classes
+			FormatPageTitle
+				-Changed to a public method as it's defined in IPage now			 
+		-X.Web.Entities.Extensions.MenuExtensions
+			Render
+				-Emit shared js file
+[2011-09-30]
+	::v4.0.5.1+
+	** NEW **
+		-Entities for Menus (Vertical, Horizontal, Context)
+			LinkType
+			MatchPattern
+			MatchPatternCollection
+			MenuItem
+			MenuItemGroup
+			MenuItemGroupCollection
+			MenuRenderType
+			MenuExtensions
+		-X.Web.Extensions.UrlExtensions
+			CreateUrl, NormalizePathAndQueryForAppending, StripKeysFromCurrentPage
+				-New methods to deal with URLs			
+		-X.Url
+			GlobalThemePath, ApplicationThemePath
+				-New properties getting Theme path
+
+[2011-09-01]
+	::v4.0.5.0+
+	** IMPROVEMENTS **
+		-X.Web.UI.WebControls.TabStrip
+			GetHtml
+				-Supports IE6
+
+[2011-07-20]
+	::v4.0.5.0+
+	** CHANGES **
+		-X.Web.Globalization.LanguageExtensions
+			ToListItems, RenderSelector
+				-X.Web.Globalization.GlobalizationContext.Current.CurrentLanguage has been renamed to X.Web.Globalization.GlobalizationContext.Current.Language
+					
+		-X.Web.UI.IPage, X.Web.UI.PageBase, X.Web.UI.PageBase`2, X.Web.WebContext
+			Master
+				-Renamed from MasterPage
+
+	** IMPROVEMENTS **
+		-X.Web.Globalization.GlobalizationContext
+			- Supports language overriding via Url key 'langid'
+			RequestInitialized
+				-Gets a value that indicate whether GlobalizationContext is initialized for the request
+			Language
+				-Renamed from CurrentLanguage
+
+[2011-06-28]
+	::v4.0.5.0+
+	** FIXES **
+		-X.Web.ApplicationStateModule
+			OnAuthenticateRequest
+				-Moved GlobalizationContext init from WebClientApplication class
+
+[2011-06-28]
+	::v4.0.5.0+
+	** NEW **
+		-X.Url
+			AbsoluteApplicationPath
+				-Hold absolute application path
+
+[2011-06-03]
+	::v2.0.4.0+
+	** NEW **
+		-X.Web.IPage, X.Web.PageBase, X.Web.CommonPageBase
+			Context
+				-Reference to HttpContext.Current
+	::v4.0.5.0+
+	** IMPROVEMENTS **
+		-X.Web.TabStrip
+			-Support modern browsers, requires jQuery UI
+
+[2011-04-24]::v2.0.4.0+
+	** NEW **
+		-X.Web.StringExtensions, ObjectExtensions
+			UrlPathEncode
+				-Extention method of type String that calls HttpUtility.UrlPathEncode
+		
+		-X.Web.ResourceManager
+			New class to handles resources for classes and pages
+
+		-X.Web.UI.UserControlBase, X.Web.UI.PageBase, X.Web.UI.CommonPageBase
+			Resource
+				-New property to handle resources
+
+	** CHANGES **
+		-X.Web.StringExtensions, ObjectExtensions
+			UrlEncode
+				-Calls HttpUtility.UrlEncode instead of UrlPathEncode
+
+		-X.Web.WebClientApplication
+			Application_Start
+				-Calls XNet2_ApplicationStart: First release supporting app startup data
+			Start
+				-Signature changed to support app startup data
+
+		-X.Web.Globalization.GlobalizationContext
+			Invalidate
+				-List data is now IEnumerable<ListItem>
+			OneTimeInit
+				-Intialize is renamed to OneTimeInit and it takes one paramemter for system app start data
+		-X.Web.Globalization.SqlResourceProvider
+			GetObject
+				-List could be belong to global resource object (e.g. class)
+
+		-X.Web.UI.PageBase
+			Page
+				-Removed as it's not in IPage anymore
+
+		-X.Web.UI.IPage
+			Page
+				-Removed as it's not needed
+
+[2011-04-17]::v2.0.4.0+
+	** NEW **
+		-X.Web.Globalization.LocalResourceProviderExtension
+			GetGlobalResourceObject(string name, CultureInfo culture)
+				-An internal static method to get global resource data
+
+	** CHANGES **
+		-X.Web.Globalization.LocalResourceProviderExtension
+				-Renamed to LocalResourceProviderExtensions
+			GetList
+				-Change return type from array to IEnumerable<ListItem>
+	** REMOVES **
+		-X.Web.Globalization.LocalResourceProviderExtension
+			GetClassResourceObject
+				-Deleted, replaced by ResourceManager's private static instance on each custom class
+
+[2011-04-07]::v2.0.4.0+
+	** NEW **
+		-X.Web.UI.IPage
+			Output
+				-Hold a reference to Http response writer object
+		-X.Web.UI.PageBase
+			Output
+				-Implements IPage.Output
+		-X.Web.Extensions.HtmlExtensions
+			DropDownList
+				-Construct a dropdown list based on specified IEnumerable<ListItem> object.
+
+	** IMPROVEMENTS **
+		-X.Web.Globalization.LanguageExtensions
+			RenderSelector
+				-Make use of new extension method HtmlExtensions.DropDownList
+
+[2011-04-06]::v2.0.4.0+
+	** IMPROVEMENTS **
+		-X.Web.WebContext
+			MasterPage
+				-IPage.MasterPage is of type IMasterPage
+		
+		-X.Web.Extensions.StringExtensions
+			JavaScriptStringEncode moved to HttpUtil
+
+		-X.Web.Globalization.GlobalizationContext
+			- Make sure class resource store and language list are not null
+		
+		-X.Web.Globalization.LanguageExtensions
+			RenderSelector
+				-Takes 'writer' parameter
+
+		-X.Web.UI.IPage
+			Page
+				-Changed to dynamic to better support MVC page
+			Response, Request, Application, Server, Session
+				-Changed to abstract type to better support MVC page
+
+		-X.Web.UI.PageBase
+			-Implements new changes in IPage to better support MVC
+
+	** NEW **
+		-X.Web.Globalization.GlobalizationContext
+			Culture, UICulture
+				-Holds reference to the counterpart on current thread
+		
+		-X.Web.UI.IPage
+			MasterPage, WebFormPage, IsWebFormPage, IsWebViewPage
+				-New members to support MVC
+
+[2011-03-30]::v2.0.4.0+
+	** IMPROVEMENTS **
+		-X.Web.Globalization.GlobalizationContext
+			InitializeRequest
+				-Moved to PostAuthorizeRequest event
+				-Moved excluding '*.axd' logic to PostAuthorizeRequest
+
+	** NEW **
+		-X.Web.WebClientApplication
+			Application_PostAuthorizeRequest
+			PagePostAuthorizeRequest
+				New events/virtual methods			
+
+[2011-03-15]::v2.0.4.0+
+	** IMPROVEMENTS **
+		-X.Web.UI.WebControls.TabItem
+			NavigateUrl
+				Allows arbitary URL if not starting with 'modules'
+
+	** NEW **
+		-X.Web.UI.WebControls.TabStrip
+			Add(text, tooltip, value)
+				New overload to add tooltip
+			Add, AddSpacer
+				New overloads to support width in pixel
+			Write
+				Writes tab strip to Response.Output or specified writer
+		
+		-X.Web.WebClientApplication
+			Application_Start
+				Do OneTimeInit on EnvironmentSettings
+
+[2011-03-09]::v2.0.4.0+
+	** IMPROVEMENTS **
+		-X.Web.Extensions.ObjectExtensions, X.Web.Extensions.StringExtensions
+			UrlEncode
+				Use 'HttpUtility.UrlPathEncode'
+			HtmlEncode
+				New overload to accept 'preserveLineBreaks' param
+	
+	** NEW **
+		-X.Web.Globalization.LocalResourceProviderExtension
+			GetLocalResourceString
+				Gets local resource value on specified template control
+
+[2011-02-18]::v2.0.4.0+
+	** FIXES **
+		-X.Web.HttpUtil
+			JavaScriptStringEncode
+				Calling methods defined in X.Net
+	
+	** IMPROVEMENTS **
+		-X.Web.Extensions.ObjectExtensions, X.Web.Extensions.StringExtensions
+			Moved Web related encoders from X.Extensions
+
+[2011-02-10]::v2.0.4.0+
+	** CHANGES **
+		-X.Web.UI.IPage
+			Inherites IUrlResolutionService
+
+[2011-02-09]::v2.0.4.0+
+	** CHANGES **
+		-X.Web.HttpUtil
+			JavaScriptStringEncode
+				Moved to X.Net dll
+
+[2011-02-08]::v2.0.4.0+
+	** NEW **
+		-X.Web.UI.UserControlBase
+			RelativeApplicationPath
+				Gets relative application path for client side resources
+
+[2011-01-31]::v2.0.4.0+
+	** NEW **
+		-X.Web.Globalization.GlobalizationContext
+			ShowResourceKeyHint
+				Indicates whether to show resource key hint when the value cannot be found.
+
+	** FIXES **
+		-X.Web.Globalization.GlobalizationContext
+			GetFileObjectId
+				pass StringComparison.InvariantCultureIgnoreCase to StartsWith to ignore cases
+		-X.Web.Globalization.SqlResourceProvider
+			ctor
+				pass StringComparison.InvariantCultureIgnoreCase to StartsWith to ignore cases
+
+[2011-01-28]::v2.0.4.0+
+	** NEW **
+		-X.Web.Globalization.GlobalizationContext
+			SetCookieName
+				Set cookie name used for storing language data
+			ResourceProviderFactoryTypeConfigured
+				Gets if ResourceProviderFactoryType configured or not
+
+	** CHANGES **
+		-X.Web.Globalization.GlobalizationContext
+			Initialize
+				Rename to IntializeRequest
+
+		-X.Web.Globalization.LanguageExtensions
+			RenderSelector
+				- Create selector form on demand and append it to end of 'body', so the selector can be inside a server form
+				- Move change lang logic to 
+
+[2011-01-20]::v2.0.4.0+
+	** CHANGES **
+		-X.Web.Globalization.LanguageExtensions
+			RenderSelector
+				- Don't emit selector if language list is empty or less than 2 languages
+
+[2011-01-05]::v2.0.4.0+
+	** NEW **
+		-X.Web.HttpUtil
+			JavaScriptStringEncode
+				- Encode string used in JavaScript
+
+[2010-12-24]::v2.0.5+
+	** NEW **
+		-X.Web.Globalization
+			Supports globalization
+		
+		-X.Web.WebClientApplication
+			base class for HttpApplication
+
+[2010-12-08]::v2.0.4.0+
+	** IMPROVEMENTS **
+		-X.Web.IntegrationHelper
+			WebRequestGetResponseText
+				- Supports compressed content
+
+[2010-11-05]::v2.0.4.0+
+	** NEW **
+		-X.Web.HttpUtil
+			SetNoCache
+				- Prevent caching current page.
+
+[2010-11-02]::v2.0.4.0+
+	** CHANGES **
+		-X.Web.ApplicationStateManager
+			ValidateSession
+				- Gets app name if not overriden by SetApplicationInfo method
+
+[2010-11-02]::v2.0.4.0+
+	** NEW **
+		-X.Web.WebContext
+			InitComplete
+				- A method is called after initialization completed
+					
+		-X.Web.HttpUtil
+			GetClientIPAddress
+				- Get client IP address
+
+	** FIXES **
+		-X.Web.UI.PageBase
+			RenderPageLayoutElements
+				- Fix webForm assignment when form doesn't have 'name' attribute assigned
+
+[2010-08-04]::v2.*-v4.*
+	** FIXES **
+		-X.Web.ApplicationStateModule
+			> Rollback last couple changes regarding SessionStateStore
+			
+			Dispose
+				- Commented out the code to displose timer and reset s_initialized flag as the HttpModule could have multiple instances
+				
+[2010-08-03]::v2.*-v4.*
+	** FIXES **
+		-X.Web.ApplicationStateModule
+			> Store Session objects in Application collection instead of HttpRuntime.Cache
+
+[2010-07-14]::v2.0.4.0
+	** FIXES **
+		-X.Web.ApplicationStateModule
+			OneTimeInit
+				- Store session container object to HttpRuntime cache to fix multithreading issues (session data could be lost)
+
+[2010-04-29]::v2.0.3.0
+	** NEW **
+		-X.Web.UI.IPage
+			IsHeaderSectionRegistered
+				- Indicates whether specified key is registered
+		-X.Web.UI.PageBase
+			IsHeaderSectionRegistered
+				- Implements new method in IPage
+
+[2010-01-29]::v2.0.2.0
+	** FIXES **
+		-X.Web.Security.FormsAuthentication
+			SignOut
+				- Checks new property WebContext.Initialized before calling WebContext.Current.Session.Abandon, as error 'WebContext not Initialized' may be thrown when CustomerApplicationStateManager is in use and Forms authentication is turned on 
+		-X.Web.ApplicationStateModule
+			OnEndRequest
+				- Checks new property WebContext.Initialized before calling WebContext.Current.Session.Abandon, as error 'WebContext not Initialized' may be thrown when CustomerApplicationStateManager is in use and Forms authentication is turned on 
+	** NEW **
+		-X.Web.WebContext
+			Initialized
+				- Indicates whether WebContext has initialized
+
+[2009-04-12]::v2.0.2.0
+	** IMPROVEMENTS **
+		-X.Web.WebContext
+			SessionStateEnabled, SkipAuthorization - added 'protected set' to allow overriding default value in InitializeRequest method.
+			
+		-X.Web.IntegrationHelper
+			UILayoutContentCacheContainer
+				- Expired - changed to sliding expiry at every get/set operation on Content property
+			WebRequestGetResponseText
+				- supports Basic authentication
+
+[2009-04-02]::v2.0.2.0
+	** IMPROVEMENTS **
+		-X.Web.IntegrationHelper
+			Render - Sends current page's URL info to receiver via request headers
+			WebRequestGetResponseText - New overloading method to take request headers
+
+[2009-04-01]::v2.0.2.0
+	** NEW **
+		-X.Web.UI.IIntegrationMasterPage
+			- Contracting interface for MasterPage that used for integration
+		-X.Web.IntegrationHelper
+			Render - Injecting current page content into the placeholder defined in Master page. It is used to replace Page.Render method, see example for more details.
+			WebRequestGetResponseText - Retrieve content of specified Web resource.
+
+[2009-03-30]::v2.0.2.0
+	** IMPROVEMENTS **
+		-X.Web.UI.PageBase<>
+			- added TMasterPage to generic parameters, and cast Master property to TMasterPage	
+
+[2009-02-13]::v2.0.2.0
+	<Changed WebContext and related classes to take advantage of Generic features, 
+		so application developer can extend framework's classes with custom functions
+		e.g. extra properties at IdentityEx
+	/>
+
+	** NEW **
+		-X.Web.UI.UserControlBase<TWebContext, TPage>
+		-X.Web.UI.MasterPageBase<TWebContext>
+		-X.Web.UI.PageBase<TWebContext>
+		-X.Web.WebContext<TWebContext, TPage, TMasterPage, TUser>
+		-X.Security.Principal.WebPrincipal<TIdentity>
+
+	** IMPROVEMENTS **
+		-X.Web.UI.UserControlBase
+			- Updated the code to allow WebPage, WebContext overrideable in Generic version of this class. 
+		
+		-X.Web.UI.MasterPageBase
+			- Updated the code to allow WebContext overrideable in Generic version of this class. 
+		
+		-X.Web.UI.PageBase
+			- Updated the code to allow WebContext overrideable in Generic version of this class. 
+		
+		-X.Web.Security.WebIdentity
+			.ctor - Access modifier changed from 'public' to 'internal protected'
+			Initialize - Signature changed from 'public (WebIdentityData identityData)' to 'internal protected virtual (DataSet startUpAppData, DataSet rqAppData, WebIdentityData identityData)' to improved subclassing 
+						 (e.g. application developer can popuate extended properties in this method)
+		
+		-X.Security.Principal.WebPrincipal
+			.ctor - ctor() and ctor(WebIdentity, string[]) have been changed to internal ctor()
+			[NEW] Initialize - introduced to handle m_identity var			
+		
+		-X.Web.ApplicationStateManagerProviderBase
+			[NEW] CreateWebContext - Allows to create an instance of subclass of WebContext
+
+		-X.Web.ApplicationStateManager
+			[NEW] CreateWebContext - Allows to create an instance of subclass of WebContext
+			
+		-X.Web.ApplicationStateModule
+			SetupUserData - Update IdentityEx.Initialize signature
+			InitializeRequest - Call WebContext.InitializeRequest after s_applicationStateManager.InitializeRequest
+		
+		-X.Web.WebContext
+			- Improved to allow type of User, MasterPage, Page, Current overrideable at subclass
+
+[2008-12-15]::v2.0.1.1
+	** CHANGES **
+		-X.Web.DefaultSessionIDManager
+			SaveSessionID - Removed cookie before adding the new one.
+			
+		-X.Web.ApplicationStateModule
+			InitializeRequest - Do nothing when session data is null, just send reset flags to SQL and let SQL decides what to do.
+			OneTimeInit - Don't use HttpRuntime.Cache to hold Session State Store, as it may has some side effects, like login page is hanging	
+
+[2008-11-23]::v2.0.1.1
+	** CHANGES **
+		-X.Web.DefaultSessionIDManager 
+			- moved to Commom project and fixed saving cookie issues
+
+[2008-11-21]::v2.0.1.1
+	** IMPROVEMENTS **
+		-X.Url
+			UrlCombine - 
+				> Handle the case QueryString is empty
+				> Check question mark instead of ampersand
+
+		-X.Web.Security
+			SignOut - 
+				> overloading (string urlParams) changed to (string returnUrl, string extraUrlParams)
+				> take account of current page is either login page or logout page
+				> remove 'User' from context
+		
+		-X.Error.ErrorHandler
+			ctor - Only append '~/' to _errPage if it doesn't start with '/'
+			LoadErrorPage - Handle the case that _errPage starting with '/'
+
+		-X.Web.ApplicationStateManagerProviderBase
+			- Implements IApplicationStateManager
+
+		-X.Web.ApplicationStateManager
+			- Implements methods in IApplicationStateManager
+			HandleValidateSessionError - Handles error codes for Authentication properly
+	
+	** NEW **
+		-X.Web.DefaultSessionIDManager
+			- replacement of 'X.Web.SessionState.SessionIDManager'
+			- made better for inheriting
+	
+	** CHANGES **
+		-X.Web.SessionState.SessionIDManager
+			- renamed to X.Web.DefaultSessionIDManager and implemented X.Web.ISessionIDManager
+		
+		-X.Web.ApplicationStateModule
+			CreateApplicationStateManager - Changed modifies to 'internal static'
+			SessionCheck - Assigning value to 'sessionCacheResetFlag' and pass it to ValidateSession method
+			SetupUserData - Removed logic updating user info in Session Cookie. It's redundant as the value shouldn't be changed during the life cyle
+			OneTimeInit - 
+						> Make sure ApplicationStateManager is properly instantiated as a global ApplicationStateManager may be in use
+						> Store 'SessionStateDataStore' in HttpRuntime to support multiple HttpApplication
+	
+	** REMOVES **
+		-X.Web.ApplicationStateModule
+			> Removed 's_sessionIDManager', it has been replaced with ApplicationStateManager.SessionIDManager
+		
+[2008-10-06]::v2.0.1.1
+	** IMPROVEMENTS **
+		-X.Web.Security.FormsAuthentication
+			Authenticate - Pass login data to ApplicationStateModule.Instance.UpdateSessionState
+		-X.Web.ApplicationStateModule
+			UpdateSessionState - Pass login data to ApplicationStateModule.Instance.UpdateSessionState
+
+[2008-08-25]::v2.0.1.1
+	** IMPROVEMENTS **
+		-X.Web.ApplicationStateModule
+			UpdateSessionState, SessionCheck - Consolidate session initialization logic into UpdateSessionState method, and removed unnecessary params from UpdateSessionState. 
+												Also improved supporting for Forms authentication
+
+	** FIXES **
+		-X.Web.UI.PageBase
+			OnPreRender, Render - Moved RenderPageLayoutElements from OnPreRender to Render method to fix the issues related to Calendar's 
+								  client resouce won't emitted in FormView with DataSourceControl being used
+	** NEW **
+		-X.Web.SessionState.HttpSesionState
+			StatusDesc - Holding description of status code			
+		-X.Web.ApplicationStateManagerProviderBase
+			GetUserData - Getting user data, e.g. identity data, roles
+		-X.Web.ApplicationStateManager
+			GetUserData - Overridable method to populate user data
+
+	** CHANGES **
+		-X.Web.Security.FormsAuthentication
+			Authenticate - Removed ApplicationStateModule.Instance.ApplicationStateManager.GetRequestData as signature of ApplicationStateModule.Instance.UpdateSessionState has been changed			
+		-X.Web.ApplicationStateManager
+			GetRequestData - Moved code getting user data to GetUserData method
+
+[2008-08-25]::v2.0.1.0
+	** IMPROVEMENTS **
+		-X.Web.UI.WebControls.Calendar
+			move reg res from OnLoad to OnInit event
+
+[2008-08-25]::v2.0.1.0
+	** NEW **
+		-X.Web.Security.WebIdentityData: New class introduced for holding Identity's data.
+		-X.Web.WebContextRequestData: New class used to hold context request data, e.g. app data, user roles, identity data, etc.
+		-X.Web.WebContext
+			startUpAppData - new internal field to hold start up app data
+		-X.Web.SessionState.HttpSessionState
+			StartUpAppData - new public property to hold start up app data
+		-X.Web.ApplicationStateManagerProviderBase
+			HandleValidateSessionError - Handle Session error.
+			GetRequestData - Returns request data that is massaged from raw data returned by ValidateSession.
+		-X.Web.ApplicationStateManager
+			HandleValidateSessionError - Moved from 'X.Web.ApplicationStateModule::Session_Error'
+			GetRequestData - Moved logic for massaging Session App Data, processing it, and extract user roles from 'X.Web.ApplicationStateModule::SessionCheck'
+			CheckIfAJAXRequest - Check if the current request is AJAX request.
+			
+	** IMPROVEMENTS **
+		-X.Configuration.Request
+			AJAXRequest - Also determined by method 'ApplicationStateModule.Instance.ApplicationStateManager.CheckIfAJAXRequest'
+		-X.Web.SessionState.HttpSessionState
+			Init - Pass 'isNewSession' flag instead of retrieving it from 'sessionData.Tables[SessionDataTables.UserData].Rows[0]["NewSession"]'
+		-X.Web.SessionState.SessionStateStore
+			- Stores session start app data to SessionStateStore, so it can be retrieved in the life of session via 'WebContext.Current.Session.StartUpAppData' 
+		-X.Web.Security.WebIdentity
+			Initialize - Changed to take 'X.Web.Security.WebIdentityData' as parameter instead of 'DataRowView'
+		-X.Web.Security.FormsAuthentication
+			Authenticate - Retrieve RequestAppData and StartUpAppData by calling 'ApplicationStateModule.Instance.ApplicationStateManager.GetRequestData'
+		-X.Web.ApplicationStateModule
+			- Improve the supports for Session Start event, storing/handling Session Start up app data.
+
+[2008-08-11]
+	** IMPROVEMENTS **
+		-X.Web.WebContext
+			MasterPage - New property allows get hold of current page's Master with casting to X.Web.UI.MasterPageBase
+		-X.Web.UI.MasterPageBase
+			FindControlManual	- Provide a way to find control manually
+			FindControlRecursive	- Finds control within master page recursively if nested master page presents.
+
+[2008-06-08]
+	** FIXES **
+		-X.Configuration.Request.ctor 
+			_scriptName - X.Url.ApplicationPath.Length may larger than context.Request.Path.Length
+				EXAMPLE: http://sobek.toromont.com/Reportserver?%2fDispute%2frptHome&rs:Command=Render
+					context.Request.Path=/Reportserver
+					X.Url.Applicationpath=/Reportserver/
+
+[2008-04-23]
+	** FIXES **
+		- fixed Calendar.Value always remember last value, especailly when the calendar control has initial value

@@ -1,0 +1,974 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>X.Web</name>
+    </assembly>
+    <members>
+        <member name="T:X.Web.UI.WebControls.GridColumnSortDirection">
+            <summary>
+            Specifies the direction of a sort operation.
+            </summary>
+        </member>
+        <member name="F:X.Web.UI.WebControls.GridColumnSortDirection.Asc">
+            <summary>
+            Ascending order.
+            </summary>
+        </member>
+        <member name="F:X.Web.UI.WebControls.GridColumnSortDirection.Desc">
+            <summary>
+            Descending order.
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.WebControls.GridColumnCollection.Add(System.String)">
+            <summary>
+            Adds a column with the specified data field into the GridColumnCollection.
+            </summary>
+            <param name="dataField">A field name from data source.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Web.UI.WebControls.GridColumnCollection.Add(System.Web.UI.WebControls.BoundColumn)">
+            <summary>
+            Adds a column into the GridColumnCollection based on the specified BoundColumn
+            </summary>
+            <param name="column">An instance of BoundColumn to add into the collection.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Web.UI.WebControls.GridColumnCollection.Add(X.Web.UI.WebControls.GridColumn)">
+            <summary>
+            Adds a column into the GridColumnCollection
+            </summary>
+            <param name="column">A column to add into the collection.</param>
+            <returns></returns>
+        </member>
+        <member name="P:X.Web.UI.WebControls.GridColumnCollection.Count">
+            <summary>
+            Gets the number of columns in the GridColumnCollection.
+            </summary>
+        </member>
+        <member name="E:X.Web.UI.WebControls.GridColumn.CellDataBound">
+            <summary>
+            Handles cell data binding.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.WebControls.GridColumn.IsNumeric">
+            <summary>
+            Indicates whether the column is numeric column.
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.WebControls.WebControlHelper">
+            <summary>
+            Summary description for Utils.
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.WebControls.WebControlHelper.SelectItemByValue(System.Web.UI.HtmlControls.HtmlSelect,System.Object)">
+            <summary>
+            Allows selecting a HTML DropDownList control by value at single statement.
+            </summary>
+            <param name="dropdownList">A HTML DropDownList control.</param>
+            <param name="value">A value to select.</param>
+            <returns>Indicates if there's any item selected.</returns>
+        </member>
+        <member name="M:X.Web.UI.WebControls.WebControlHelper.SelectItemByValue(System.Web.UI.WebControls.ListControl,System.Object)">
+            <summary>
+            Allows selecting a ListControl control by value at single statement.
+            </summary>
+            <param name="listControl">A ListControl object.</param>
+            <param name="value">A value to select.</param>
+            <returns>Indicates if there's any item selected.</returns>
+        </member>
+        <member name="T:X.Web.UI.UserControlBase`2">
+            <summary>
+            Summary description for UserControlBase.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.HtmlHeader">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds HTML head content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.HeaderPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application header's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.TopPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application top pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.SearchPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application search pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.DetailPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application detail pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.LeftPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application left pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.ModulePane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application module pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.RightPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application right pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IMasterPage.BottomPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application bottom pane's content.
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.CommonMasterPageBase.FindControlRecursive(System.Web.UI.MasterPage,System.String,System.Type)">
+            <summary>
+            Finds control within master page recursively if nested master page presents.
+            </summary>
+            <param name="master">Starting master page. Passing null to indicate starting from current master page.</param>
+            <param name="ctrlID">Control's ID.</param>
+            <param name="controlType">Control type.</param>
+            <returns></returns>
+        </member>
+        <member name="T:X.Web.Security.FormsAuthentication">
+            <summary>
+            Manages forms-authentication services for Web applications. This class cannot be inherited and instantiated.
+            </summary>
+        </member>
+        <member name="M:X.Web.Security.FormsAuthentication.SignOut">
+            <summary>
+            Removes the forms-authentication ticket from the browser and redirect to login page. 
+            </summary>
+        </member>
+        <member name="M:X.Web.Security.FormsAuthentication.Authenticate(System.String,System.String)">
+            <summary>
+            Validates a user name and password, and pass out the authentication status code and description.
+            </summary>
+            <param name="userName">The user name.</param>
+            <param name="password">The password for the user.</param>
+            <returns><b>true</b> if the user name and password are valid; otherwise, <b>false</b>.</returns>
+        </member>
+        <member name="T:X.Web.UI.WebControls.Calendar">
+            <summary>
+            Summary description for Calendar.
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.WebControls.Calendar.InitializeComponent">
+            <summary>
+            	Required method for Designer support - do not modify
+            	the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.WebControls.TableColumnSpanAlso">
+            <summary>
+            Specifies how the columns will span.
+            </summary>
+        </member>
+        <member name="F:X.Web.UI.WebControls.TableColumnSpanAlso.Before">
+            <summary>
+            Also span all columns before the first column.
+            </summary>
+        </member>
+        <member name="F:X.Web.UI.WebControls.TableColumnSpanAlso.After">
+            <summary>
+            Also span all columns after the last column.
+            </summary>
+        </member>
+        <member name="F:X.Web.UI.WebControls.TableColumnSpanAlso.AllOthers">
+            <summary>
+            Span all other columns.
+            </summary>
+        </member>
+        <member name="F:X.Web.UI.WebControls.TableColumnSpanAlso.None">
+            <summary>
+            Only span columns in specified range.
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.WebControls.TableHelper">
+            <summary>
+            Summary description for Table.
+            </summary>
+        </member>
+        <member name="M:X.Web.ApplicationStateManagerProviderBase.HandleValidateSessionError(System.Int32,System.String)">
+            <summary>
+            Handle Session error.
+            </summary>
+            <param name="errorCode">An error code.</param>
+            <param name="errorMessage">An error message. </param>
+        </member>
+        <member name="M:X.Web.ApplicationStateManagerProviderBase.GetRequestData(System.Web.HttpContext,System.String,System.Boolean,System.Data.DataSet)">
+            <summary>
+            Returns request data that is massaged from raw data returned by ValidateSession.
+            </summary>
+            <param name="context">Current HttpContext.</param>
+            <param name="sessionID">Session ID.</param>
+            <param name="isNewSession">Indicates wether current request is starting new session.</param>
+            <param name="rawData">Raw data returned from ValidateSession.</param>
+            <returns>An instance of WebContextRequestData.</returns>
+        </member>
+        <member name="M:X.Web.ApplicationStateManagerProviderBase.GetUserData(System.Web.HttpContext,System.String,System.Boolean,X.Web.WebContextRequestData)">
+            <summary>
+            Returns request data that is massaged from raw data returned by ValidateSession.
+            </summary>
+            <param name="context">Current HttpContext.</param>
+            <param name="sessionID">Session ID.</param>
+            <param name="isNewSession">Indicates wether current request is starting new session.</param>
+            <param name="requestData">An instance of WebContextRequestData.</param>
+            <returns>An instance of WebContextUserData.</returns>
+        </member>
+        <member name="M:X.Web.ApplicationStateManagerProviderBase.CheckIfAJAXRequest(System.Web.HttpContext)">
+            <summary>
+            Check if the current request is AJAX request.
+            </summary>
+            <param name="context">Current HttpContext.</param>
+            <returns>A value indicates whether it is AJAX request.</returns>
+        </member>
+        <member name="M:X.Web.ApplicationStateManagerProviderBase.CreateWebContext(System.Web.HttpApplication,System.Web.HttpContext)">
+            <summary>
+            Creates WebContext instance.
+            </summary>
+            <param name="context">Current HttpContext.</param>
+            <returns>Creates WebContext instance.</returns>
+        </member>
+        <member name="M:X.Web.ApplicationStateManager.HandleValidateSessionError(System.Int32,System.String)">
+            <summary>
+            Handle Session error.
+            </summary>
+            <param name="errorCode">An error code.</param>
+            <param name="errorMessage">An error message. </param>
+        </member>
+        <member name="M:X.Web.ApplicationStateManager.GetRequestData(System.Web.HttpContext,System.String,System.Boolean,System.Data.DataSet)">
+            <summary>
+            Returns request data that is massaged from raw data returned by ValidateSession.
+            </summary>
+            <param name="context">Current HttpContext.</param>
+            <param name="sessionID">Session ID.</param>
+            <param name="isNewSession">Indicates wether current request is starting new session.</param>
+            <param name="rawData">Raw data returned from ValidateSession.</param>
+            <returns>An instance of WebContextRequestData.</returns>
+        </member>
+        <member name="M:X.Web.ApplicationStateManager.GetUserData(System.Web.HttpContext,System.String,System.Boolean,X.Web.WebContextRequestData)">
+            <summary>
+            Returns request data that is massaged from raw data returned by ValidateSession.
+            </summary>
+            <param name="context">Current HttpContext.</param>
+            <param name="sessionID">Session ID.</param>
+            <param name="isNewSession">Indicates wether current request is starting new session.</param>
+            <param name="requestData">Raw data returned from ValidateSession.</param>
+            <returns>An instance of WebContextRequestData.</returns>
+        </member>
+        <member name="M:X.Web.ApplicationStateManager.CheckIfAJAXRequest(System.Web.HttpContext)">
+            <summary>
+            Check if the current request is AJAX request.
+            </summary>
+            <param name="context">Current HttpContext.</param>
+            <returns>A value indicates whether it is AJAX request.</returns>
+        </member>
+        <member name="M:X.Web.ApplicationStateManager.CreateWebContext(System.Web.HttpApplication,System.Web.HttpContext)">
+            <summary>
+            Creates WebContext instance.
+            </summary>
+            <param name="context">Current HttpContext.</param>
+            <returns>Creates WebContext instance.</returns>
+        </member>
+        <member name="T:X.Web.UI.IPage">
+            <summary>
+            Defines common members of Page that used in X Framework applications. 
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.IPage.RegisterHeaderSection(System.String,System.String)">
+            <summary>
+            Allows output arbitrary content inside HTML Head tag.
+            </summary>
+            <param name="key">A key to identify the content.</param>
+            <param name="content">The arbitrary content that will be sent to the client.</param>
+        </member>
+        <member name="P:X.Web.UI.IPage.HasLayout">
+            <summary>
+            Gets or sets a value indicating whether the page has layout.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IPage.PageTitle">
+            <summary>
+            Gets or sets a value representing page title.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IPage.ModuleTitle">
+            <summary>
+            Gets or sets a value representing module title.
+            </summary>
+        </member>
+        <member name="T:X.Web.SessionState.HttpSessionState">
+            <summary>
+            Summary description for HttpSessionState.
+            </summary>
+        </member>
+        <member name="M:X.Web.SessionState.HttpSessionState.CreateSessionData(System.Data.DataSet)">
+            <summary>
+            Creates session data file
+            </summary>
+            <param name="sessionData">A DataSet contains current session data</param>
+        </member>
+        <member name="P:X.Web.SessionState.HttpSessionState.Contents">
+            <summary>
+            Gets a DataSet that holds app data returned from ValidateSession at every request.
+            </summary>
+        </member>
+        <member name="P:X.Web.SessionState.HttpSessionState.StartUpAppData">
+            <summary>
+            Gets a DataSet that holds app data returned from ValidateSession when session starts.
+            </summary>
+        </member>
+        <member name="T:X.Url">
+            <summary>
+            Summary description for Url.
+            </summary>
+        </member>
+        <member name="M:X.Url.UrlStripper(System.String,System.String)">
+            <summary>
+            Removes query string keys.
+            </summary>
+            <param name="keyNames">keys in comma delimited form</param>
+            <param name="url">source url string</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Url.UrlStripper(System.String,System.String,System.Boolean)">
+            <summary>
+            Removes query string keys.
+            </summary>
+            <param name="keyNames">keys in comma delimited form</param>
+            <param name="url">source url string</param>
+            <param name="removeHash">Indicates whether remove hash from url.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Url.UrlStripper(System.String,System.String,System.String)">
+            <summary>
+            Removes query string keys.
+            </summary>
+            <param name="keyNames">keys in comma delimited form</param>
+            <param name="url">source url string</param>
+            <param name="appendUrl">Appending Url</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Url.UrlStripper(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            Removes query string keys.
+            </summary>
+            <param name="keyNames">keys in comma delimited form</param>
+            <param name="url">source url string</param>
+            <param name="removeHash">Indicates whether remove hash from url.</param>
+            <param name="appendUrl">Appending Url</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Url.UrlStripper(System.String)">
+            <summary>
+            Removes query string keys.
+            </summary>
+            <param name="keyNames">keys in comma delimited form</param>
+            <returns></returns>
+        </member>
+        <member name="T:X.Web.IntegrationHelper">
+            <summary>
+            Integration Helper class.
+            </summary>
+        </member>
+        <member name="M:X.Web.IntegrationHelper.Render(System.Web.UI.Page,System.Web.UI.HtmlTextWriter,System.Action{System.Web.UI.HtmlTextWriter})">
+             <summary>
+             Injecting current page content into the placeholder defined in Master page. It is used to replace Page.Render method, see example for more details.
+             </summary>
+             <example>
+            private void RenderBase(HtmlTextWriter writer) {
+                base.Render(writer);
+            }
+            
+            protected override void Render(HtmlTextWriter writer) {
+                IntegrationHelper.Render(
+                    this,
+                    writer,
+                    RenderBase
+                );
+            }
+             </example>
+             <param name="page">Current page instance.</param>
+             <param name="writer">An instance of HtmlTextWriter that renders current page.</param>
+             <param name="renderModule">An anonymous method that renders current page.</param>
+        </member>
+        <member name="M:X.Web.IntegrationHelper.WebRequestGetResponseText(System.String,System.Boolean)">
+            <summary>
+            Retrieve content of specified Web resource.
+            </summary>
+            <param name="url">A specified Url.</param>
+            <returns>Returns content of specified Url.</returns>
+        </member>
+        <member name="M:X.Web.IntegrationHelper.WebRequestGetResponseText(System.String,System.Collections.Specialized.NameValueCollection,System.Boolean)">
+            <summary>
+            Retrieve content of specified Web resource.
+            </summary>
+            <param name="url">A specified Url.</param>
+            <param name="reqHeaders">A collection of request headers to send.</param>
+            <returns>Returns content of specified Url.</returns>
+        </member>
+        <member name="T:X.Web.UI.WebControls.RepeaterHelper">
+            <summary>
+            Summary description for Repeater.
+            </summary>
+        </member>
+        <member name="T:X.Web.Security.WebIdentity">
+            <summary>
+            Summary description for Identity.
+            </summary>
+        </member>
+        <member name="T:X.Web.Security.WebIdentityData">
+            <summary>
+            Holds WebIdentity's Data.
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.WebControls.TabStrip">
+            <summary>
+            Summary description for Tab.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.WebControls.TabStrip.HasClicked">
+            <summary>
+            Gets a value indicating whether the Tab Strip has been clicked.
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.IIntegrationMasterPage">
+            <summary>
+            Contracting MasterPage for integration purpose.
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.IIntegrationMasterPage.ProcessUILayoutPlaceHolderContent(System.String)">
+            <summary>
+            A method called by integration helper to proccess content retrieved from UI layout provider. Fixing Url path logic could be placed here.
+            </summary>
+            <param name="uiLayoutContent"></param>
+            <returns></returns>
+        </member>
+        <member name="P:X.Web.UI.IIntegrationMasterPage.TemplateCode">
+            <summary>
+            UI layout's template code (e.g. TT value for ASP X framework applications).
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IIntegrationMasterPage.IntegrationMode">
+            <summary>
+            Indicates whether integration mode is turned on.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IIntegrationMasterPage.UILayoutPlaceHolderUrl">
+            <summary>
+            Specifies Url of UI layout.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IIntegrationMasterPage.UILayoutPlaceHolderToken">
+            <summary>
+            Place holder token for injecting current page's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IIntegrationMasterPage.BeforeRenderModuleAction">
+            <summary>
+            Allows to emit custom content or client resources before rendering current page.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IIntegrationMasterPage.CacheItemKey">
+            <summary>
+            Gets or sets a key used to store proccessed UI layout content in Session object.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IIntegrationMasterPage.CacheTimeout">
+            <summary>
+            Gets or sets a timeout value of cache item. Default value is same as Session timeout.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.IIntegrationMasterPage.CacheInvalidated">
+            <summary>
+            Gets or sets a value to indicate whether the UI layout cache should be invalidated for current request. 
+            Default value is 'false'.
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.MasterPageBase`1">
+            <summary>
+            Summary description for MasterPageBase
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.MasterPageBase.FindControlManual(System.String)">
+            <summary>
+            Manually finds control according to specified pane ID.
+            </summary>
+            <param name="id">Expected control's ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Web.UI.MasterPageBase.FindControlRecursive(System.Web.UI.MasterPage,System.String,System.Type)">
+            <summary>
+            Finds control within master page recursively if nested master page presents.
+            </summary>
+            <param name="master">Starting master page. Passing null to indicate starting from current master page.</param>
+            <param name="ctrlID">Control's ID.</param>
+            <param name="controlType">Control type.</param>
+            <returns></returns>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.HtmlHeader">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds HTML head content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.HeaderPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application header's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.TopPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application top pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.SearchPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application search pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.DetailPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application detail pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.LeftPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application left pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.ModulePane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application module pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.RightPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application right pane's content.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.BottomPane">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.ContentPlaceHolder"></see> that holds the application bottom pane's content.
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.MasterPageBase.Pane">
+            <summary>
+            Pane 
+            </summary>
+        </member>
+        <member name="E:X.Web.UI.MasterPageBase.Pane.VisibleChanged">
+            <summary>
+            VisibleChanged event handler.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.Pane.Exists">
+            <summary>
+            Gets a value indicating whether the pane exists.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.Pane.UserControlPath">
+            <summary>
+            Gets or sets user control's relative path.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.MasterPageBase.Pane.ContentPlaceHolder">
+            <summary>
+            Gets the wrapped ContentPlaceHolder instance.
+            </summary>
+        </member>
+        <member name="T:X.Web.ApplicationStateModule">
+            <summary>
+            Session check class that implements IHttpModule interface
+            </summary>
+        </member>
+        <member name="M:X.Web.ApplicationStateModule.CreateApplicationStateManager">
+            <summary>
+            Creates Session State Data Access Object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:X.Web.ApplicationStateModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Register for HttpApplication events
+            </summary>
+            <param name="application"></param>		
+        </member>
+        <member name="M:X.Web.ApplicationStateModule.SessionCheck(System.Web.HttpContext,X.Web.WebContext)">
+            <summary>
+            Session check starts here
+            </summary>
+        </member>
+        <member name="M:X.Web.ApplicationStateModule.RaiseSessionStart">
+            <summary>
+            Raises the <see cref="E:X.Web.WebContext.Start"></see> event.
+            </summary>
+        </member>
+        <member name="M:X.Web.ApplicationStateModule.RaiseSessionAuthorizeComplete(System.Boolean)">
+            <summary>
+            Raises the <see cref="E:X.Web.WebContext.AuthorizeComplete"></see> event.
+            </summary>
+        </member>
+        <member name="M:X.Web.ApplicationStateModule.ResetPerRequestFields">
+            <summary>
+            Reset Per-Request Fields
+            </summary>
+        </member>
+        <member name="M:X.Web.ApplicationStateModule.InitializeRequest(System.Web.HttpApplication,System.Web.HttpContext)">
+            <summary>
+            Initialize request.
+            </summary>
+        </member>
+        <member name="M:X.Web.ApplicationStateModule.OneTimeInit(System.Web.HttpApplication)">
+            <summary>
+            One time initialization.
+            </summary>
+        </member>
+        <member name="E:X.Web.ApplicationStateModule.Start">
+            <summary>
+            Start event.
+            </summary>
+        </member>
+        <member name="E:X.Web.ApplicationStateModule.Error">
+            <summary>
+            Error event.
+            </summary>
+        </member>
+        <member name="E:X.Web.ApplicationStateModule.AuthorizeComplete">
+            <summary>
+            Authenticate Request event.
+            </summary>
+        </member>
+        <member name="T:X.Web.WebContextRequestData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:X.Error.ErrorHandler">
+            <summary>
+            Summary description for ErrorHandler.
+            </summary>
+        </member>
+        <member name="F:X.Web.WebContext._rqSessionStateEnabled">
+            <summary>
+            Determine whether enable session state for current request. 
+            </summary>
+        </member>
+        <member name="M:X.Web.WebContext.ResetPerRequestFields">
+            <summary>
+            Reset Per-Request Fields
+            </summary>
+        </member>
+        <member name="M:X.Web.WebContext.InitializeRequest(System.Web.HttpApplication,System.Web.HttpContext)">
+            <summary>
+            Initialize request.
+            </summary>
+        </member>
+        <member name="P:X.Web.WebContext.User">
+            <summary>
+            Get or set security information for current HTTP request
+            </summary>
+        </member>
+        <member name="P:X.Web.WebContext`4.User">
+            <summary>
+            Get or set security information for current HTTP request
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.ClientScriptHelper">
+            <summary>
+            Holds helper methods for client scripts.
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.ClientScriptHelper.RegisterCallbackHelper(X.Web.UI.PageBase)">
+            <summary>
+            Emits script to fix/help callback calls.
+            </summary>
+            <param name="page">current page.</param>
+        </member>
+        <member name="M:X.Web.UI.ClientScriptHelper.RaiseCallbackOnError(System.String)">
+            <summary>
+            Raise OnError event with message and terminate current request.
+            </summary>
+            <param name="message">Message to output.</param>
+        </member>
+        <member name="T:X.Web.OfflineModule">
+            <summary>
+            Session check class that implements IHttpModule interface
+            </summary>
+        </member>
+        <member name="M:X.Web.OfflineModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Register for HttpApplication events
+            </summary>
+            <param name="application"></param>		
+        </member>
+        <member name="T:X.Web.UI.PageBase`2">
+            <summary>
+            Provides a abstract Web Forms page template.
+            </summary>
+        </member>
+        <member name="F:X.Web.UI.PageBase.ensureCookiesEnabled">
+            <summary>
+            indicates whether to ensure client browser enabling cookies
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.PageBase.IsHeaderSectionRegistered(System.String)">
+            <summary>
+            Determines if the header section is registered with the page.
+            </summary>
+            <param name="key">The string key of the header section to search for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterHeaderSection(System.String,System.String)">
+            <summary>
+            Allows output arbitrary content inside HTML Head tag.
+            </summary>
+            <param name="key">A key to identify the content.</param>
+            <param name="content">The arbitrary content that will be sent to the client.</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptEvent(System.String,System.Web.UI.Control,System.String,System.String)">
+            <summary>
+            Registers a client side javascript event handler
+            </summary>
+            <param name="eventName">The event to handle</param>
+            <param name="ctrl">The control to apply this handler to. The ClientID of the control is used to identify the script, if a script is already registered using this key then the 
+            previous script is replaced</param>
+            <param name="script">The script to run</param>
+            <param name="language">The script's language</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptEvent(System.String,System.Web.UI.Control,System.String)">
+            <summary>
+            Registers a client side javascript event handler
+            </summary>
+            <param name="eventName">The event to handle</param>
+            <param name="ctrl">The control to apply this handler to. The ClientID of the control is used to identify the script, if a script is already registered using this key then the 
+            previous script is replaced</param>
+            <param name="script">The script to run</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptEvent(System.String,System.String,System.String,System.String)">
+            <summary>
+            Registers a client side javascript event handler
+            </summary>
+            <param name="key">script key. If a script is already registered using this key then the 
+            previous script is replaced</param>
+            <param name="eventName">The event to handle</param>
+            <param name="ctrlName">The name of the HTML element(s) to apply this handler to</param>
+            <param name="script">The script to run</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptEvent(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Registers a client side javascript event handler
+            </summary>
+            <param name="key">script key. If a script is already registered using this key then the 
+            previous script is replaced</param>
+            <param name="eventName">The event to handle</param>
+            <param name="ctrlName">The name of the HTML element(s) to apply this handler to</param>
+            <param name="script">The script to run</param>
+            <param name="language">The script's language</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptFile(System.String,System.String)">
+            <summary>
+            Registers a client side javascript file include
+            </summary>
+            <param name="key">Script key. If a script file is already registered using this key then the previous script is replaced</param>
+            <param name="file">The javascript include file to reference</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptFile(System.String,System.String,System.String)">
+            <summary>
+            Registers a client side javascript file include
+            </summary>
+            <param name="key">Script key. If a script file is already registered using this key then the previous script is replaced</param>
+            <param name="file">The javascript include file to reference</param>
+            <param name="language">The script's language</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptFile(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Registers a client side javascript file include
+            </summary>
+            <param name="key">Script key. If a script file is already registered using this key then the previous script is replaced</param>
+            <param name="file">The javascript include file to reference</param>
+            <param name="language">The script's language</param>
+            <param name="defer">Whether or not the script should be run after the page has fully loaded</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptBlock(System.String,System.String,System.String)">
+            <summary>
+            Registers a client side javascript block. The block is automatically surrounded by &lt;script> tags
+            </summary>
+            <param name="key">Script key.</param>
+            <param name="script">The javascript to include.</param>
+            <param name="language">The script's language</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterClientScriptBlock(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Registers a client side javascript block. The block is automatically surrounded by &lt;script> tags
+            </summary>
+            <param name="key">Script key.</param>
+            <param name="script">The javascript to include.</param>
+            <param name="language">The script's language</param>
+            <param name="defer">Whether or not the script should be run after the page has fully loaded</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterStartupScript(System.String,System.String,System.String)">
+            <summary>
+            Registers a startup client side javascript block. The block is automatically surrounded by &lt;script> tags
+            </summary>
+            <param name="key">Script key.</param>
+            <param name="script">The javascript to include.</param>
+            <param name="language">The script's language</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.RegisterStartupScript(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Registers a startup client side javascript block. The block is automatically surrounded by &lt;script> tags
+            </summary>
+            <param name="key">Script key.</param>
+            <param name="script">The javascript to include.</param>
+            <param name="language">The script's language</param>
+            <param name="defer">Whether or not the script should be run after the page has fully loaded</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.SetDefaultButton(System.Web.UI.Control)">
+            <summary>
+            Allows to set default submit button/image button.
+            </summary>
+            <param name="button">A button or image button to set for default; or passing null to prevent the form get submitted when press Enter key.</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.SetFocus(System.Web.UI.Control,System.Boolean)">
+            <summary>
+            Allows to set focus on a control.
+            </summary>
+            <param name="control">A control that will have focus.</param>
+            <param name="selectAll">Indicates if select the content of the control is needed.</param>
+        </member>
+        <member name="M:X.Web.UI.PageBase.EventFired(System.Web.UI.Control)">
+            <summary>
+            Check if the current event is fired at the specified control.
+            </summary>
+            <param name="ctrl">The control firing the event.</param>
+            <returns></returns>
+        </member>
+        <member name="M:X.Web.UI.PageBase.EventFired(System.Web.UI.Control,System.Boolean)">
+            <summary>
+            Check if the current event is fired at the specified control or its child controls.
+            </summary>
+            <param name="ctrl">The control firing the event.</param>
+            <param name="includeChildControls">Indicates whether to check if the event is also fired by the child controls.</param>
+            <returns></returns>
+        </member>
+        <member name="P:X.Web.UI.PageBase.HasLayout">
+            <summary>
+            Gets or sets a value indicating whether the page has layout.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.PageBase.DefaultMasterPageFile">
+            <summary>
+            Gets or sets the default MasterPage to apply on the current page.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.PageBase.DefaultTheme">
+            <summary>
+            Gets or sets the default Theme to apply on the current page.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.PageBase.DefaultStyleSheetTheme">
+            <summary>
+            Gets or sets the default StyleSheetTheme to apply on the current page.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.PageBase.EnableTemplateUrlParam">
+            <summary>
+            Gets or sets a <see cref="T:System.Boolean"/> value indicating whether the MasterPageFile value can be changed from Url parameter (TT).
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.PageBase.WebContext">
+            <summary>
+            Gets the X.Web.WebContext object associated with the page.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.PageBase`2.WebContext">
+            <summary>
+            Gets the X.Web.WebContext object associated with the page.
+            </summary>
+        </member>
+        <member name="P:X.Web.UI.PageBase`2.Master">
+            <summary>
+            Gets the X.Web.UI.MasterPageBase object associated with the page.
+            </summary>
+        </member>
+        <member name="T:X.Configuration.Request">
+            <summary>
+            Summary description for Request.
+            </summary>
+        </member>
+        <member name="P:X.Configuration.Request.AJAXRequest">
+            <summary>
+            Gets a value indicating whether the page was requested thru AJAX.
+            </summary>
+        </member>
+        <member name="T:X.Web.UI.WebControls.HyperLinkHelper">
+            <summary>
+            Summary description for WebControls.
+            </summary>
+        </member>
+        <member name="M:X.Web.UI.WebControls.HyperLinkHelper.CreateSortLinkButton(System.String,System.String,System.Boolean,System.Web.UI.Control)">
+            <summary>
+            Creates a link button that raises DataGrid SortCommand event.
+            </summary>
+            <returns>A link button.</returns>
+        </member>
+        <member name="M:X.Web.UI.WebControls.HyperLinkHelper.CreateSortLinkButton(System.String,System.String)">
+            <summary>
+            Creates a link button that raises DataGrid SortCommand event.
+            </summary>
+            <returns>A link button.</returns>
+        </member>
+        <member name="T:X.Web.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:X.Web.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:X.Web.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:X.Web.Resources.ApplicationState_ManagerProvider_Missing">
+            <summary>
+              Looks up a localized string similar to Missing application state manager provider &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:X.Web.Resources.SessionState_HttpModule_AlreadyInit">
+            <summary>
+              Looks up a localized string similar to The HttpModule has already been initialized; its &apos;Init&apos; method can only be executed by ASP.NET framework..
+            </summary>
+        </member>
+        <member name="P:X.Web.Resources.SessionState_SessionID_Cannot_Be_Null">
+            <summary>
+              Looks up a localized string similar to Session ID cannot be null..
+            </summary>
+        </member>
+        <member name="P:X.Web.Resources.SessionState_SessionIDManager_uninit">
+            <summary>
+              Looks up a localized string similar to SessionIDManager is not initialized. Call Initialize() method first..
+            </summary>
+        </member>
+        <member name="P:X.Web.Resources.SessionState_WebContextModule_NotFound">
+            <summary>
+              Looks up a localized string similar to The HttpModule named &apos;Session&apos; is not type of &apos;X.Web.ApplicationStateModule&apos;. Please remove the system &apos;Session&apos; HttpModule and add new one with type of &apos;X.Web.ApplicationStateModule&apos;..
+            </summary>
+        </member>
+        <member name="P:X.Web.Resources.WebContext_Not_Init">
+            <summary>
+              Looks up a localized string similar to &apos;WebContext&apos; is not initialized..
+            </summary>
+        </member>
+    </members>
+</doc>

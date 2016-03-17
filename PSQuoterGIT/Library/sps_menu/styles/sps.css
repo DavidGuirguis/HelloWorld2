@@ -1,0 +1,1571 @@
+.ms-MenuUILabelFont
+{
+    FONT-SIZE: 66.67%; 
+    FONT-FAMILY: Verdana, sans-serif;
+    text-decoration:none;
+}
+
+input
+{
+    font-size: 8pt; 
+}
+.ms-input
+{
+    font-family: Verdana, sans-serif; 
+}
+table.ms-toolbar
+{
+   background-image: url(/_layouts/images/toolgradp.gif);
+   border: 1px solid #DCE3EB;
+   background-color: #DCE3EB;
+}
+.ms-bannerframe, .ms-GRHeaderBackground, .ms-storMeFree
+{ 
+    background-image: none;
+}
+.ms-navframe, .ms-GRStatusBar
+{
+	background-image: url(/_layouts/images/vgradp.gif);
+	background-color: #FBFBFd;
+        BACKGROUND-REPEAT: repeat-y;
+}
+.ms-navwatermark
+{
+    color: #CACED5;
+}
+.ms-navwatermarktext
+{
+    width: 139pt;
+    height: 17.25pt;
+    rotation: -90;
+}
+.ms-selectednav, .ms-GRSortFilter
+{
+   	width: 100%;
+	padding-bottom: 4px; 
+	padding-top: 2px; 
+	color: #000000 ; 
+	border-color: #B0C0D0;  
+	border-style: solid; 
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 1px; 
+	background-color: #Ffffff;
+	margin-left:0px;	
+	margin-right:4px;
+
+}
+.ms-selectednav A, .ms-GRSortFilter A{
+	OVERFLOW: hidden; 
+	TEXT-OVERFLOW: ellipsis; 
+}
+.ms-unselectednav
+{
+   border: none;
+   width: 100%;
+   padding-bottom: 4px; 
+   padding-top: 1px
+
+}
+.ms-unselectednav a:link 
+{
+width: 100px;
+overflow: hidden;
+text-overflow:ellipsis;
+color: #003399
+}
+
+.ms-unselectednav a:visited 
+{
+width: 100px;
+overflow: hidden;
+text-overflow:ellipsis;
+color: #003399
+}
+Div.ms-titleareaframe
+{
+    border-top: 3px solid #4E7DD1;
+    background-image: url(/_layouts/images/headcornerp.gif);
+    background-repeat: no-repeat;
+}
+.ms-titlearealine, .ms-storMeEstimated
+{
+    background-color: #D8E0EB;
+}
+.ms-pagetitle
+{
+    color: #131FA5;  
+}
+.ms-partline
+{
+    background-color: #C3D4E6;
+}
+.UserToolbar
+{
+   background-image: url(/_layouts/images/toolgradp.gif);
+   border: 1px solid #DCE3EB;
+}
+
+.ms-WPBorder
+{
+    border-width: 0px;
+}
+.ms-ToolPaneFrame .ms-HoverCellInActiveDark
+{
+    border: solid 1px #2254b1;
+}
+.ms-PartSpacingVertical
+{
+    margin-top: 12px;
+}
+.ms-PartSpacingHorizontal
+{
+    width: 22px;
+}
+.ms-WPHeader
+{
+    background-image: url(/_layouts/images/partgradp.gif);
+   background-color: #ffffff;
+   BORDER-TOP:  solid 1px #FEE8CA; 
+}
+.ms-smallheader
+{
+   color: #000000;
+}
+
+.ms-tabselected 
+{
+   color: #ffffff; 
+}
+.ms-stylelabel
+{
+	color: #C0C0C0; 
+}
+.ms-alternating
+{
+    background-color: #ECF4FE;
+}
+
+.ms-spaceBetContentAndButton
+{
+   height:10px;
+}
+.ms-ButtonHeightWidth
+{
+   height:24px;
+   width :100px;
+}
+.ms-SpaceBetButtons
+{
+   width :10px;
+}
+.ms-summarycustombody {
+   margin-left: 6px;
+   margin-top: 5px;
+   margin-right: 6px;
+}
+.ms-summarystandardbody {
+   margin-left: 2px;
+   margin-top: 5px;
+   margin-right: 6px;
+}
+
+.ms-custhdr
+{
+	display : none;
+}
+
+.ms-sitehdr 
+{
+BACKGROUND-POSITION: left center; 
+BACKGROUND-IMAGE: url(/_layouts/images/sitehdr.gif); 
+WIDTH: 100%; 
+BACKGROUND-REPEAT: repeat-y; 
+BACKGROUND-COLOR: #646464; 
+padding-left: 5px;
+padding-right: 0px; 
+padding-top:4px; 
+padding-bottom:4px;
+}
+.ms-farmhdr
+{
+BACKGROUND-POSITION: left center; 
+BACKGROUND-IMAGE: url(/_layouts/images/sitehdr.gif); 
+WIDTH: 100%; 
+BACKGROUND-REPEAT: repeat-y; 
+BACKGROUND-COLOR: #646464; 
+padding-left: 5px;
+padding-right: 0px;
+padding-top:4px; 
+padding-bottom:4px;
+}
+.ms-vspacer 
+{
+	padding-right: 9px; padding-left: 7px; WIDTH: 124px;border-right:1px solid #D4DCE6;
+	font-family: Verdana, sans-serif;
+	font-size: 8pt;
+}
+.ms-vspacer a
+{
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    color: #003399;
+}
+.ms-colspace {
+	padding-left: 0px;
+	padding-right: 5px;
+}
+.ms-formwidth {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 8px; WIDTH: 400px; PADDING-TOP: 0px;
+}
+.ms-formspacer {
+	WIDTH: 20px; HEIGHT: 5px
+}
+.ms-errorinl {
+	FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: verdana, sans-serif
+}
+
+.ms-ptable1
+{
+ background-color : #f6f6f6;
+	border: 1px solid #e1e1e1;
+	padding-top:10px;
+	padding-bottom: 15px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.ms-ptable2
+{
+	border:1px solid #efefef;
+	padding-top:12px;
+	padding-bottom: 15px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.ms-ptabarea {
+	margin-top: 4px;
+}
+
+.ms-ptabln {
+	background-image: url(/_layouts/images/tablnk.gif); background-repeat: repeat-y; background-color: #ffffff;
+}
+.ms-ptablnb {
+}
+.ms-ptablf {
+	background-image: url(/_layouts/images/tablfk.gif); background-repeat: repeat-y; background-color: #ffffff;
+}
+.ms-ptablfb {
+}
+
+.ms-ptabmff {
+	background-image: url(/_layouts/images/tabmffk.gif); background-repeat: repeat-y; background-color: #ffffff;
+}
+.ms-ptabmffb {
+}
+
+.ms-ptabmfn {
+	background-color: #ffffff; background-image: url(/_layouts/images/tabmfnk.gif); background-repeat: repeat-y;
+}
+.ms-ptabmfnb {
+}
+
+.ms-ptabmnf {
+	background-image: url(/_layouts/images/tabmnfk.gif); background-repeat: repeat-y; background-color: #ffffff;
+}
+.ms-ptabmnfb {
+}
+
+.ms-ptabrn {
+	background-image: url(/_layouts/images/tabrnk.gif); background-repeat: repeat-y;
+}
+.ms-ptabrnb {
+}
+.ms-ptabrf {
+	background-image: url(/_layouts/images/tabrfk.gif); background-repeat: repeat-y; background-color: #ffffff
+}
+.ms-ptabrfb {
+}
+
+.ms-ptabcn {
+	background-color: #ffffff; border-color: #b4b4b4 #ffffff #ffffff; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;
+	font-family: Verdana, Arial, Helvetica; font-size: 0.7em; font-style: normal; font-weight: normal;
+	padding-bottom: 4px; padding-top: 1px; color: #000000 ; vertical-align: middle; text-align: left;
+}
+.ms-ptabcn A:link, .ms-ptabon A:visited {
+	text-decoration: none; color: #595959; font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal;
+}
+.ms-ptabcn A:hover {
+	text-decoration: underline; font-family : Verdana, Arial, Helvetica, sans-serif; color: #FF0000; font-style: normal;
+}
+.ms-ptabcnb {
+	background-color: #ffffff;
+}
+
+.ms-ptabcf {
+	background-color: #d9e3e6; border-color: #b4b4b4 #ffffff #ffffff; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;
+	font-family: Verdana, Arial, Helvetica; font-size: 0.7em; font-style: normal; font-weight: normal;
+	padding-bottom: 4px; padding-top: 1px; color: #000000 ; vertical-align: middle; text-align: left;
+}
+.ms-ptabcf A:link, .ms-ptaboff A:visited {
+	text-decoration: none; color: #595959; font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal;
+}
+.ms-ptabcf A:hover {
+	text-decoration: underline; font-family : Verdana, Arial, Helvetica, sans-serif; color: #FF0000; font-style: normal;
+}
+.ms-ptabcfb {
+	background-color: #b4b4b4;
+}
+
+.ms-phnav1wrapper {
+	background-image: url(/_layouts/images/topgrad.gif);
+	WIDTH: 100%; 
+	border-top: 1px #7795CB solid;
+	background-color: #00248C;
+	BACKGROUND-REPEAT: repeat-x;
+}
+
+.ms-phnavtableone 
+{
+	 padding-top: 3px; 
+	 padding-right: 4px; 
+	 padding-bottom: 5px; 
+	 padding-left: 4px;
+}
+
+.ms-phnavtableone a
+{
+	 font-family: Tahoma; 
+	 font-size: 70%; 
+	 font-style: normal; 
+	 font-weight: bold; 
+	 color: #ffffff; 
+	 text-decoration: none; 
+}
+.ms-phnavtableone a:hover
+{
+	text-decoration:underline;
+}
+
+.ms-phnavmidc1, .ms-phnavmidc0
+{
+	 padding-top: 1px; 
+	 padding-right: 8px; 
+	 padding-bottom:2px; 
+	 padding-left: 8px;
+}
+
+.ms-phnavmidc1sel, .ms-phnavmidc0sel
+{
+	 padding-top: 1px; 
+	 padding-right: 8px; 
+	 padding-bottom:2px; 
+	 padding-left: 8px;
+	 background-color:#5284DE;
+	 background-image: url(/_layouts/images/navgradp.gif);
+	 background-repeat: repeat-x;
+	 BORDER-top: #00238B 1px solid;
+	 BORDER-left: #00238B 1px solid;
+	 BORDER-bottom: #578CEB 1px solid;
+	 BORDER-right: #578CEB 1px solid; 
+}
+
+.ms-phnavmidc1sel a,.ms-phnavmidc0sel a
+{
+	 font-family: Tahoma; 
+	 font-size: 70%; 
+	 font-style: normal; 
+	 font-weight: bold; 
+	 color: #131FA5; 
+	 text-decoration: none; 	
+}
+
+.ms-phnavmidc1sel a:hover,.ms-phnavmidc0sel a:hover
+{
+	 text-decoration: underline; 
+}
+
+.ms-phnavtopl1sel, .ms-phnavtopr1sel, .ms-phnavbotl1sel, .ms-phnavbotr1sel, .ms-phnavtopl0sel, .ms-phnavtopr0sel, .ms-phnavbotl0sel, .ms-phnavbotr0sel
+{
+
+   	background-repeat: no-repeat; 
+	height: 2px; 
+	width: 2px;
+}
+
+.ms-pageidi
+{
+	height: 55px; 
+	width: 125px; 
+	text-align: center; 
+	vertical-align: bottom; 
+	padding-bottom: 2px
+}
+
+.ms-pageidpt
+{
+	vertical-align: bottom; 
+	padding-bottom: 4px;
+	padding-left: 0px;
+	padding-right: 20px
+}
+
+.ms-pageidta
+{
+	padding-top: 7px;
+	height: 20px;
+}
+
+.ms-sblbcorner 
+{  
+	background-color: #FFFFFF; 
+	background-image: url(/_layouts/images/cornerbl.gif); 
+	background-repeat: no-repeat; 
+	background-position: right top; 
+	padding-left: 0px;	
+	padding-right: 5px; 
+	padding-bottom: 4px
+}
+.ms-sblbcornerRTL
+{  
+	background-color: #FFFFFF; 
+	background-image: url(/_layouts/images/cornerbRTL.gif); 
+	background-repeat: no-repeat; 
+	background-position: right top; 
+	padding-left: 0px;
+	padding-right: 5px; 
+	padding-bottom: 4px
+
+}
+
+.ms-sbtopcorner 
+{  
+	background-color: #FFFFFF; 
+	background-image: url(/_layouts/images/cornertop.gif); 
+	background-repeat: no-repeat; 
+	background-position: left top; 
+	border-bottom-width: 0px;
+}
+
+.ms-sbtopcornerRTL
+{  
+	background-color: #FFFFFF; 
+	background-image: url(/_layouts/images/cornertopRTL.gif); 
+	background-repeat: no-repeat; 
+	background-position: left top; 
+	border-bottom-width: 0px;
+}
+
+.ms-sbtable 
+{ 
+	background-color: #4e7dd1; font-family: Verdana; font-size: .7px; font-style: normal; font-weight: normal
+}
+
+.ms-sbtabletransparent
+{ 
+	font-family: Verdana; font-size: .7px; font-style: normal; font-weight: normal
+}
+
+.ms-sbgo 
+{  
+	padding-right: 14px; padding-left: 4px
+}
+
+.ms-sbrow 
+{ 
+	margin-top: 3px ; margin-bottom: 1px ; height : 24px ; border: 0px;
+}
+
+.ms-sbdropdown
+{
+	height:20px; width:128px;
+}
+
+.ms-sbkeyword
+{  
+	border: 1px solid #7f9db9; height: 19px;
+}
+
+.ms-sbcellwhite100
+{ 
+	width: 100%;
+}
+
+.ms-sbcellwhite
+{ 
+}
+
+.ms-sbPropOpDropDown
+{
+	width: 100px;
+}
+
+.ms-sbSources1stCell
+{
+	width: 210px;
+	padding-left:16px;
+}
+
+.ms-sbSources2ndCell
+{
+	width: 210px;
+	padding-left:20px;
+}
+
+.ms-sbSourcesOneCell
+{
+	width: 440px;
+	padding-left:16px;
+}
+
+.ms-dmiFirstCell
+{
+	width: 128px; height: 21px; margin-right:20px;	margin-left:0px;
+}
+
+.ms-location
+{
+	font-size: 8pt;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	color: #000000; 
+	text-decoration: none; 
+	text-decoration: none;
+	margin-left: 6px;
+	margin-right: 1px;
+	width:125px;
+}
+
+.ms-location a:link, .ms-location a:visited  
+{
+	font-size: 8pt;
+    font-family: Verdana, sans-serif;
+    font-weight: normal;
+    text-align: left;
+	text-decoration: none; 
+	color: #003399;
+	text-decoration: none;
+}
+
+.ms-location a:hover 
+{
+	text-decoration: underline;
+}
+
+.ms-locationhead 
+{
+    font-size: 8pt;
+    font-family: Verdana, sans-serif;
+    text-align: left;
+    color: black;
+	padding-top:10px;
+	text-decoration: none;
+	background-image: url(/_layouts/images/dot_rule.gif); 
+	background-repeat: repeat-x; 
+	background-position: left bottom;  
+	padding-bottom: 2px;
+	padding-top: 5px;
+}
+
+.ms-locationicon 
+{
+	width: 1px; 
+	padding-top: 5px; 
+	padding-right: 7px; 
+	background-image: url(/_layouts/images/arrow.gif); 
+	background-repeat: no-repeat; 
+	background-position: left top;
+	padding-left:4px;
+}
+
+.ms-locationbutton 
+{
+	width: 100%;
+	padding-bottom: 4px; 
+	padding-top: 1px
+}
+
+.ms-locationiconsel 
+{
+	border: #B0C0D0 solid; 
+	padding-left: 1px; 
+	background-color: #FFFFFF; 
+	padding-top: 5px; 
+	border-top-width: 1px; 
+	border-right-width: 0px; 
+	border-bottom-width: 1px; 
+	border-left-width: 1px; 
+	padding-right: 2px
+}
+
+.ms-locationbuttonsel 
+{
+	width: 100%;
+	padding-bottom: 4px; 
+	padding-top: 2px; 
+	color: #000000 ; 
+	border-color: #B0C0D0;  
+	border-style: solid; 
+	border-top-width: 1px; 
+	border-right-width: 1px; 
+	border-bottom-width: 1px; 
+	border-left-width: 0px; 
+	background-color: #Ffffff;
+	margin-left:0px;	
+	margin-right:4px;
+	padding-left: 0px;	
+	padding-right: 2px;
+}
+
+.ms-locationbuttonsel A {
+	OVERFLOW: hidden; 
+	WIDTH: 100px; 
+	TEXT-OVERFLOW: ellipsis; 
+}
+
+.ms-locationbutton A {
+	OVERFLOW: hidden; 
+	WIDTH: 100px; 
+	TEXT-OVERFLOW: ellipsis; 
+}
+
+.ms-pvnav
+{
+	margin-left:4px;
+	margin-right:0px;
+	padding-left:0px;	
+	padding-right:0px;
+}
+
+.Ms-pvnavtableone1
+{
+	padding-left:6px;
+	padding-right:0px;
+}
+
+.ms-navheader
+{
+	font-size: 8pt;
+	font-weight:bold;
+	font-family: Verdana, sans-serif;
+	text-align: left;
+	color: black;
+	background-image: url(/_layouts/images/dot_rule.gif); 
+	background-repeat: repeat-x; 
+	background-position: left bottom; 
+	padding-bottom: 2px;
+	padding-top: 5px
+}
+
+.ms-pvnavmidL1 
+{ 
+	width: 1px; 
+	padding-bottom: 0px; 
+	padding-left: 0px;
+	padding-right: 17px; 
+	background-image: url(/_layouts/images/vnavicon.gif); 
+	background-repeat: no-repeat; 
+	background-position: left top
+}
+
+.ms-pvnavmidC1 
+{ 
+font-family: Verdana; font-size: .7em; font-style: normal; font-weight: normal; color: #000000; padding-top: 1px; padding-right: 0px; padding-bottom: 2px; padding-left: 0px ; text-align: left
+}
+
+.ms-pvnavmidC1 a:link 
+{
+width: 100px;
+overflow: hidden;
+text-overflow:ellipsis;
+text-decoration: none; 
+color: #003399
+}
+
+.ms-pvnavmidC1 a:visited 
+{
+width: 100px;
+overflow: hidden;
+text-overflow:ellipsis;
+text-decoration: none; 
+color: #003399
+}
+.ms-pvnavmidC1 a:hover 
+{
+text-decoration: underline; 
+color: #003399
+}
+.Ms-pvnavmidr1,.Ms-pvnavtopr1,.Ms-pvnavbotr1 
+{
+width:0px;
+margin : 0px;
+padding: 0px;
+}
+
+.ms-pvtb {
+ 	font-family : Verdana;  
+ 	 	font-style : normal; 
+ 	font-weight: normal;
+ 	text-decoration: none;
+ 	color: #999999;
+	padding-left: 0px; 	
+ 	 	padding-right:20px;
+ 	 	margin-left:4px;
+ 	 	margin-right:0px; 	 	
+}
+
+.ms-pvtb a:link, .ms-pvtb a:visited 
+{
+	color: #003399; 
+ 	text-decoration: none;
+}
+.ms-pvtb a:hover 
+{
+	TEXT-DECORATION: underline;
+
+}
+
+.ms-pvtbt 
+{
+	font-size : .7em;  
+	font-weight: bold;  
+	background-image: url(/_layouts/images/dot_rule.gif); 
+	background-repeat: repeat-x; 
+	background-position: left bottom;  
+	padding-bottom: 2px; 
+	padding-top:12px;
+	padding-left: 0px;	
+	padding-right:6px;
+	color:#000000;
+}
+
+.ms-pvtbicon { width: 1px; padding-top: 5px; padding-right: 10px; background-image: url(/_layouts/images/rtbullet.gif); background-repeat: no-repeat; background-position: left top; padding-left: 0px}
+
+.ms-pvtbbutton
+{
+	padding-top: 2px; 
+	padding-bottom: 4px; 
+	padding-left: 0px;
+	padding-right: 0px;	
+	text-decoration: none;	
+	vertical-align: top;
+	font-family : Verdana;  
+	font-style : normal; 
+	font-weight: normal;
+	font-size : .7em;  
+	color: #003399; 
+ 	text-decoration: none;
+}
+
+.ms-pvtbbutton a:link, .ms-pvtbbutton a:visited 
+{
+	color: #003399;
+	text-decoration: none;
+}
+
+.ms-pvtbbutton a:hover
+{
+ 	text-decoration: underline;
+}
+
+.ms-view 
+{  
+	padding-top: 14px;
+	width:125px;
+	margin-left: 4px;
+ 	margin-right:0px;	
+}
+
+.ms-viewhead 
+{ 
+	background-image: url(/_layouts/images/dot_rule.gif); 
+	background-repeat: repeat-x; 
+	background-position: left bottom; 
+	font-family: Tahoma; 
+	font-size: .7em; font-style: normal; padding-bottom: 2px;margin-bottom:4px;
+	font-weight:bold;
+}
+
+.ms-viewbutton 
+{ 
+	font-family: Tahoma; 
+	font-size: 0.7em; 
+	font-style: normal; 
+	font-weight: normal; 
+	padding-bottom: 4px; 
+	padding-top: 1px; 
+	color: #000000 ; 
+	vertical-align: top 
+}
+.ms-viewbutton a:link, .ms-viewbutton a:visited
+{ 
+	text-decoration: none; 
+	color: #003399
+}
+
+.ms-viewbutton a:hover 
+{ 
+	text-decoration:underline 
+}
+
+.ms-viewicon 
+{ 
+	width: 7px; 
+	padding-top: 5px; 
+	padding-right: 3px; 
+	padding-left: 1px 
+}
+
+.ms-viewiconsel 
+{ 
+	border: #B0C0D0 solid; 
+	padding-left: 1px; 
+	background-color: #FFFFFF; 
+	padding-top: 5px;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	padding-right: 2px 
+}
+
+.ms-viewbuttonsel 
+{ 
+font-family: Tahoma; 
+font-size: .7em; 
+font-style: normal; 
+font-weight: normal; 
+text-decoration: none; 
+padding-bottom: 4px; 
+padding-top: 2px; 
+color: #000000 ; 
+border-color: #B0C0D0; 
+border-style: solid; 
+border-top-width: 1px; 
+border-right-width: 1px; 
+border-bottom-width: 1px; 
+border-left-width: 0px; 
+background-color: #FFFFFF 
+}
+
+.ms-viewbuttonsel a
+{
+	color: #000000 ; 
+	text-decoration: none; 
+}
+
+.ms-viewbuttonsel a:hover
+{
+	color: #000000 ; 
+	text-decoration: underline; 
+}
+
+.ms-catdesc 
+{
+	WIDTH: 100%;
+}
+
+.ms-catdescicon 
+{
+	PADDING-BOTTOM: 10px; 
+	PADDING-TOP: 10px;
+	PADDING-RIGHT: 12px;
+	PADDING-LEFT: 5px;
+	WIDTH: 1px;
+}
+
+.ms-catdescimage
+{
+	PADDING-RIGHT: 8px; 
+	PADDING-LEFT: 10px; 
+	WIDTH: 1px;
+}
+
+.ms-catdesctext
+{
+	PADDING-RIGHT: 12px; 
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 10px; 
+	PADDING-TOP: 10px;
+}
+
+.ms-contactbox
+{
+	VERTICAL-ALIGN: top; 
+	WIDTH: 295px;
+}
+
+.ms-contactboxbg {
+	border: solid 1 px #DEDEDE;
+	BACKGROUND-COLOR: #f3f3f3; 
+	VERTICAL-ALIGN: top; 
+	width: 100%;
+	height: 100%;
+	PADDING-TOP: 10px;
+	PADDING-BOTTOM: 10px; 		
+}
+
+.ms-catdesccontact
+{
+	padding-right: 10px;
+	padding-left: 6px;
+	word-wrap:break-word;
+}
+
+.ms-srchtzmrdiv
+{
+}
+
+.ms-catindent 
+{
+	PADDING-RIGHT: 5px;
+	padding-left: 0px;	
+	PADDING-BOTTOM: 0px
+}
+
+.ms-toc
+{
+	margin-left:4px;
+	margin-right:0px;
+}	
+
+.ms-toccat 
+{
+	PADDING-RIGHT: 20px;
+	padding-left: 0px;	
+	PADDING-BOTTOM:20px
+}
+
+.ms-toccattitle
+{
+	font-family: tahoma; 
+	font-style: normal; 
+	font-weight: bold; 
+	text-decoration: none; 
+
+}
+
+.ms-toccattitle a
+{
+	color:#003399;
+	font-size: .7em;
+	text-decoration: none; 
+}
+
+.ms-toccattitle a:hover
+{
+	color:#003399;
+	font-size: .7em;
+	text-decoration: underline; 
+}
+
+.ms-tocitems 
+{
+	PADDING-TOP: 0px;
+	font-family: Tahoma; 
+	font-style: normal; 
+	font-weight: normal; 
+	text-decoration: none; 
+
+}
+
+.ms-catlsts, .ms-catlsts a
+{
+	vertical-align:bottom;
+}
+
+.ms-catsubcats, .ms-catsubcats a
+{
+	vertical-align:bottom;
+}
+
+.ms-newsheadline
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: 900;
+	padding-bottom: 3px
+}
+.ms-newssubhead
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt
+}
+
+.ms-lswptitle
+{	
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: 700; 
+	Color: #4E7DD1;
+	padding-bottom:6px;
+	padding-left:5px;
+	padding-right:0px;	
+}
+
+.ms-ls
+{
+	margin-left: 4px;
+	margin-right: 0px;
+
+}
+
+.ms-lsgrphdg 
+{
+}
+
+.ms-lsmin
+{	
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+
+.ms-lscomp
+{	
+	padding-bottom: 10px;
+}
+
+.ms-lsnorm
+{	
+	padding-bottom: 15px;
+}
+
+.ms-lsexp
+{	
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 2px;
+	padding-right: 0px;	
+}
+
+.ms-lstitle
+{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+.ms-sectionheader
+{
+	font-family:arial;
+	font-size:1em;
+	color: #333333;
+}
+
+.ms-gray 
+{
+	color: #585858
+	}
+
+.ms-white 
+{
+	color: #FFFFFF
+}
+
+.ms-gold 
+{
+	color: #FFD700;
+}
+
+.ms-black
+{
+	color: #000000
+}
+
+.HtmlMenuButton 
+{
+    CURSOR: hand; 
+}
+
+.ElementFrame 
+{
+
+} 
+
+.Element 
+{ 
+    font-family: Tahoma; 
+	font-size: .7em; 
+	font-style: normal; 
+	font-weight: normal; 
+	text-decoration: none; 			
+	border:1px #ffffff solid;
+	CURSOR: default; 
+    COLOR: black; 
+    BACKGROUND-COLOR: #ffffff;
+	vertical-align : middle;
+	padding-bottom : 2px;
+	padding-top:2px;
+	padding-left:4px;
+	padding-right:0px;	
+	width: 100%;
+} 
+
+.Elementdrop
+{ 
+    font-family: Tahoma; 
+	font-size: .7em; 
+	font-style: normal; 
+	font-weight: normal; 
+	text-decoration: none; 			
+	border: 1px solid #FF9933;
+	CURSOR: default; 
+    COLOR: black; 
+    BACKGROUND-COLOR: #FFE7BE;
+	vertical-align : middle;
+	padding-bottom : 2px;
+	padding-top:2px;
+	padding-left:4px;
+	padding-right:0px;	
+	width: 100%;
+} 
+
+.Elementsel
+{ 
+   	border: 1px solid #ebebeb;
+    font-family: Tahoma; 
+	font-size: .7em; 
+	font-style: normal; 
+	font-weight: normal; 
+	text-decoration: none; 			
+	CURSOR: default; 
+    COLOR: black; 
+    BACKGROUND-COLOR: #ECECEC;
+	vertical-align : middle;
+	padding-bottom : 2px;
+	padding-top:2px;
+	padding-left:4px;
+	padding-right:0px;	
+	width: 100%;
+} 
+
+.ElementChildren 
+{ 
+
+} 
+
+.LayoutIBeam 
+{
+	TABLE-LAYOUT: fixed; 
+    DISPLAY: none; 
+    WIDTH: 50px; 
+    POSITION: absolute; 
+    BORDER-COLLAPSE: collapse; 
+    HEIGHT: 30px;
+} 
+
+.LayoutIBeamTDTop 
+{ 
+    BORDER-RIGHT: #FF9933 2px solid; 
+    BORDER-LEFT: #FF9933 2px solid; 
+    BORDER-BOTTOM: 2px solid #FF9933; 
+} 
+
+.LayoutIBeamTDBottom 
+{ 
+    BORDER-RIGHT: #FF9933 2px solid; 
+    BORDER-LEFT: #FF9933 2px solid;
+} 
+
+.LayoutIBeamTR 
+{ 
+    HEIGHT: 5px;
+} 
+
+.LayoutCanvas 
+{ 
+	border-top:1px #efefef solid ;
+	border-left:1px #efefef solid ;
+    OVERFLOW: scroll; 
+    WIDTH: 100%; 
+} 
+
+.NonECBCell 
+{
+	width:0px;
+}
+
+.ECBCell
+{
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 0px;	
+}
+
+.ms-pmecbp
+{
+	padding-left: 0px;
+	padding-right: 25px;
+}
+
+.Hidden 
+{ 
+	DISPLAY: none;
+} 
+
+.ToggleIcon 
+{ 
+	cursor:hand;
+} 
+
+.Icon 
+{ 
+	cursor:move;
+} 
+
+.Iconhome 
+{
+	CURSOR: not-allowed;
+}
+
+.Full
+{
+            WIDTH: 100%; 
+            HEIGHT: 100%;
+}
+
+.ms-odbcell
+{
+	background-color: #0033CC;
+	padding-left: 7px;
+	padding-right:0px;	
+	padding-top: 7px;
+}
+
+.ms-odbfont
+{
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+.ms-odncell
+{
+	background-color: #0033CC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	padding-right:0px;	
+}
+.ms-odnfont
+{
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-size: 20px;
+	padding-left: 6px;
+	padding-right:0px;	
+}
+.ms-odccell
+{
+	background-color: #316AC5;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	padding-right:0px;	
+}
+.ms-odcfont
+{
+	color: #000000;
+	font-family: Verdana;
+	font-size: 10px;
+	padding-left: 4px;
+	padding-right:0px;	
+}
+
+.ms-odtreediv
+{
+	margin-left: 9px;
+	margin-right: 0px;	
+	margin-top: 5px;
+}
+
+.ms-odtree
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.ms-odtoggleimg
+{
+}
+
+.ms-odcatcell
+{
+	padding-left: 3px;
+	padding-top: 4px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	width: 100%;
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+.ms-odcatcelltable
+{
+}
+
+.ms-odcatcelltdimg
+{
+	width: 1px;
+	padding-right: 5px;
+	padding-left: 0px;	
+}
+
+.ms-odcatcelltdtitle
+{
+	width: 100%;
+}
+
+.ms-odcatcelltdtitletable
+{
+}
+
+.ms-odcatcelltdtitletd
+{
+	padding-left: 3px;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	width: 100%;
+	font-family: Tahoma;
+	color: #000000;
+	font-size: .7em;
+}
+
+.ms-phtb 
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	border-bottom:10px #ffffff solid;
+	background-repeat: repeat-x;
+	height:20px;
+	border-top:20px #ffffff solid;
+}
+.ms-phtb a:link, .ms-phtb a:visited
+{
+	color: black;
+	text-decoration: none;
+}
+.ms-phtb a:hover
+{
+	color: red;
+	text-decoration: underline
+}
+
+.ms-smallheader
+{
+	font-family: Verdana;
+	font-weight: Bold;
+	font-size: .7em;
+	color: #CC6633;
+}
+.ms-smallheader a:link
+{
+	color: #003399;
+	text-decoration: none;
+}
+.ms-smallheader a:hover
+{
+	text-decoration: underline;
+}
+.ms-smallheader a:visited
+{
+	color: #003399;
+	text-decoration: none;
+}
+.ms-srchAlignTop
+{
+	vertical-align: top;
+	padding-bottom: 0px;
+}
+.ms-srchTitle, .ms-srchTitle a:link {
+   font-size: 8pt; 
+   font-weight: bold;
+   color: #000066;
+   font-family:verdana;
+   text-decoration: none;
+}
+.ms-srchTitle a:visited {
+   color: #000066;
+   text-decoration: none;
+}
+.ms-srchTitle a:hover, .ms-srchTitle a:visited:hover  {
+   color: #ff3300;
+   text-decoration: underline;
+}
+
+.ms-srchUrl {
+    font-family: verdana;
+    font-size: .68em;
+    vertical-align: top;
+    color: gray;
+}
+.ms-srchUrl a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+.ms-srchActions {
+    font-family: verdana;
+    font-size: .68em;
+    vertical-align: top;
+    color: gray;
+}
+.ms-srchActions a:link {
+    color: gray;
+    text-decoration: none;
+}
+.ms-srchUrl a:visited, .ms-srchActions a:visited  {
+    color: gray;
+    text-decoration: none;
+}
+
+.ms-srchUrl a:hover, .ms-srchUrl a:visited:hover {
+   color: #ff3300;
+   text-decoration: underline;
+}
+.ms-srchActions a:hover, .ms-srchActions a:visited:hover {
+    color: #ff3300;
+    text-decoration: underline;
+}
+
+.ms-bannerframe { 
+	background-color: #4E7DD1; 
+	width: 100%; 
+	padding-left: 5px; 
+	padding-right: 14px; 
+	padding-top:4px; 
+	padding-bottom:4px;
+	border-bottom:1px #4675CB solid;
+}
+
+.ms-banner {
+	text-align: right;
+}
+
+.ms-portaltitle {
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: 700; 
+	Color: #4E7DD1;
+	padding-bottom:10px;
+	padding-left:0px;
+	padding-right:0px;	
+}
+
+.ms-tztop
+{
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left:6px;
+	padding-bottom: 6px;
+}
+
+.ms-tzmidleft
+{
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left:6px;
+	padding-bottom: 6px;
+}
+
+.ms-tzmidright
+{
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left:6px;
+	padding-bottom: 6px;
+
+}
+
+.ms-tzbottom
+{
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-left:6px;
+	padding-bottom: 6px;
+}
+
+.ms-tzmrdiv
+{
+	width: 295px;
+}
+
+.ms-bbutton
+{
+	overflow: visible;
+	width: 100px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ms-tztable
+{
+	margin-right:12px;
+	margin-left:0px;
+}
+
+.ms-titlearea a { 
+    text-decoration:none;
+}
+
+.ms-titlearea a:visited { 
+    color:003399;
+}
+
+.ms-titlearea a:hover
+{
+text-decoration:underline;
+}
+
+.ms-navaddlink
+{
+	color:#E57F1A;
+}
+.ms-lstopitemdesc 
+{
+color:#666666;	
+}
+
+.ms-catlsts
+{
+	margin-top:4px;
+	}
+
+.ms-toccatitem
+{
+	color:#666666;
+	vertical-align:middle;
+	padding-top:4px;
+}
+
+.IconBrowse
+
+{
+	margin-right:6px;
+	margin-left:0px;	
+}
+
+.ms-nav td 
+{
+
+	font-weight:bold;
+}
+
+.ms-verticaldots {
+    border-right: 0px solid #ffffff; 
+    border-left: none; 
+}
+
+.ms-descriptiontext A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-cadminnav
+{
+	padding:5px;
+}

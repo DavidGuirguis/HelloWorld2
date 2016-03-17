@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{AF82BE3E-49B4-4187-9516-A73AC39E21B1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PSQuoter", "..\PSQuoter", "{85F13766-5270-4889-8C72-AF580BE5E7FB}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/PSQuoter"
+		Debug.AspNetCompiler.PhysicalPath = "..\PSQuoter\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\PSQuoter\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/PSQuoter"
+		Release.AspNetCompiler.PhysicalPath = "..\PSQuoter\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\PSQuoter\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62776"
+	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AppDb_PSQuoter (VS10)", "..\_SQLProjects\AppDb_PSQuoter\AppDb_PSQuoter (VS10).sqlproj", "{951B98C1-2F4D-40C0-8A4C-21DF826BD18C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsroot:8080/tfs/dealerapps
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = .
+		SccLocalPath1 = .
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = ..\\_SQLProjects\\AppDb_PSQuoter\\AppDb_PSQuoter\u0020(VS10).sqlproj
+		SccProjectTopLevelParentUniqueName2 = PSQuoter\u0020v4\u0020(VS12).sln
+		SccProjectName2 = ../../../SQL\u0020Projects/Main/Source/AppDb_PSQuoter/Source
+		SccLocalPath2 = ..\\_SQLProjects\\AppDb_PSQuoter
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85F13766-5270-4889-8C72-AF580BE5E7FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F13766-5270-4889-8C72-AF580BE5E7FB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{951B98C1-2F4D-40C0-8A4C-21DF826BD18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951B98C1-2F4D-40C0-8A4C-21DF826BD18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951B98C1-2F4D-40C0-8A4C-21DF826BD18C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{951B98C1-2F4D-40C0-8A4C-21DF826BD18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951B98C1-2F4D-40C0-8A4C-21DF826BD18C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{951B98C1-2F4D-40C0-8A4C-21DF826BD18C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{951B98C1-2F4D-40C0-8A4C-21DF826BD18C} = {AF82BE3E-49B4-4187-9516-A73AC39E21B1}
+	EndGlobalSection
+EndGlobal

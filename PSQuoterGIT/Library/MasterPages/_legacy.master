@@ -1,0 +1,11 @@
+<%@ Master 
+    Language="C#" 
+    AutoEventWireup="true" 
+    CodeFile="_legacy.master.cs" 
+    MasterPageFile="~/Library/MasterPages/_base.master"
+    Inherits="Template" 
+%>
+<asp:Content ContentPlaceHolderID="cntMP" runat="server">
+  <form runat="server" enableviewstate="false" id="_mainFrm"></form>
+  <div id="wrapper"><asp:ContentPlaceHolder ID="cntMP" runat="server"></asp:ContentPlaceHolder></div>
+</asp:Content>

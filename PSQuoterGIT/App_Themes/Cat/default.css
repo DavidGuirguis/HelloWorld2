@@ -1,0 +1,17 @@
+@import "/Library/Themes/CAT/v4/main.css";
+@import "../../library/styles/main.css";
+
+/*Detail Pane*/
+.detailPane #DetailBarTable	{background:url(images/bg_detailPane.gif) repeat-x -10px; color:White; height:28px;}
+/*Search Bar Cell*/
+.std {background: url('images/graphite_search_background.gif') no-repeat #CECFCE; }
+/*Detail Bar*/
+.db {background: url('images/graphite_page_background.gif'); }
+
+.back {background: url('images/graphite_page_background.gif') #efefef;}
+.tback {background: url('images/graphite_page_background.gif') #efefef;font-family: Arial, Verdana, helvetica; font-size: 11px; font-weight: normal;}
+
+/*--- Top Menu Bar Classes --------------------------------------------------*/
+.topMenuPane	{background: #666666; color: white;}
+#menuBar {background: #666666; color: White;}
+#menuBar .root {background: #4D4D4D url(images/menuCorner.gif) no-repeat bottom right;}

@@ -1,0 +1,54 @@
+<%@ Master 
+    Language="C#" 
+    AutoEventWireup="true" 
+    CodeFile="ReportLegacy.master.cs" 
+    Inherits="Template" 
+    MasterPageFile="~/Library/MasterPages/_legacy.master"
+%>
+<%@ Register Src="../Panes/bottomPane.ascx" TagName="bottomPane" TagPrefix="pane" %>
+<%@ Register Src="../Panes/topmenu.ascx" TagName="topmenu" TagPrefix="pane" %>
+<%@ Register Src="../Panes/SearchBar.ascx" TagName="searchbar" TagPrefix="pane" %>
+<%@ Register Src="../Panes/detailbar.ascx" TagName="detailbar" TagPrefix="pane" %>
+<%@ Register Src="../Panes/applicationheader.ascx" TagName="applicationheader" TagPrefix="pane" %>
+<asp:Content runat="server" ContentPlaceHolderID="cntMP">
+      <div id="topContainer">
+    <!-- HEADER: Start -->
+       <div id="headerBox">
+            <asp:ContentPlaceHolder ID="cntHP" runat="server"><pane:applicationheader runat="server" /></asp:ContentPlaceHolder>
+       </div>
+    <!-- HEADER: End -->
+
+    <!-- TOP MENU: Start -->
+       <div id="topPaneBox">
+         <asp:ContentPlaceHolder ID="cntTP" runat="server">
+           <pane:topmenu runat="server" />
+         </asp:ContentPlaceHolder>
+       </div>
+    <!-- TOP MENU: END -->
+
+    <!-- SEARCH: Start -->
+      <div id="searchBox">
+        <asp:ContentPlaceHolder ID="cntSP" runat="server">
+          <pane:searchbar runat="server" />
+        </asp:ContentPlaceHolder>
+      </div>
+    <!-- SEARCH: END -->
+
+    <!-- Detail: Start -->
+      <div id="detailBox">
+        <asp:ContentPlaceHolder ID="cntDP" runat="server">
+           <pane:detailbar runat="server" />
+         </asp:ContentPlaceHolder>
+      </div>
+    <!-- Detail: END -->
+     </div>
+     <div id="bottomContainer">    
+    <!-- Module PANE: Start -->
+      <div id="moduleBox"><asp:Panel ID=MsgHolder runat="server" Visible="false" /><asp:ContentPlaceHolder ID="cntMP" runat="server"></asp:ContentPlaceHolder></div>
+    <!-- Module PANE: END -->
+
+    <!-- BOTTOM PANE: Start -->
+      <div id="bottomPaneBox"><asp:ContentPlaceHolder ID="cntBP" runat="server"><pane:bottomPane runat="server" /></asp:ContentPlaceHolder></div>
+    <!-- BOTTOM PANE: END-->
+     </div>
+</asp:Content>

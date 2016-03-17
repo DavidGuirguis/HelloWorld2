@@ -1,0 +1,9 @@
+<%@ Master 
+    Language="C#" 
+    AutoEventWireup="true" 
+    Inherits="UI.Abstracts.MasterPages.Popup" 
+    MasterPageFile="~/Library/MasterPages/_legacy.master"
+%>
+<asp:Content runat="server" ContentPlaceHolderID="cntMP">
+  <asp:Panel ID=MsgHolder runat="server" Visible="false" /><asp:ContentPlaceHolder ID="cntMP" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

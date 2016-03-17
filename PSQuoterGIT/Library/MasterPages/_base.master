@@ -1,0 +1,7 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="_base.master.cs" Inherits="Template" %>
+<%@ Import Namespace="X.Web.UI" %>
+<!DOCTYPE html>
+<html>
+<head runat="server"><asp:ContentPlaceHolder ID="cntHH" runat="server" /><asp:PlaceHolder Runat="server"><%RenderLayoutSection(LayoutSection.HtmlHead);%></asp:PlaceHolder></head>
+<body><asp:ContentPlaceHolder ID="cntMP" runat="server"></asp:ContentPlaceHolder></body>
+</html>

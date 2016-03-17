@@ -1,0 +1,36 @@
+<%@ Master 
+    Language="C#" 
+    AutoEventWireup="true" 
+    CodeFile="Popup.master.cs" 
+    Inherits="Template" 
+    MasterPageFile="~/Library/MasterPages/_webForm.master"
+%>
+<%@ Register Src="../Panes/applicationheader.ascx" TagName="applicationheader" TagPrefix="pane" %>
+<%@ Register Src="../Panes/detailbar.ascx" TagName="detailbar" TagPrefix="pane" %>
+<%@ Register Src="../Panes/bottomPane.ascx" TagName="bottomPane" TagPrefix="pane" %>
+<asp:Content runat="server" ContentPlaceHolderID="cntMP">
+      <div id="topContainer">
+    <!-- HEADER: Start -->
+       <div id="headerBox">
+            <asp:ContentPlaceHolder ID="cntHP" runat="server"><pane:applicationheader runat="server" /></asp:ContentPlaceHolder>
+       </div>
+    <!-- HEADER: End -->
+
+    <!-- Detail: Start -->
+      <div id="detailBox">
+        <asp:ContentPlaceHolder ID="cntDP" runat="server">
+           <pane:detailbar runat="server" />
+         </asp:ContentPlaceHolder>
+      </div>
+    <!-- Detail: END -->
+      </div>
+      <div id="bottomContainer">
+        <!-- Module PANE: Start -->
+          <div id="moduleBox"><asp:Panel ID=MsgHolder runat="server" Visible="false" /><asp:ContentPlaceHolder ID="cntMP" runat="server"></asp:ContentPlaceHolder></div>
+        <!-- Module PANE: END -->
+
+        <!-- BOTTOM PANE: Start -->
+          <div id="bottomPaneBox"><asp:ContentPlaceHolder ID="cntBP" runat="server"><pane:bottomPane runat="server" /></asp:ContentPlaceHolder></div>
+        <!-- BOTTOM PANE: END-->
+      </div>
+</asp:Content>

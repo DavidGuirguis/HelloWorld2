@@ -1,0 +1,29 @@
+<%@ Master 
+    Language="C#" 
+    AutoEventWireup="true" 
+    Inherits="UI.Abstracts.MasterPages.Popup" 
+    MasterPageFile="~/Library/MasterPages/_webForm.master"
+%>
+<asp:Content runat="server" ContentPlaceHolderID="cntMP">
+  <style type="text/css">
+    body,html{background-color:transparent;}
+    .ui-dialog {
+    position:absolute;
+    z-index:100;
+    }
+  </style>
+<script language="javascript" type="text/javascript">
+    function setFocus() {
+        if (typeof (getFocusElement) == "function") {
+            var focusElement = getFocusElement();
+
+            try {
+                focusElement.focus();
+            }
+            catch (e) {
+            }
+        }
+    }
+</script>
+  <asp:Panel ID=MsgHolder runat="server" Visible="false" /><asp:ContentPlaceHolder ID="cntMP" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

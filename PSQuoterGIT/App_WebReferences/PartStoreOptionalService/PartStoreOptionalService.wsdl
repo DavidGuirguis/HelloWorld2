@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns3="http://www.cat.com/MT/2008/11/15/PartStoreOptionalService" xmlns:ns4="http://invoicedetail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns8="http://webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns6="http://consignment.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns1="http://invoicelist.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns10="http://placeshopreq.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns11="http://allsos.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns12="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns5="http://shopreqtaxship.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns9="http://dropbox.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns13="http://piecehose.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ns2="http://docinqlist.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://coretrack.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ns7="http://shopreqlookup.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://www.cat.com/MT/2008/11/15/PartStoreOptionalService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>PartStoreOptionalService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema xmlns:ax24="http://coretrack.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://coretrack.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="CoreTrackInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bizCmdtCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dateFrom" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dateTo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CoreTrackOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="core" nillable="true" type="ax24:CoreTrackCoreOutput" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CoreTrackCoreOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bizCmdtCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="currInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dateSold" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="extdSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="qty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="serialNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax210="http://invoicelist.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://invoicelist.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="InvoiceListInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dateFrom" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dateTo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoiceType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="poNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceListOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoiceInfo" nillable="true" type="ax210:InvoiceListInvoiceInfoOutput" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceListInvoiceInfoOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="amount" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="currencyInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="documentNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoiceDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoiceNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoiceType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="poNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sequenceNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax25="http://docinqlist.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://docinqlist.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="DocInqListInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dateFrom" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dateTo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocInqListOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="docInq" nillable="true" type="ax25:DocInqListDocInqOutput" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocInqListDocInqOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="deliLoc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="entryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="salesRep" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipInst" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ns="http://www.cat.com/MT/2008/11/15/PartStoreOptionalService" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.cat.com/MT/2008/11/15/PartStoreOptionalService">
+      <xs:element name="getSOSInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="input" nillable="true" type="ns11:AllSOSInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getSOSInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ns11:AllSOSOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getConsignmentInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="consignmentInput" nillable="true" type="ns6:ConsignmentInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getConsignmentInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns6:ConsignmentOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveOutstandingCores">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="coreTrackInput" nillable="true" type="ns0:CoreTrackInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveOutstandingCoresResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns0:CoreTrackOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getDocumentInquiryList">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="docInqListInput" nillable="true" type="ns2:DocInqListInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getDocumentInquiryListResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns2:DocInqListOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveListOfDropBoxes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="dropBoxInput" nillable="true" type="ns9:DropBoxInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveListOfDropBoxesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns9:DropBoxOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getInvoiceDetailInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="invoiceDetailInput" nillable="true" type="ns4:InvoiceDetailInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getInvoiceDetailInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns4:InvoiceDetailOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getInvoiceList">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="invoiceListInput" nillable="true" type="ns1:InvoiceListInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getInvoiceListResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns1:InvoiceListOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPieceHose">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="pieceHoseInput" nillable="true" type="ns13:PieceHoseInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPieceHoseResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ns13:PieceHoseOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPlaceShopReq">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="placeShopReqInput" nillable="true" type="ns10:PlaceShopReqInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getPlaceShopReqResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns10:PlaceShopReqOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getShopReqInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="shopReqLookupInput" nillable="true" type="ns7:ShopReqLookupInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getShopReqInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns7:ShopReqLookupOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getShopReqTaxShipInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="shopReqTaxShipInput" nillable="true" type="ns5:ShopReqTaxShipInput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getShopReqTaxShipInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns5:ShopReqTaxShipOutput" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:ax27="http://invoicedetail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ax29="http://webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://invoicedetail.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:import namespace="http://webservice.midtier.websolutions.dcs.cat/xsd" />
+      <xs:complexType name="InvoiceDetailInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoiceNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceDetailOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="countryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custAddr3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custCityState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custEquipNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dispLaborDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="divisionInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="documentDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="documentDiscount" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoiceDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="invoiceInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoiceItemDiscRecord" nillable="true" type="ax27:InvoiceItemDiscRecord" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoiceLaborRecord" nillable="true" type="ax27:InvoiceLaborRecord" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoiceLaborTotalRecord" nillable="true" type="ax27:InvoiceLaborTotalRecord" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoiceLineItemNoteRecord" nillable="true" type="ax27:InvoiceLineItemNoteRecord" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoiceMiscRecord" nillable="true" type="ax27:InvoiceMiscRecord" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoiceMiscTotalRecord" nillable="true" type="ax27:InvoiceMiscTotalRecord" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoicePartRecord" nillable="true" type="ax27:InvoicePartRecord" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoicePartTotalRecord" nillable="true" type="ax27:InvoicePartTotalRecord" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="invoiceSegmentTotalRecord" nillable="true" type="ax27:InvoiceSegmentTotalRecord" />
+          <xs:element minOccurs="0" name="machineID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="messageOutput" nillable="true" type="ax29:MessageOutput" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="miscInfo" nillable="true" type="ax27:InvoiceDetailMiscInfoOutput" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="netInvoiceTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="noteArrayDocInq" nillable="true" type="ax27:InvoiceDetailNoteArrayOutput" />
+          <xs:element minOccurs="0" name="poNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="salesmanName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sequenceNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serviceHours" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="shipToAddrln1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="tax" nillable="true" type="ax27:InvoiceDetailTaxOutput" />
+          <xs:element minOccurs="0" name="termsCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="zipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceItemDiscRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="discAmount" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="percent" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceLaborRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="desc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="extdPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hours" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceLaborTotalRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="total" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceLineItemNoteRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="text" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceMiscRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="desc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="extdPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="qty" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceMiscTotalRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="total" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoicePartRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custItemNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPartNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="desc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="extdPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="qty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoicePartTotalRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="total" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceSegmentTotalRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="total" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceDetailMiscInfoOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="miscDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="miscDollarAmt" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceDetailNoteArrayOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="note" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="InvoiceDetailTaxOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="amount" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="taxDesc" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax216="http://shopreqtaxship.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://shopreqtaxship.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="ShopReqTaxShipInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="apiCalledBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="empId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nbrPartNo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ordType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="partNo" nillable="true" type="ax216:ShopReqTaxShipPartNoInput" />
+          <xs:element minOccurs="0" name="shipCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="slNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderOperationNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderSegmentNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ShopReqTaxShipPartNoInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="coreChrUnitSellPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="errorCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ordQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDiscAmt" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSellPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitWeight" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ShopReqTaxShipOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="crdtChkOkDbs" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="currency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="lnItemDscntTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="ordTotal" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="ordTotalBefTax" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="ordTotalNet" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="pickUpAddrLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pickUpAddrLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pickUpAddrLine3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pickUpAddrLine4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pickUpAddrLine5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipMiscChrg" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax23="http://consignment.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://consignment.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="ConsignmentInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="consignmentPart" nillable="true" type="ax23:ConsignmentPartInput" />
+          <xs:element minOccurs="0" name="custEmailId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPhoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cwsId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dbsPymtTermCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryLocation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nbrPart" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="orderByName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="poNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pymtTermCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="salesRepName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddr5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipViaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shippingInst" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="textLineArray" nillable="true" type="ax23:ConsignmentTextLineArrayInput" />
+          <xs:element minOccurs="0" name="tranType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ConsignmentPartInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ordQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partFlag" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ConsignmentTextLineArrayInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="textLine" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ConsignmentOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="consignmentDoc" nillable="true" type="ax23:ConsignmentDocOutput" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ConsignmentDocOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatusDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docTime" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax215="http://shopreqlookup.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://shopreqlookup.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="ShopReqLookupInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="apiCalledBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="empId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderOperationNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderSegmentNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ShopReqLookupOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="currInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custName2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPresCurrCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dfltStNoEndUseCdReqInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dfltStoreNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dfltTermsCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="langCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="phoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="shipInst" nillable="true" type="ax215:ShopReqLookupShipInstOutput" />
+          <xs:element minOccurs="0" name="shipToAddrln1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="shipVia" nillable="true" type="ax215:ShopReqLookupShipViaOutput" />
+          <xs:element minOccurs="0" name="state" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="validPayment" nillable="true" type="ax215:ShopReqLookupValidPaymentOutput" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="validStore" nillable="true" type="ax215:ShopReqLookupValidStoreOutput" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ShopReqLookupShipInstOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="shippingCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shippingDesc" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ShopReqLookupShipViaOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="shipViaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipViaDesc" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ShopReqLookupValidPaymentOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dbsPaymentTermsCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="paymentTermsCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ShopReqLookupValidStoreOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="stNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax28="http://webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="MessageOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax26="http://dropbox.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://dropbox.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="DropBoxInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DropBoxOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="shippingAddress" nillable="true" type="ax26:DropBoxShippingAddressOutput" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DropBoxShippingAddressOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dealerField1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerField2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln5" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax214="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" xmlns:ax212="http://placeshopreq.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://placeshopreq.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:import namespace="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" />
+      <xs:complexType name="PlaceShopReqInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="apiCalledBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="creditAuthDet" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custEmailId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custPhoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cwsId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="deliveryLoc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="empId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nbrPartNo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ordType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="orderedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="partNumberDetailArray" nillable="true" type="ax212:PartNumberDetailInput" />
+          <xs:element minOccurs="0" name="salesPerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipMiscChrg" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="shipToAddrln1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipToAddrln5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shipViaCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="shippingInst" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="slNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="textLineArray" nillable="true" type="ax214:PartStoreCommonTextInput" />
+          <xs:element minOccurs="0" name="transType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderOperationNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="workOrderSegmentNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ARRAY_LEN_TEXT_LINES" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PartNumberDetailInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="coreChrUnitSellPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="lineItemNote" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ordQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDiscAmt" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSellPrice" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitWeight" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PlaceShopReqOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="docDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatusCd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docStatusDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="docTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax22="http://allsos.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://allsos.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="AllSOSInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="custType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="equipMfrCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="equipMfrModel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="equipMfrSerNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="inNbrPartTable" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="inPartTable" nillable="true" type="ax22:AllSOSInPartTable" />
+          <xs:element minOccurs="0" name="orderType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllSOSInPartTable">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ordQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllSOSOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="sosDetail" nillable="true" type="ax22:AllSOSDetailInformation" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllSOSDetailInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="altFound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="bo" nillable="true" type="ax22:AllBOInformation" />
+          <xs:element minOccurs="0" name="coreDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="coreUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="currency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="desc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="extdCoreSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdNet" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="extdSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hoseAsmInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nonRetrnInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="outPartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partNotesFound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="qtyOnHand" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="remanXRefFound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="replFound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sosDesc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="unitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="unitSell" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AllBOInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boFac" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="boQty" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax213="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="PartStoreCommonTextInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="textLine" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax211="http://piecehose.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://piecehose.partstore.domain.webservice.midtier.websolutions.dcs.cat/xsd">
+      <xs:complexType name="PieceHoseInput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="dealerCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="endUseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="inPartTable" nillable="true" type="ax211:PieceHoseInPartTable" />
+          <xs:element minOccurs="0" name="make" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="numberOfPart" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="orderType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serialNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="storeNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PieceHoseInPartTable">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PieceHoseOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="errorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="errorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="hoseArray" nillable="true" type="ax211:PieceHoseDetailOutput" />
+          <xs:element minOccurs="0" name="partNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sos" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PieceHoseDetailOutput">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="angleOrientation" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="armourLength" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="armourLengthUM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="armourPartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="armourUnitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="armourUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hoseLength" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hoseLengthUM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="hoseNoteInd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="hosePartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="hoseType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="hoseUnitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="hoseUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="innerDiameter" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="innerDiameterUM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="permStemPartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="permStemQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="permStemUnitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="permStemUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="sealPartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sealQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="sealUnitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="sealUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="segmentNo" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="sleevePartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sleeveQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="sleeveUnitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="sleeveUnitSell" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="stemPartNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="stemQty" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="stemUnitDisc" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="stemUnitSell" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getInvoiceDetailInformationRequest">
+    <wsdl:part name="parameters" element="ns3:getInvoiceDetailInformation" />
+  </wsdl:message>
+  <wsdl:message name="getInvoiceDetailInformationResponse">
+    <wsdl:part name="parameters" element="ns3:getInvoiceDetailInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveListOfDropBoxesRequest">
+    <wsdl:part name="parameters" element="ns3:retrieveListOfDropBoxes" />
+  </wsdl:message>
+  <wsdl:message name="retrieveListOfDropBoxesResponse">
+    <wsdl:part name="parameters" element="ns3:retrieveListOfDropBoxesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getInvoiceListRequest">
+    <wsdl:part name="parameters" element="ns3:getInvoiceList" />
+  </wsdl:message>
+  <wsdl:message name="getInvoiceListResponse">
+    <wsdl:part name="parameters" element="ns3:getInvoiceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getShopReqTaxShipInformationRequest">
+    <wsdl:part name="parameters" element="ns3:getShopReqTaxShipInformation" />
+  </wsdl:message>
+  <wsdl:message name="getShopReqTaxShipInformationResponse">
+    <wsdl:part name="parameters" element="ns3:getShopReqTaxShipInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="getShopReqInformationRequest">
+    <wsdl:part name="parameters" element="ns3:getShopReqInformation" />
+  </wsdl:message>
+  <wsdl:message name="getShopReqInformationResponse">
+    <wsdl:part name="parameters" element="ns3:getShopReqInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPlaceShopReqRequest">
+    <wsdl:part name="parameters" element="ns3:getPlaceShopReq" />
+  </wsdl:message>
+  <wsdl:message name="getPlaceShopReqResponse">
+    <wsdl:part name="parameters" element="ns3:getPlaceShopReqResponse" />
+  </wsdl:message>
+  <wsdl:message name="getConsignmentInformationRequest">
+    <wsdl:part name="parameters" element="ns3:getConsignmentInformation" />
+  </wsdl:message>
+  <wsdl:message name="getConsignmentInformationResponse">
+    <wsdl:part name="parameters" element="ns3:getConsignmentInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSOSInformationRequest">
+    <wsdl:part name="parameters" element="ns3:getSOSInformation" />
+  </wsdl:message>
+  <wsdl:message name="getSOSInformationResponse">
+    <wsdl:part name="parameters" element="ns3:getSOSInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="retrieveOutstandingCoresRequest">
+    <wsdl:part name="parameters" element="ns3:retrieveOutstandingCores" />
+  </wsdl:message>
+  <wsdl:message name="retrieveOutstandingCoresResponse">
+    <wsdl:part name="parameters" element="ns3:retrieveOutstandingCoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPieceHoseRequest">
+    <wsdl:part name="parameters" element="ns3:getPieceHose" />
+  </wsdl:message>
+  <wsdl:message name="getPieceHoseResponse">
+    <wsdl:part name="parameters" element="ns3:getPieceHoseResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentInquiryListRequest">
+    <wsdl:part name="parameters" element="ns3:getDocumentInquiryList" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentInquiryListResponse">
+    <wsdl:part name="parameters" element="ns3:getDocumentInquiryListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PartStoreOptionalServicePortType">
+    <wsdl:operation name="getInvoiceDetailInformation">
+      <wsdl:input wsaw:Action="urn:getInvoiceDetailInformation" message="ns3:getInvoiceDetailInformationRequest" />
+      <wsdl:output wsaw:Action="urn:getInvoiceDetailInformationResponse" message="ns3:getInvoiceDetailInformationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveListOfDropBoxes">
+      <wsdl:input wsaw:Action="urn:retrieveListOfDropBoxes" message="ns3:retrieveListOfDropBoxesRequest" />
+      <wsdl:output wsaw:Action="urn:retrieveListOfDropBoxesResponse" message="ns3:retrieveListOfDropBoxesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceList">
+      <wsdl:input wsaw:Action="urn:getInvoiceList" message="ns3:getInvoiceListRequest" />
+      <wsdl:output wsaw:Action="urn:getInvoiceListResponse" message="ns3:getInvoiceListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getShopReqTaxShipInformation">
+      <wsdl:input wsaw:Action="urn:getShopReqTaxShipInformation" message="ns3:getShopReqTaxShipInformationRequest" />
+      <wsdl:output wsaw:Action="urn:getShopReqTaxShipInformationResponse" message="ns3:getShopReqTaxShipInformationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getShopReqInformation">
+      <wsdl:input wsaw:Action="urn:getShopReqInformation" message="ns3:getShopReqInformationRequest" />
+      <wsdl:output wsaw:Action="urn:getShopReqInformationResponse" message="ns3:getShopReqInformationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPlaceShopReq">
+      <wsdl:input wsaw:Action="urn:getPlaceShopReq" message="ns3:getPlaceShopReqRequest" />
+      <wsdl:output wsaw:Action="urn:getPlaceShopReqResponse" message="ns3:getPlaceShopReqResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsignmentInformation">
+      <wsdl:input wsaw:Action="urn:getConsignmentInformation" message="ns3:getConsignmentInformationRequest" />
+      <wsdl:output wsaw:Action="urn:getConsignmentInformationResponse" message="ns3:getConsignmentInformationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getSOSInformation">
+      <wsdl:input wsaw:Action="urn:getSOSInformation" message="ns3:getSOSInformationRequest" />
+      <wsdl:output wsaw:Action="urn:getSOSInformationResponse" message="ns3:getSOSInformationResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveOutstandingCores">
+      <wsdl:input wsaw:Action="urn:retrieveOutstandingCores" message="ns3:retrieveOutstandingCoresRequest" />
+      <wsdl:output wsaw:Action="urn:retrieveOutstandingCoresResponse" message="ns3:retrieveOutstandingCoresResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getPieceHose">
+      <wsdl:input wsaw:Action="urn:getPieceHose" message="ns3:getPieceHoseRequest" />
+      <wsdl:output wsaw:Action="urn:getPieceHoseResponse" message="ns3:getPieceHoseResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentInquiryList">
+      <wsdl:input wsaw:Action="urn:getDocumentInquiryList" message="ns3:getDocumentInquiryListRequest" />
+      <wsdl:output wsaw:Action="urn:getDocumentInquiryListResponse" message="ns3:getDocumentInquiryListResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PartStoreOptionalServiceSOAP11Binding" type="ns3:PartStoreOptionalServicePortType">
+    <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" Id="UsernameTokenOverSSL">
+      <wsp:ExactlyOne>
+        <wsp:All>
+          <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken RequireClientCertificate="false" />
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic256 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Lax />
+                </wsp:Policy>
+              </sp:Layout>
+              <sp:IncludeTimestamp />
+            </wsp:Policy>
+          </sp:TransportBinding>
+          <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+            <wsp:Policy>
+              <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient" />
+            </wsp:Policy>
+          </sp:SignedSupportingTokens>
+        </wsp:All>
+      </wsp:ExactlyOne>
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getInvoiceDetailInformation">
+      <soap:operation soapAction="urn:getInvoiceDetailInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveListOfDropBoxes">
+      <soap:operation soapAction="urn:retrieveListOfDropBoxes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceList">
+      <soap:operation soapAction="urn:getInvoiceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShopReqTaxShipInformation">
+      <soap:operation soapAction="urn:getShopReqTaxShipInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShopReqInformation">
+      <soap:operation soapAction="urn:getShopReqInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPlaceShopReq">
+      <soap:operation soapAction="urn:getPlaceShopReq" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsignmentInformation">
+      <soap:operation soapAction="urn:getConsignmentInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSOSInformation">
+      <soap:operation soapAction="urn:getSOSInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveOutstandingCores">
+      <soap:operation soapAction="urn:retrieveOutstandingCores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPieceHose">
+      <soap:operation soapAction="urn:getPieceHose" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentInquiryList">
+      <soap:operation soapAction="urn:getDocumentInquiryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PartStoreOptionalServiceSOAP12Binding" type="ns3:PartStoreOptionalServicePortType">
+    <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" Id="UsernameTokenOverSSL">
+      <wsp:ExactlyOne>
+        <wsp:All>
+          <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken RequireClientCertificate="false" />
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic256 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Lax />
+                </wsp:Policy>
+              </sp:Layout>
+              <sp:IncludeTimestamp />
+            </wsp:Policy>
+          </sp:TransportBinding>
+          <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+            <wsp:Policy>
+              <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient" />
+            </wsp:Policy>
+          </sp:SignedSupportingTokens>
+        </wsp:All>
+      </wsp:ExactlyOne>
+    </wsp:Policy>
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getInvoiceDetailInformation">
+      <soap12:operation soapAction="urn:getInvoiceDetailInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveListOfDropBoxes">
+      <soap12:operation soapAction="urn:retrieveListOfDropBoxes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceList">
+      <soap12:operation soapAction="urn:getInvoiceList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShopReqTaxShipInformation">
+      <soap12:operation soapAction="urn:getShopReqTaxShipInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShopReqInformation">
+      <soap12:operation soapAction="urn:getShopReqInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPlaceShopReq">
+      <soap12:operation soapAction="urn:getPlaceShopReq" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsignmentInformation">
+      <soap12:operation soapAction="urn:getConsignmentInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSOSInformation">
+      <soap12:operation soapAction="urn:getSOSInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveOutstandingCores">
+      <soap12:operation soapAction="urn:retrieveOutstandingCores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPieceHose">
+      <soap12:operation soapAction="urn:getPieceHose" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentInquiryList">
+      <soap12:operation soapAction="urn:getDocumentInquiryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PartStoreOptionalServiceHttpBinding" type="ns3:PartStoreOptionalServicePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getInvoiceDetailInformation">
+      <http:operation location="PartStoreOptionalService/getInvoiceDetailInformation" />
+      <wsdl:input>
+        <mime:content part="getInvoiceDetailInformation" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getInvoiceDetailInformation" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveListOfDropBoxes">
+      <http:operation location="PartStoreOptionalService/retrieveListOfDropBoxes" />
+      <wsdl:input>
+        <mime:content part="retrieveListOfDropBoxes" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="retrieveListOfDropBoxes" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInvoiceList">
+      <http:operation location="PartStoreOptionalService/getInvoiceList" />
+      <wsdl:input>
+        <mime:content part="getInvoiceList" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getInvoiceList" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShopReqTaxShipInformation">
+      <http:operation location="PartStoreOptionalService/getShopReqTaxShipInformation" />
+      <wsdl:input>
+        <mime:content part="getShopReqTaxShipInformation" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getShopReqTaxShipInformation" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShopReqInformation">
+      <http:operation location="PartStoreOptionalService/getShopReqInformation" />
+      <wsdl:input>
+        <mime:content part="getShopReqInformation" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getShopReqInformation" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPlaceShopReq">
+      <http:operation location="PartStoreOptionalService/getPlaceShopReq" />
+      <wsdl:input>
+        <mime:content part="getPlaceShopReq" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getPlaceShopReq" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsignmentInformation">
+      <http:operation location="PartStoreOptionalService/getConsignmentInformation" />
+      <wsdl:input>
+        <mime:content part="getConsignmentInformation" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getConsignmentInformation" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSOSInformation">
+      <http:operation location="PartStoreOptionalService/getSOSInformation" />
+      <wsdl:input>
+        <mime:content part="getSOSInformation" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getSOSInformation" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveOutstandingCores">
+      <http:operation location="PartStoreOptionalService/retrieveOutstandingCores" />
+      <wsdl:input>
+        <mime:content part="retrieveOutstandingCores" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="retrieveOutstandingCores" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPieceHose">
+      <http:operation location="PartStoreOptionalService/getPieceHose" />
+      <wsdl:input>
+        <mime:content part="getPieceHose" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getPieceHose" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentInquiryList">
+      <http:operation location="PartStoreOptionalService/getDocumentInquiryList" />
+      <wsdl:input>
+        <mime:content part="getDocumentInquiryList" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getDocumentInquiryList" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PartStoreOptionalService">
+    <wsdl:port name="PartStoreOptionalServiceSOAP11port_https" binding="ns3:PartStoreOptionalServiceSOAP11Binding">
+      <soap:address location="https://midtierws.cat.com/webapp/services/PartStoreOptionalService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreOptionalServiceSOAP11port_http1" binding="ns3:PartStoreOptionalServiceSOAP11Binding">
+      <soap:address location="http://midtierws.cat.com:80/webapp/services/PartStoreOptionalService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreOptionalServiceSOAP12port_https" binding="ns3:PartStoreOptionalServiceSOAP12Binding">
+      <soap12:address location="https://midtierws.cat.com:80/webapp/services/PartStoreOptionalService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreOptionalServiceSOAP12port_http1" binding="ns3:PartStoreOptionalServiceSOAP12Binding">
+      <soap12:address location="http://midtierws.cat.com:80/webapp/services/PartStoreOptionalService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreOptionalServiceHttpport" binding="ns3:PartStoreOptionalServiceHttpBinding">
+      <http:address location="https://midtierws.cat.com:80/webapp/services/PartStoreOptionalService" />
+    </wsdl:port>
+    <wsdl:port name="PartStoreOptionalServiceHttpport1" binding="ns3:PartStoreOptionalServiceHttpBinding">
+      <http:address location="http://midtierws.cat.com:80/webapp/services/PartStoreOptionalService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
